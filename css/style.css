@@ -1,0 +1,365 @@
+/* couleur secondaire : #6AC */
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../img/fond.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body > header {
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    position: fixed;
+    background-color: rgba(255,255,255, 0.7);
+    z-index: 100;
+}
+
+header h1, header h1 a {
+    font-weight: 300;
+    color: #5289A5;
+    text-decoration: none;
+}
+
+a.btn {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #EEE;
+}
+
+.btn.bleu{
+    background-color: #6AC;
+    color: white;
+}
+
+.bar-btn {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn.bleu:hover {
+    background-color: #62A3C4;
+}
+
+section {
+    padding: 20px;
+}
+
+section.scape {
+    padding: 90px;
+    background-color: #EEE;
+    text-align: center;
+}
+
+section.scape h2 {
+    font-size: 2.2em;
+}
+
+.content {
+    width: 1000px;
+    margin: auto;
+}
+
+blockquote {
+    
+}
+
+blockquote.large-quote {
+    font-size: 1.3em;
+    text-align: justify;
+    width: 37em;
+    margin: auto;
+}
+
+.scape .avatar {
+    width: 11.5em;
+}
+
+.column-3 img {
+    width: 2.9em;
+    float: left;
+    padding: 5px
+}
+
+.column-3 {
+    display: inline-block;
+    padding: 10px;
+    margin: 0.47em;
+    width: 18.5em;
+    font-size: 1em;
+    text-align: justify;
+    vertical-align: top;
+}
+
+body > footer {
+    background-color: #333;
+    color: #AAA;
+    padding: 20px;
+}
+
+.license {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.menu-footer {
+    display: inline-block;
+    vertical-align: top;
+    width: 12em;
+    margin: 10px;
+}
+
+.menu-footer li {
+    list-style-type: disc;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: #6AC;
+    font-size: 0.9em
+}
+
+footer section h3 {
+    font-size: 1.1em;
+    color: white;
+}
+
+footer section p {
+    font-size: 0.9em;
+}
+
+.menu-footer li:first-child {
+    list-style: none;
+    font-size: 0.85em;
+    position: relative;
+    left: -20px
+}
+
+.section-footer {
+    background-color: transparent;
+}
+
+.license a {
+    color: #6AC;
+    text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+    border: 1px solid #6AC;
+    border-radius: 5px;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FFF;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #6AC;
+    font-weight: 300;
+    border: 0px solid #6AC;
+}
+
+input[type="submit"]:hover {
+    background-color: #62A3C4;
+}
+
+.form-email {
+    text-align: center;
+    padding: 20px;
+}
+
+.form-email input, .form-email textarea {
+    width: 30em;
+}
+
+textarea {
+    height: 10em;
+}
+
+section {
+    background-color: white;
+}
+
+section.twitter {
+    background-color: transparent;
+}
+
+.tweet {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    color: #EEE;
+}
+
+.tweet a {
+    color: #6AC;
+}
+
+.tweet .logo {
+    height: 0px;
+}
+
+.tweet .logo img {
+    height: 4em;
+    float: left;
+    position: relative;
+    left:-35px;
+    top: -40px;
+    z-index: 10;
+}
+
+.tweet .name {
+    font-weight: 400;
+}
+
+.twitter .tweet .screen_name_date {
+    font-size: 0.6em;
+    color: #CCC;
+}
+
+.twitter .tweet .screen_name, .twitter .tweet .date {
+    font-size: 1.4em;
+}
+
+.twitter .tweet .user_mentions, .twitter .tweet .hashtag{
+    text-decoration: none;
+}
+
+.rep-success{
+    background-color: rgba(102, 170, 204, 0.3);
+    color: #6AC;
+    border: 1px solid #6AC;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.rep-error{
+    background-color: rgba(204, 36, 9, 0.3);
+    color: #CC2409;
+    border: 1px solid #CC2409;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+div.menu-header, h1.title-header {
+    vertical-align: top;
+    display: inline-block;
+    width: 20.5em;
+}
+
+div.menu-header {
+    text-align: center;
+}
+
+div.menu-header li{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+div.menu-header li a{
+    color: #555;
+    text-decoration: none;
+}
+
+.exp-cv h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+.exp-cv a {
+    text-decoration: none;
+    color: #6AC;
+}
+
+div.exp-cv {
+    margin-top: 2em;
+}
+
+section.gray {
+    background-color: #DDD;
+}
+
+section.blue {
+    background-color: rgba(137, 197, 233, 1);
+}
+
+.tag-cv {
+    display: inline-block;
+    margin: 2px;
+    padding: 3px;
+    border: 1px solid #6AC;
+    border-radius: 3px;
+}
+
+.tag-cv:hover {
+    background-color: #6AC;
+    color: white;
+}
+
+img.picon {
+    width: 1.5em;
+}
+
+.column-3  p{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+
+@media screen and (max-width: 980px) {
+    .content{
+        max-width: 800px;
+        padding: 0px;
+    }
+
+    body > header {
+        text-align: center;
+        height: 130px;
+    }
+
+    div.menu-header, h1.title-header {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    section.scape {
+        padding-top: 140px;
+    }
+
+    .column-3 {
+        display: block;
+        width: 100%;
+    }
+
+    blockquote.large-quote {
+        font-size: 1.4em;
+        width: 100%;
+    }
+}
