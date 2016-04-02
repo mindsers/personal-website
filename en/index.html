@@ -30,7 +30,7 @@
         <meta property="og:type" content="website" />
         
         
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:100,200,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
     </head>
     <body>
@@ -205,7 +205,7 @@
             </div>   
         </footer>
         
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
         <script src="../js/jquery.validate.min.js"></script>
         <script src="../js/additional-methods.min.js"></script>
         <script>
@@ -214,13 +214,13 @@
                 $.getJSON("../core/tweet.php", function(data) {
                     
                     var date = new Date(data[0].created_at);
-                    var replaceTab = new Array();
+                    var replaceTab = [];
                     var messagetext = data[0].text;
                     
                     /* Hashtags */
                     if(data[0].entities.hashtags.length > 0){
                         data[0].entities.hashtags.forEach(function(e,i,a){
-                            var tmpTab = new Array();
+                            var tmpTab = [];
                             var tmpHash = messagetext.substring(e.indices[0], e.indices[1]);
                             var tmpstring = '<a class="hashtag" href="http://twitter.com/hashtag/';
                             tmpstring = tmpstring + e.text;
@@ -238,7 +238,7 @@
                     /* Mentions */
                     if(data[0].entities.user_mentions.length > 0){
                         data[0].entities.user_mentions.forEach(function(e,i,a){
-                            var tmpTab = new Array();
+                            var tmpTab = [];
                             var tmpMention = messagetext.substring(e.indices[0], e.indices[1]);
                             var tmpstring = '<a class="user_mentions" href="http://twitter.com/';
                             tmpstring = tmpstring + e.screen_name;
@@ -256,7 +256,7 @@
                     /* Urls */
                     if(data[0].entities.urls.length > 0){
                         data[0].entities.urls.forEach(function(e,i,a){
-                            var tmpTab = new Array();
+                            var tmpTab = [];
                             var tmpUrl = messagetext.substring(e.indices[0], e.indices[1]);
                             var tmpstring = '<a href="';
                             tmpstring = tmpstring + e.expanded_url + '">';
@@ -298,7 +298,7 @@
                     posting.done(function(data){
                         var response = JSON.parse(data);
                         
-                        if(response.status == 0){
+                        if(response.status === 0){
                             $('div.form-email').html('<p class="rep-success">Your email is sent.</p>');
                         }else{
                             $('div.form-email').html('<p class="rep-error">Error</p>');
