@@ -1,1 +1,3 @@
-<?php header('Location: /nath/en/'); ?>
+<?php
+
+header('Location: /en/');
