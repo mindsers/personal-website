@@ -1,10 +1,11 @@
 stages:
   - deploy
 
-before_script:
-  - ssh-agent <(echo "$SSH_PRIVATE_KEY")
-
 build_smalink:
   stage: deploy
   script:
     - ssh deployer@nathanaelcherrier.com 'echo test'
+  only:
+    - master
+  tags:
+    - bash
