@@ -1,13 +1,14 @@
 stages:
   - deploy
 
-build_smalink:
+deploy_smalink:
+  environment: production
   stage: deploy
   script:
     - ssh webserver 'rm -rf /var/www/nath/* /var/www/nath/.git*'
     - ssh webserver 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
-    - ssh webserver 'sudo chown www-data:www-data -R /var/www/nath'
-    - ssh webserver 'sudo chmod -R 775 /var/www/nath'
+    - ssh webserver 'chmod -R 775 /var/www/nath'
+    - ssh webserver 'chown :www-data -R /var/www/nath/*'
   only:
     - master
   tags:
