@@ -4,7 +4,9 @@ stages:
 build_smalink:
   stage: deploy
   script:
-    - ssh deployer@nathanaelcherrier.com 'echo test'
+    - ssh webserver 'rm -rf /var/www/nath'
+    - ssh webserver 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
+    - ssh webserver 'chown www-data:www-data -R /var/www/nath'
   only:
     - master
   tags:
