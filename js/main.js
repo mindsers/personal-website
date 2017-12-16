@@ -18,7 +18,14 @@ function application() {
     .addEventListener('submit', handleContactFormSubmit)
 
   getLastTweet()
-    .then(tweet => console.log(tweet))
+    .then(tweet => {
+      const container = document.querySelector('.tweet')
+
+      container.querySelector('.text').innerHTML = tweet.text
+      container.querySelector('.name').innerHTML = tweet.name
+      container.querySelector('.date').innerHTML = tweet.date
+      container.querySelector('.screen_name').innerHTML = `@${tweet.screenName}`
+    })
 }
 
 function handleContactFormSubmit(e) {
