@@ -22,12 +22,22 @@ function handleContactFormSubmit(e) {
   e.preventDefault()
 
   const form = e.target
+  const formData = new FormData(form)
   const url = form.getAttribute('action')
 
-  const name = form.querySelector('input[name="mail-nom"]').value
-  const addr = form.querySelector('input[name="mail-addr"]').value
-  const obj = form.querySelector('input[name="mail-objet"]').value
-  const msg = form.querySelector('textarea[name="mail-message"]').value
+  fetch(url, {
+    method: 'POST',
+    body: formData
+  })
+  .then(data => JSON.parse(data))
+  .then(({ status }) => {
+    if (status === 1) {
+      throw new Error('Server error')
+    }
 
-  console.table({ url, name, addr, obj, msg })
+    form.parentNode.innerHTML = '<p class="rep-success">Your email is sent.</p>'
+  })
+  .catch(_ => {
+    form.parentNode.innerHTML = '<p class="rep-error">Error</p>'
+  })
 }
