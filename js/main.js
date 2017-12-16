@@ -16,6 +16,9 @@ function application() {
   document
     .querySelector('#contact-form')
     .addEventListener('submit', handleContactFormSubmit)
+
+  checkLastTweets()
+    .then(tweet => console.log(tweet))
 }
 
 function handleContactFormSubmit(e) {
@@ -40,4 +43,51 @@ function handleContactFormSubmit(e) {
   .catch(_ => {
     container.innerHTML = '<p class="rep-error">Error</p>'
   })
+}
+
+function checkLastTweets() {
+  return fetch('../core/tweet.php')
+    .then(data => JSON.parse(data))
+    .then(tweets => tweets.map(tweet => {
+      const mappings = []
+
+      if (tweet.entities.hashtags.length > 0) {
+        for (const hash of tweet.entities.hashtags) {
+          const [from = 0, to = 0] = hash.indices
+          const link = `<a class="hashtag" href="http://twitter.com/hashtag/${hash.text}?src=hash">${tweet.text.substring(from, to)}</a>`
+
+          mappings.push({ from: tweet.text.substring(from, to), to: link })
+        }
+      }
+
+      if (tweet.entities.urls.length > 0) {
+        for (const url of tweet.entities.urls) {
+          const [from = 0, to = 0] = url.indices
+          const link = `<a href="${url.expanded_url}">${url.display_url}</a>`
+
+          mappings.push({ from: tweet.text.substring(from, to), to: link })
+        }
+      }
+
+      if (tweet.entities.user_mentions.length > 0) {
+        for (const mention of tweet.entities.user_mentions) {
+          const [from = 0, to = 0] = mention.indices
+          const link = `<a class="user_mentions" href="http://twitter.com/${mention.screen_name}">${tweet.text.substring(from, to)}</a>`
+
+          mappings.push({ from: tweet.text.substring(from, to), to: link })
+        }
+      }
+
+      const text = mappings.reduce((tweet, { from, to }) => {
+        return tweet.replace(from, to)
+      }, tweet.text)
+
+      return {
+        text,
+        name: tweet.user.name,
+        screenName: tweet.user.screen_name,
+        date: (new Date(tweet.created_at)).toDateString()
+      }
+    }))
+    .then(tweets => tweets.shift())
 }
