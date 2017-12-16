@@ -22,12 +22,12 @@ function handleContactFormSubmit(e) {
   e.preventDefault()
 
   const form = e.target
-  const formData = new FormData(form)
+  const container = form.parentNode
   const url = form.getAttribute('action')
 
   fetch(url, {
     method: 'POST',
-    body: formData
+    body: new FormData(form)
   })
   .then(data => JSON.parse(data))
   .then(({ status }) => {
@@ -35,9 +35,9 @@ function handleContactFormSubmit(e) {
       throw new Error('Server error')
     }
 
-    form.parentNode.innerHTML = '<p class="rep-success">Your email is sent.</p>'
+    container.innerHTML = '<p class="rep-success">Your email is sent.</p>'
   })
   .catch(_ => {
-    form.parentNode.innerHTML = '<p class="rep-error">Error</p>'
+    container.innerHTML = '<p class="rep-error">Error</p>'
   })
 }
