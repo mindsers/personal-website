@@ -17,7 +17,7 @@ function application() {
     .querySelector('#contact-form')
     .addEventListener('submit', handleContactFormSubmit)
 
-  checkLastTweets()
+  getLastTweet()
     .then(tweet => console.log(tweet))
 }
 
@@ -45,7 +45,7 @@ function handleContactFormSubmit(e) {
   })
 }
 
-function checkLastTweets() {
+function getLastTweet() {
   return fetch('../core/tweet.php')
     .then(data => JSON.parse(data))
     .then(tweets => tweets.map(tweet => {
