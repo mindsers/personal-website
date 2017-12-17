@@ -4,11 +4,17 @@ stages:
 deploy_smalink:
   environment: production
   stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - ssh webserver 'rm -rf /var/www/nath/* /var/www/nath/.git*'
-    - ssh webserver 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
-    - ssh webserver 'chmod -R 775 /var/www/nath/*'
-    - ssh webserver 'chown :www-data -R /var/www/nath/*'
+    - ssh mindsers@51.255.163.174 'rm -rf /var/www/nath/* /var/www/nath/.git*' -p 6421
+    - ssh mindsers@51.255.163.174 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath' -p 6421
+    - ssh mindsers@51.255.163.174 'chmod -R 775 /var/www/nath/*' -p 6421
+    - ssh mindsers@51.255.163.174 'chown :www-data -R /var/www/nath/*' -p 6421
   only:
     - master
   tags:
