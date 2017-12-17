@@ -13,10 +13,10 @@ deploy_smalink:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - ssh mindsers@51.255.163.174 -p 6421 'rm -rf /var/www/nath/* /var/www/nath/.git*'
-    - ssh mindsers@51.255.163.174 -p 6421 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
-    - ssh mindsers@51.255.163.174 -p 6421 'chmod -R 775 /var/www/nath/*'
-    - ssh mindsers@51.255.163.174 -p 6421 'chown :www-data -R /var/www/nath/*'
+    - ssh deployer@51.255.163.174 -p 6421 'rm -rf /var/www/nath/* /var/www/nath/.git*'
+    - ssh deployer@51.255.163.174 -p 6421 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
+    - ssh deployer@51.255.163.174 -p 6421 'chmod -R 775 /var/www/nath/*'
+    - ssh deployer@51.255.163.174 -p 6421 'chown :www-data -R /var/www/nath/*'
   only:
     - master
   tags:
