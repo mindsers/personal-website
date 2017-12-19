@@ -54,6 +54,7 @@ function handleContactFormSubmit(e) {
 
 function getLastTweet() {
   return fetch('../core/tweet.php')
+    .then(data => { console.log(data); return data })
     .then(data => JSON.parse(data))
     .then(tweets => tweets.map(tweet => {
       const mappings = []
