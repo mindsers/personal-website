@@ -39,7 +39,7 @@ function handleContactFormSubmit(e) {
     method: 'POST',
     body: new FormData(form)
   })
-  .then(data => JSON.parse(data))
+  .then(data => data.json())
   .then(({ status }) => {
     if (status === 1) {
       throw new Error('Server error')
@@ -54,7 +54,7 @@ function handleContactFormSubmit(e) {
 
 function getLastTweet() {
   return fetch('../core/tweet.php')
-    .then(data => JSON.parse(data))
+    .then(data => data.json())
     .then(tweets => tweets.map(tweet => {
       const mappings = []
 
