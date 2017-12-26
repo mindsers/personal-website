@@ -230,6 +230,7 @@ section.twitter {
 .twitter .tweet .screen_name_date {
     font-size: 0.6em;
     color: #CCC;
+    vertical-align: text-bottom;
 }
 
 .twitter .tweet .screen_name, .twitter .tweet .date {
