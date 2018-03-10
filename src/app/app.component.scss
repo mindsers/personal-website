@@ -1,0 +1,55 @@
+header {
+  border-bottom: 1px solid lightgray;
+  margin: 0; padding: 20px;
+  color: #34495e;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &> div {
+      &.title {
+        margin-right: auto;
+
+        img, h1 {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        img {
+          width: 50px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+          font-weight: 500;
+          margin-left: 10px;
+        }
+      }
+
+      &.shop {
+        a {
+          background: linear-gradient(70deg, #2980b9, #3498db);
+          border-radius: 3px;
+          padding: 8px 15px;
+          color: white;
+          box-shadow: 1px 1px 8px 0px gray;
+          font-size: 0.85em;
+
+          &:active {
+            box-shadow: 0;
+          }
+        }
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 15px;
+        font-weight: lighter;
+        font-size: 0.95em;
+      }
+    }
+  }
+}
+
