@@ -7,6 +7,8 @@ import { AppComponent } from './app.component'
 
 import { environment } from '../environments/environment'
 import { HeaderComponent } from './header/header.component'
+import { SharedModule } from './shared/shared.module'
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './header/header.component'
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
