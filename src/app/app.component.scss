@@ -36,6 +36,7 @@ header {
           color: white;
           box-shadow: 1px 1px 8px 0px gray;
           font-size: 0.85em;
+          text-decoration: none;
 
           &:active {
             box-shadow: 0;
@@ -53,3 +54,35 @@ header {
   }
 }
 
+footer {
+  background-color: #34495e;
+  padding: 50px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      color: white;
+      font-weight: 300;
+
+      h2 {
+        font-weight: 300;
+        margin: 20px 0;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+
+      li {
+        list-style: none;
+        margin: 10px;
+        font-size: 0.85em;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
