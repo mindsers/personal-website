@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 
-const routes: Routes = []
+import { ResumeComponent } from './resume/resume.component'
+
+const routes: Routes = [
+  { path: 'resume', component: ResumeComponent }
+]
 
 @NgModule({
   imports: [
