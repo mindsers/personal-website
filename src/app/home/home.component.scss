@@ -1,0 +1,62 @@
+.featured {
+  background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+  padding: 150px 50px;
+
+  h2 {
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+    font-size: 4em;
+    font-family: 'Source Code Pro', monospace;
+  }
+}
+
+.section {
+  padding: 30px;
+
+  p {
+    margin: 15px 0; padding: 5px;
+    font-size: 1.5em;
+
+    a {
+      color: rgba(0, 118, 223, 1);
+      background-color: rgba(0, 118, 223, 0.2);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.more {
+        text-transform: lowercase;
+        background-color: transparent;
+
+        &::before {
+          content: '</'
+        }
+
+        &::after {
+          content: '>'
+        }
+      }
+    }
+
+    &.actions {
+      text-align: center;
+    }
+  }
+
+  &.instagram {
+    background-color: rgb(245, 245, 245);
+
+    .followers {
+      text-align: center;
+      font-size: 2.5em;
+
+      img {
+        height: 40px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
