@@ -59,6 +59,18 @@
       }
     }
 
+    .pictures {
+      height: 250px;
+      margin: 10px;
+      background-color: lightgray;
+      text-align: center;
+      line-height: 250px;
+    }
+
+    h3 {
+      margin: 20px 0;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
