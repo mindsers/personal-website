@@ -58,5 +58,26 @@
         vertical-align: bottom;
       }
     }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+
+      li {
+        list-style: none;
+        font-size: 1.1em;
+
+        a {
+          color: rgba(0, 118, 223, 1);
+          text-decoration: none;
+
+          img {
+            height: 30px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
   }
 }
