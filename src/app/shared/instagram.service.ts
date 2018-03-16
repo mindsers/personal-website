@@ -10,6 +10,11 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class InstagramService {
+  /*
+    Store manualy instagram information for mindsers.it
+    because the facebook API need so much informations
+    to register a new client.
+  */
   private followersCount = 3730
   private pictureIds = [
     'BfITPgrnrT8', 'BdngTceHpte', 'BgV4SKRB6Vx', 'Bfgq-6rnZCr', 'BdLHxTQHwNn',
