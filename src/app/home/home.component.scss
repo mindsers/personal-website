@@ -60,11 +60,14 @@
     }
 
     .pictures {
-      height: 250px;
       margin: 10px;
-      background-color: lightgray;
-      text-align: center;
-      line-height: 250px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        border: 5px solid white;
+        border-radius: 3px;
+      }
     }
 
     h3 {

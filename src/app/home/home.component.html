@@ -16,11 +16,13 @@
 </section>
 <section class="instagram section">
   <div class="content">
-    <p class="followers" i18n><img src="assets/img/instagram.png" alt="instagram logo"> 0000 followers</p>
+    <p class="followers" i18n><img src="assets/img/instagram.png" alt="instagram logo"> {{ instagramFollowersCount }} followers</p>
     <p i18n>
       Nathanaël Cherrier is an <a href="https://www.instagram.com/mindsers.it/">instragram influencer</a>. He talk about the life of a developer.
     </p>
-    <div class="pictures">pictures</div>
+    <div class="pictures">
+      <img *ngFor="let url of instagramUrls" [src]="url" alt="An instagram picture">
+    </div>
     <h3 i18n>Other social media</h3>
     <ul>
       <li><a href="https://twitter.com/MindsersIT"><img src="assets/img/twitter.svg" alt="Twitter logo"> Twitter</a></li>

@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core'
 
 
 import { ServiceWorkerModule } from '@angular/service-worker'
-import { AppComponent } from './app.component'
+import { HttpClientModule } from '@angular/common/http'
 
 import { environment } from '../environments/environment'
 import { SharedModule } from './shared/shared.module'
+import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { ResumeComponent } from './resume/resume.component'
 import { HomeComponent } from './home/home.component'
@@ -22,6 +23,7 @@ import { HomeComponent } from './home/home.component'
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
