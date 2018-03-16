@@ -1,3 +1,46 @@
-<p>
-  resume works!
-</p>
+<section class="featured">
+  <div class="content">
+    <h2 i18n>Lead JavaScript and<br>iOS developer</h2>
+    <div class="infos">
+      <div>
+        <h3 i18n>Contact</h3>
+        <p>
+          +33 (0) 658 62 44 21<br>
+          dev@nathanaelcherrier.com<br>
+          https://nathanaelcherrier.com<br>
+        </p>
+      </div>
+      <div>
+        <h3 i18n>Social</h3>
+        <p>
+          <a href="https://www.facebook.com/MindsersIT"><img class="logo" src="assets/img/facebook.svg" alt="Facebook logo"></a>
+          <a href="https://twitter.com/MindsersIT"><img class="logo" src="assets/img/twitter.svg" alt="Twitter logo"></a>
+          <a href="https://www.instagram.com/mindsers.it/"><img class="logo" src="assets/img/instagram.png" alt="Instagram logo"></a>
+          <a href="https://github.com/Mindsers"><img class="logo" src="assets/img/github.svg" alt="Github logo"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="content">
+      <h3 i18n>My professional experiences</h3>
+      <div class="exp" *ngFor="let exp of experiences">
+        <h4>
+          <span>{{ exp.title }}</span>
+          <span>
+            {{ !exp.duration.end ? 'since' : '' }}
+            {{ exp.duration.start }}
+            {{ exp.duration.end ? '- ' + exp.duration.end : '' }}</span>
+        </h4>
+        <p>{{ exp.description }}</p>
+        <p>
+          For <a [href]="exp.link" *ngIf="exp.link">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
+          at {{ exp.location }}
+        </p>
+      </div>
+      <p class="actions">
+        <a class="btn" (click)="toogleExperiences()">{{ experiences.length <= 3 ? 'More' : 'Less' }} experinces</a>
+      </p>
+  </div>
+</section>
