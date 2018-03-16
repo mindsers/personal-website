@@ -18,6 +18,10 @@
     margin: 15px 0; padding: 5px;
     font-size: 1.5em;
 
+    strong {
+      text-decoration: underline;
+    }
+
     a {
       color: rgba(0, 118, 223, 1);
       background-color: rgba(0, 118, 223, 0.2);
@@ -60,7 +64,7 @@
     }
 
     .pictures {
-      margin: 10px;
+      margin: 25px 0;
       display: flex;
       justify-content: space-between;
 
@@ -70,14 +74,10 @@
       }
     }
 
-    h3 {
-      margin: 20px 0;
-    }
-
     ul {
       display: flex;
       justify-content: space-between;
-      margin: 15px 0;
+      margin: 40px 0 15px 0;
 
       li {
         list-style: none;
