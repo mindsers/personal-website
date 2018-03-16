@@ -11,6 +11,7 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { ResumeComponent } from './resume/resume.component'
 import { HomeComponent } from './home/home.component'
+import { ResumeService } from './resume/resume.service'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { HomeComponent } from './home/home.component'
     SharedModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
