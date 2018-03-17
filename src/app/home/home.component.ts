@@ -4,7 +4,6 @@ import { SafeUrl } from '@angular/platform-browser'
 import { InstagramService } from '../shared/instagram.service'
 
 @Component({
-  selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

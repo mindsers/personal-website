@@ -12,12 +12,14 @@ import { AppRoutingModule } from './app-routing.module'
 import { ResumeComponent } from './resume/resume.component'
 import { HomeComponent } from './home/home.component'
 import { ResumeService } from './resume/resume.service'
+import { ContactComponent } from './contact/contact.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
