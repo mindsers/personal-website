@@ -15,7 +15,21 @@ export class ResumeService {
   getStudies(): Observable<any[]> {
     return Observable.of(STUDIES)
   }
+
+  getSkills(): Observable<any[]> {
+    return Observable.of(SKILLS)
+  }
 }
+
+const SKILLS = [
+  'JavaScript',
+  'HTML5',
+  'Swift',
+  'iOS',
+  'Angular',
+  'CSS3',
+  'NodeJS'
+]
 
 const STUDIES = [
   {

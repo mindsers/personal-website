@@ -10,6 +10,7 @@ import { ResumeService } from './resume.service'
 export class ResumeComponent implements OnInit {
   displayedExperiences = []
   displayedStudies = []
+  displayedSkills = []
 
   private experiences = []
 
@@ -30,6 +31,12 @@ export class ResumeComponent implements OnInit {
     this.resumeService.getStudies()
       .subscribe(
         studies => this.displayedStudies = studies,
+        console.error
+      )
+
+    this.resumeService.getSkills()
+      .subscribe(
+        skills => this.displayedSkills = skills,
         console.error
       )
   }

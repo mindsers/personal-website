@@ -35,7 +35,7 @@
 section:not(.featured) {
   padding: 30px;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: rgb(245, 245, 245);
   }
 
@@ -54,6 +54,7 @@ section:not(.featured) {
 
   .exp {
     margin: 35px 0;
+    animation: show 0.4s ease;
 
     p {
       margin: 10px 0;
@@ -82,16 +83,59 @@ section:not(.featured) {
     }
   }
 
+  .skills {
+    $height: 110px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around; align-items: center;
+    margin: 20px 0;
+    height: $height + 60px;
+
+    .skill {
+      transition: height 0.5s, width 0.5s, line-height 0.5s, font-size 0.5s;
+      padding: 10px;
+      height: $height; width: $height;
+      line-height: $height;
+      border-radius: 50%;
+      font-family: 'Source Code Pro', monospace;
+      color: white;
+      text-align: center;
+
+      &:nth-child(even) {
+        background: linear-gradient(10deg, #5f27cd, #25CCF7);
+        align-self: flex-end;
+      }
+
+      &:nth-child(odd) {
+        background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+        align-self: flex-start;
+      }
+
+      &:hover {
+        height: $height + 30; width: $height + 30;
+        line-height: $height + 30;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .other p {
+    margin: 20px 0;
+  }
+
   .actions {
     text-align: center;
 
     .btn {
+      transition: background-color 0.4s, border 0.4s, color 0.4s;
       border: 1px solid #2980b9;
       border-radius: 3px;
       margin: 15px; padding: 8px 15px;
       color: #2980b9;
       text-decoration: none;
       display: inline-block;
+      cursor: pointer;
 
       &:hover {
         background: #1B9CFC;
@@ -99,5 +143,16 @@ section:not(.featured) {
         border-color: transparent;
       }
     }
+  }
+}
+
+@keyframes show {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
 }
