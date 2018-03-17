@@ -1,3 +1,5 @@
-<p>
-  popin works!
-</p>
+<div class="popin-background" *ngIf="isVisible" (click)="close()">
+  <div class="popin-box" appStopClickPropagation>
+    <ng-content></ng-content>
+  </div>
+</div>
