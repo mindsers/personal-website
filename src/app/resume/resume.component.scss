@@ -35,21 +35,25 @@
 section:not(.featured) {
   padding: 30px;
 
+  &:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+  }
+
   h3 {
     text-align: center;
     font-size: 1.5em;
   }
 
+  h4 {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    //color: #1B9CFC;
+  }
+
   .exp {
     margin: 35px 0;
-
-    h4 {
-      margin: 15px 0;
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.1em;
-      //color: #1B9CFC;
-    }
 
     p {
       margin: 10px 0;
@@ -63,6 +67,18 @@ section:not(.featured) {
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  .study {
+    margin: 35px 0;
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 20px 40px;
     }
   }
 

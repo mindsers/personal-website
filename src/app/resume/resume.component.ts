@@ -9,6 +9,7 @@ import { ResumeService } from './resume.service'
 })
 export class ResumeComponent implements OnInit {
   displayedExperiences = []
+  displayedStudies = []
 
   private experiences = []
 
@@ -19,20 +20,28 @@ export class ResumeComponent implements OnInit {
       .subscribe(
         experiences => {
           this.experiences = experiences
-          this.displayedExperiences = this.experiences.slice(0, 3)
+          this.displayedExperiences = experiences
+
+          this.toogleExperiences(3)
         },
+        console.error
+      )
+
+    this.resumeService.getStudies()
+      .subscribe(
+        studies => this.displayedStudies = studies,
         console.error
       )
   }
 
-  toogleExperiences() {
-    if (this.displayedExperiences.length <= 3) {
+  toogleExperiences(min = 0) {
+    if (this.displayedExperiences.length <= min) {
       this.displayedExperiences = this.experiences
 
       return
     }
 
-    this.displayedExperiences = this.experiences.slice(0, 3)
+    this.displayedExperiences = this.experiences.slice(0, min)
   }
 }
 

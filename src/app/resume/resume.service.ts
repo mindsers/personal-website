@@ -11,7 +11,48 @@ export class ResumeService {
   getExperiences(): Observable<any[]> {
     return Observable.of(EXPERIENCES)
   }
+
+  getStudies(): Observable<any[]> {
+    return Observable.of(STUDIES)
+  }
 }
+
+const STUDIES = [
+  {
+    school: 'SUPINFO International University',
+    location: 'Paris, France',
+    graduation: 'Master of Science',
+    duration: {
+      start: 2011,
+      end: 2015
+    },
+    events: [
+      {
+        title: 'Associate of Science',
+        year: 2013
+      },
+      {
+        title: 'Microsoft Student Partner',
+        year: 2013
+      }
+    ]
+  },
+  {
+    school: 'Lycée Mahatma Gandhi',
+    location: 'Saint-André, La Réunion',
+    graduation: 'Baccalauréat',
+    duration: {
+      start: 2008,
+      end: 2011
+    },
+    events: [
+      {
+        title: 'Scientific A level, applied in Mathematics and spanish culture',
+        year: 2011
+      }
+    ]
+  }
+]
 
 const EXPERIENCES = [
   {

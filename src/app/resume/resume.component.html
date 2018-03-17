@@ -40,7 +40,19 @@
         </p>
       </div>
       <p class="actions">
-        <a class="btn" (click)="toogleExperiences()">{{ displayedExperiences.length <= 3 ? 'More' : 'Less' }} experiences</a>
+        <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)">{{ displayedExperiences.length <= 3 ? 'More' : 'Less' }} experiences</a>
       </p>
+  </div>
+</section>
+<section>
+  <div class="content">
+      <h3 i18n>My studies</h3>
+      <div class="study" *ngFor="let study of displayedStudies">
+        <h4><span>{{ study.graduation }}</span><span>{{ study.duration.start }} - {{ study.duration.end }}</span></h4>
+        <p>From {{ study.school }} at {{ study.location }}</p>
+        <ul>
+          <li *ngFor="let event of study.events">{{ event.title }}, {{ event.year }}</li>
+        </ul>
+      </div>
   </div>
 </section>
