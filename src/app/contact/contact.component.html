@@ -1,3 +1,27 @@
-<p>
-  contact works!
-</p>
+<div class="contact">
+  <div class="text">
+    <h2 i18n>Leave me a message</h2>
+    <p i18n>
+      If you want to send me a message, an offer or a partnership, <br>please use this form.
+    </p>
+  </div>
+  <div class="form">
+    <form #contactForm="ngForm" (ngSubmit)="handleSubmit(contactForm)">
+      <div>
+        <input type="text" name="name" placeholder="Name" ngModel>
+      </div>
+      <div>
+        <input type="text" name="email" placeholder="Email" ngModel required>
+      </div>
+      <div>
+        <input type="text" name="subject" placeholder="Subject" ngModel>
+      </div>
+      <div>
+        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+      </div>
+      <div class="actions">
+        <input type="submit" value="Send" [disabled]="contactForm.invalid">
+      </div>
+    </form>
+  </div>
+</div>

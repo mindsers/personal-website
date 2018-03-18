@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { NgForm } from '@angular/forms'
 
 @Component({
   templateUrl: './contact.component.html',
@@ -6,4 +7,6 @@ import { Component, OnInit } from '@angular/core'
 })
 export class ContactComponent implements OnInit {
   ngOnInit() {}
+
+  handleSubmit(form: NgForm) {}
 }

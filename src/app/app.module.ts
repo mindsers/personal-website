@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
 
 
 import { ServiceWorkerModule } from '@angular/service-worker'
@@ -26,7 +27,8 @@ import { ContactComponent } from './contact/contact.component'
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ResumeService],
   bootstrap: [AppComponent]
