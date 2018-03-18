@@ -15,6 +15,10 @@
     border-radius: 5px;
     animation: popin 0.5s linear;
   }
+
+  &.hidden {
+    display: none;
+  }
 }
 
 @keyframes popin {

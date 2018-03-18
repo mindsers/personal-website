@@ -12,12 +12,12 @@ export class PopinComponent implements AfterViewInit {
 
   get isVisible(): boolean { return this._isVisible }
 
-  private _isVisible = true
+  private _isVisible = false
 
   constructor(private popinService: PopinService) {}
 
   ngAfterViewInit() {
-    this.popinService.registerContainer(this.container)
+    this.popinService.registerContainer(this)
   }
 
   open() {
@@ -26,5 +26,6 @@ export class PopinComponent implements AfterViewInit {
 
   close() {
     this._isVisible = false
+    this.container.clear()
   }
 }

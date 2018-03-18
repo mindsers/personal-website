@@ -1,28 +1,34 @@
-import { Injectable, Type, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core'
+import { Injectable, Type, ViewContainerRef, ComponentFactoryResolver, ComponentRef, OnDestroy } from '@angular/core'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'
 
+import { PopinComponent } from './popin.component'
+
 @Injectable()
-export class PopinService {
-  private container = new BehaviorSubject<ViewContainerRef>(null)
+export class PopinService implements OnDestroy {
+  private popinContainer = new BehaviorSubject<PopinComponent>(null)
 
   constructor(private resolver: ComponentFactoryResolver) { }
 
-  registerContainer(container: ViewContainerRef): void {
-    this.container.next(container)
+  registerContainer(popin: PopinComponent): void {
+    this.popinContainer.next(popin)
   }
 
   openPopin<C>(componentClass: Type<C>): void {
-    const subscription = this.container.subscribe(container => {
-      if (container == null) {
+    this.popinContainer.subscribe(popinRef => {
+      if (popinRef == null || popinRef.container == null) {
         return
       }
 
-      container.clear()
-      container.createComponent(
+      popinRef.container.clear()
+      popinRef.container.createComponent(
         this.resolver.resolveComponentFactory(componentClass)
       )
 
-      subscription.unsubscribe()
+      popinRef.open()
     })
+  }
+
+  ngOnDestroy() {
+    this.popinContainer.complete()
   }
 }
