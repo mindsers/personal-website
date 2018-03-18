@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { PopinComponent } from './popin.component'
+import { PopinContainerComponent } from './popin-container.component'
 
 describe('PopinComponent', () => {
-  let component: PopinComponent
-  let fixture: ComponentFixture<PopinComponent>
+  let component: PopinContainerComponent
+  let fixture: ComponentFixture<PopinContainerComponent>
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopinComponent ]
+      declarations: [ PopinContainerComponent ]
     })
     .compileComponents()
   }))
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PopinComponent)
+    fixture = TestBed.createComponent(PopinContainerComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

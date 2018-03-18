@@ -1,15 +1,15 @@
 import { Injectable, Type, ViewContainerRef, ComponentFactoryResolver, ComponentRef, OnDestroy } from '@angular/core'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'
 
-import { PopinComponent } from './popin.component'
+import { PopinContainerComponent } from './popin-container.component'
 
 @Injectable()
 export class PopinService implements OnDestroy {
-  private popinContainer = new BehaviorSubject<PopinComponent>(null)
+  private popinContainer = new BehaviorSubject<PopinContainerComponent>(null)
 
   constructor(private resolver: ComponentFactoryResolver) { }
 
-  registerContainer(popin: PopinComponent): void {
+  registerContainer(popin: PopinContainerComponent): void {
     this.popinContainer.next(popin)
   }
 
