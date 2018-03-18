@@ -19,11 +19,17 @@
     }
 
     &.form {
+      .required-star {
+        color: #e74c3c;
+      }
+
       .actions {
         text-align: center;
+        margin: 20px 0;
       }
 
       input, textarea {
+        transition: border 0.7s, background-color 0.7s;
         padding: 5px;
         font-size: 1em;
         min-width: 400px;
@@ -46,10 +52,15 @@
         padding: 10px 20px;
         border-radius: 3px;
 
-        &:hover {
+        &:not([disabled]):hover {
           background: #1B9CFC;
           border-color: transparent;
           color: white;
+        }
+
+        &[disabled] {
+          color: lightgray;
+          border-color: gray;
         }
       }
 
@@ -58,6 +69,22 @@
 
         &:focus {
           background-color: rgba(#1B9CFC, 0.1);
+        }
+      }
+
+      .error-field {
+        .error {
+          color: #e74c3c;
+          font-size: 0.8em;
+          margin-bottom: 15px;
+        }
+
+        input, textarea {
+          border-color: #e74c3c;
+        }
+
+        textarea:focus {
+          background-color: rgba(#e74c3c, 0.1);
         }
       }
     }
