@@ -12,7 +12,7 @@ export class PopinService {
   }
 
   openPopin<C>(componentClass: Type<C>): void {
-    this.container.subscribe(container => {
+    const subscription = this.container.subscribe(container => {
       if (container == null) {
         return
       }
@@ -21,6 +21,8 @@ export class PopinService {
       container.createComponent(
         this.resolver.resolveComponentFactory(componentClass)
       )
+
+      subscription.unsubscribe()
     })
   }
 }
