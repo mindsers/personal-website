@@ -1,20 +1,20 @@
 <header>
   <div class="content">
-    <div class="title">
+    <div class="title" routerLink="/">
       <img src="assets/img/logo.svg" alt="MindsersIT logo">
-      <h1><a routerLink="/">Nathanaël Cherrier</a></h1>
+      <h1>Nathanaël Cherrier</h1>
     </div>
     <div class="menu">
       <nav>
         <ul>
           <li><a href="https://blog.nathanaelcherrier.com" i18n>Blog</a></li>
           <li><a [routerLink]="['/', 'resume']" i18n>Resume</a></li>
-          <li><a i18n>Portfolio</a></li>
+          <li *ngIf="false"><a i18n>Portfolio</a></li>
           <li (click)="handleOnContactButtonClick()" i18n>Contact</li>
         </ul>
       </nav>
     </div>
-    <div class="shop">
+    <div class="shop" *ngIf="false">
       <a routerLink="/" i18n>Shop</a>
     </div>
   </div>

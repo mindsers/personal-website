@@ -11,6 +11,8 @@ header {
     &> div {
       &.title {
         margin-right: auto;
+        cursor: pointer;
+        outline: none;
 
         img, h1 {
           display: inline-block;
@@ -59,6 +61,7 @@ header {
         margin: 0 15px;
         font-weight: lighter;
         font-size: 0.95em;
+        cursor: pointer;
 
         a {
           text-decoration: none;

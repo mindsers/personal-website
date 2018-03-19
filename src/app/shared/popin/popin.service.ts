@@ -1,4 +1,5 @@
 import { Injectable, Type, ViewContainerRef, ComponentFactoryResolver, ComponentRef, OnDestroy } from '@angular/core'
+
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'
 import 'rxjs/add/operator/switchMap'
 
