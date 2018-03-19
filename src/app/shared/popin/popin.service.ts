@@ -1,5 +1,6 @@
 import { Injectable, Type, ViewContainerRef, ComponentFactoryResolver, ComponentRef, OnDestroy } from '@angular/core'
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'
+import 'rxjs/add/operator/switchMap'
 
 import { PopinContainerComponent } from './popin-container.component'
 
@@ -13,22 +14,27 @@ export class PopinService implements OnDestroy {
     this.popinContainer.next(popin)
   }
 
-  openPopin<C>(componentClass: Type<C>): void {
-    this.popinContainer.subscribe(popinRef => {
-      if (popinRef == null || popinRef.container == null) {
-        return
-      }
+  openPopin<C>(componentClass: Type<C>) {
+    const afterClose = () => {
+      return this.popinContainer
+        .switchMap(popinRef => {
+          if (popinRef == null || popinRef.container == null) {
+            return
+          }
 
-      popinRef.container.clear()
-      popinRef.container.createComponent(
-        this.resolver.resolveComponentFactory(componentClass)
-      )
+          popinRef.container.clear()
+          popinRef.container.createComponent(
+            this.resolver.resolveComponentFactory(componentClass)
+          )
 
-      popinRef.open()
-    })
+          return popinRef.open()
+        })
+    }
+
+    return { afterClose }
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.popinContainer.complete()
   }
 }

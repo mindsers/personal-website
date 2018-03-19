@@ -1,4 +1,6 @@
 import { Component, ViewChild, ViewContainerRef, AfterViewInit } from '@angular/core'
+import { Subject } from 'rxjs/Subject'
+import { Observable } from 'rxjs/Observable'
 
 import { PopinService } from './popin.service'
 
@@ -12,20 +14,27 @@ export class PopinContainerComponent implements AfterViewInit {
 
   get isVisible(): boolean { return this._isVisible }
 
+  private closeFnCalled: Subject<any>
   private _isVisible = false
 
   constructor(private popinService: PopinService) {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.popinService.registerContainer(this)
   }
 
-  open() {
+  open(): Observable<any> {
     this._isVisible = true
+
+    this.closeFnCalled = new Subject()
+    return this.closeFnCalled
   }
 
-  close() {
+  close(data: any): void {
     this._isVisible = false
     this.container.clear()
+
+    this.closeFnCalled.next(data)
+    this.closeFnCalled.complete()
   }
 }
