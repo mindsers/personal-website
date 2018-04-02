@@ -10,8 +10,9 @@ variables:
 tests:
   image: node:latest
   stage: test
+  services:
+    - chrome
   before_script:
-    - apt-get update && apt-get install chromium -y --no-install-recommends
     - yarn
   script:
     - yarn test --single-run --browsers ChromeHeadless
