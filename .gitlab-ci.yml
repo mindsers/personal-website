@@ -10,9 +10,9 @@ variables:
 tests:
   image: node:latest
   stage: test
-  services:
-    - dockerfile/chrome
   before_script:
+    - apt-get update && apt-get install chromium -y --no-install-recommends
+    - CHROME_BIN=/usr/bin/chromium-browser
     - yarn
   script:
     - yarn test --single-run --browsers ChromeHeadless
