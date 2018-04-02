@@ -1,0 +1,48 @@
+<div class="contact">
+  <div class="text">
+    <h2 i18n>Leave me a message</h2>
+    <p i18n>
+      If you want to send me a message, an offer or a partnership, <br>
+      please use this form.
+    </p>
+  </div>
+  <div class="form">
+    <form #contactForm="ngForm" (ngSubmit)="handleSubmit(contactForm)" novalidate>
+      <div [class.error-field]="name.invalid && name.touched">
+        <input #name="ngModel" type="text" name="name" placeholder="Name" ngModel required>
+        <div class="error" *ngIf="name.invalid && name.touched" i18n>
+          Your name is required.
+        </div>
+      </div>
+      <div [class.error-field]="email.invalid && email.touched">
+        <input #email="ngModel" ngModel
+          type="email" name="email" placeholder="Email"
+          matchEmail required>
+        <div class="error" *ngIf="email.invalid && email.touched && email.hasError('required')" i18n>
+          Your email is required.
+        </div>
+        <div class="error" *ngIf="email.invalid && email.touched && email.hasError('matchEmail') && !email.hasError('required')" i18n>
+          Your need to enter a valid address email.
+        </div>
+      </div>
+      <div [class.error-field]="subject.invalid && subject.touched">
+        <input #subject="ngModel" type="text" name="subject" placeholder="Subject" ngModel required>
+        <div class="error" *ngIf="subject.invalid && subject.touched" i18n>
+          The subject of your message is required.
+        </div>
+      </div>
+      <div [class.error-field]="msg.invalid && msg.touched">
+        <textarea #msg="ngModel" name="message" placeholder="Message" cols="30" rows="10" ngModel required></textarea>
+        <div class="error" *ngIf="msg.invalid && msg.touched" i18n>
+          Your message is required.
+        </div>
+      </div>
+      <p>
+        <span class="required-star">*</span> All fields are required.
+      </p>
+      <div class="actions">
+        <input type="submit" value="Send" [disabled]="contactForm.invalid">
+      </div>
+    </form>
+  </div>
+</div>
