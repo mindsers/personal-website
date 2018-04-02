@@ -11,9 +11,10 @@ tests:
   image: node:latest
   stage: test
   before_script:
+    - apt-get install chromium
     - yarn
   script:
-    - yarn test --single-run
+    - yarn test --single-run --browsers ChromeHeadless
   tags:
     - docker
 
