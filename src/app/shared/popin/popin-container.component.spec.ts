@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { PopinContainerComponent } from './popin-container.component'
+import { PopinService } from './popin.service'
 
 describe('PopinComponent', () => {
   let component: PopinContainerComponent
@@ -8,7 +9,10 @@ describe('PopinComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopinContainerComponent ]
+      declarations: [ PopinContainerComponent ],
+      providers: [
+        { provide: PopinService, useValue: { registerContainer() {} } }
+      ]
     })
     .compileComponents()
   }))
