@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { Observable } from 'rxjs/observable'
+import { Observable } from 'rxjs/Observable'
 import 'rxjs/add/observable/of'
 import { ResumeComponent } from './resume.component'
 import { ResumeService } from './resume.service'
