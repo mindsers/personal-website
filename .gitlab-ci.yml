@@ -13,7 +13,7 @@ tests:
   before_script:
     - yarn
   script:
-    - yarn test
+    - yarn test --single-run
   tags:
     - docker
 
