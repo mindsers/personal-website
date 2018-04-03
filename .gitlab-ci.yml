@@ -19,7 +19,7 @@ tests:
     - rm -rf /var/lib/apt/lists/*
     - yarn
   script:
-    - yarn test --single-run --browsers ChromeHeadless
+    - yarn test --single-run --browsers ChromeHeadlessNoSandbox
   tags:
     - docker
 
