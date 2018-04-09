@@ -21,11 +21,11 @@ export class HomeComponent implements OnInit {
         console.error
       )
 
-      this.instagramService
-        .getUserInfo()
-        .subscribe(
-          user => this.instagramFollowersCount = user.followers,
-          console.error
-        )
+    this.instagramService
+      .getUserInfo()
+      .subscribe(
+        user => this.instagramFollowersCount = user.followers,
+        console.error
+      )
   }
 }
