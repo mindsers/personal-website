@@ -16,26 +16,18 @@ export class ResumeComponent implements OnInit {
   constructor(private resumeService: ResumeService) {}
 
   ngOnInit() {
-    this.resumeService.getExperiences()
+    this.resumeService.getResume()
       .subscribe(
-        experiences => {
-          this.experiences = experiences
-          this.displayedExperiences = experiences
+        resume => {
+          this.experiences = resume['experiences']
+          this.displayedExperiences = resume['experiences']
+
+          this.displayedSkills = resume['skills']
+
+          this.displayedStudies = resume['studies']
 
           this.toogleExperiences(3)
         },
-        console.error
-      )
-
-    this.resumeService.getStudies()
-      .subscribe(
-        studies => this.displayedStudies = studies,
-        console.error
-      )
-
-    this.resumeService.getSkills()
-      .subscribe(
-        skills => this.displayedSkills = skills,
         console.error
       )
   }
