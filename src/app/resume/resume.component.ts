@@ -41,5 +41,12 @@ export class ResumeComponent implements OnInit {
 
     this.displayedExperiences = this.experiences.slice(0, min)
   }
+
+  openResumeFile() {
+    this.resumeService.getResumeFile()
+      .forEach(file => {
+        window.open(file)
+      })
+  }
 }
 

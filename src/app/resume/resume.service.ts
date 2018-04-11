@@ -16,4 +16,9 @@ export class ResumeService {
     return this.httpService.get(`${environment.api}/resume`)
       .map(response => response['data'])
   }
+
+  getResumeFile() {
+    return this.httpService.get(`${environment.api}/resume/file`, { responseType: 'blob' })
+      .map(blob => URL.createObjectURL(blob))
+  }
 }
