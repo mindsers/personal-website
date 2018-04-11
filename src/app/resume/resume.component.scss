@@ -52,6 +52,10 @@ section:not(.featured) {
     //color: #1B9CFC;
   }
 
+  .empty-message {
+    padding: 40px 0 20px 0;
+  }
+
   .exp {
     margin: 35px 0;
     animation: show 0.4s ease;

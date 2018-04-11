@@ -39,6 +39,11 @@
           at {{ exp.location }}
         </p>
       </div>
+      <div class="empty-message" *ngIf="displayedExperiences.length < 1">
+        <p>
+          No experiences to show. Maybe webservices don't work as exepected.
+        </p>
+      </div>
       <p class="actions">
         <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)">{{ displayedExperiences.length <= 3 ? 'More' : 'Less' }} experiences</a>
       </p>
@@ -54,15 +59,25 @@
           <li *ngFor="let event of study.events">{{ event.title }}, {{ event.year }}</li>
         </ul>
       </div>
+      <div class="empty-message" *ngIf="displayedExperiences.length < 1">
+        <p>
+          No study informations to show. Maybe webservices don't work as exepected.
+        </p>
+      </div>
   </div>
 </section>
 <section>
   <div class="content">
       <h3 i18n>My skills</h3>
-      <div class="skills">
+      <div class="skills" *ngIf="displayedSkills.length > 0">
         <div class="skill" *ngFor="let skill of displayedSkills">
           {{ skill }}
         </div>
+      </div>
+      <div class="empty-message" *ngIf="displayedSkills.length < 1">
+        <p>
+          No skill to show. Maybe webservices don't work as exepected.
+        </p>
       </div>
   </div>
 </section>
