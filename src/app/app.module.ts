@@ -30,6 +30,7 @@ import { ContactComponent } from './contact/contact.component'
     HttpClientModule,
     FormsModule
   ],
+  entryComponents: [ContactComponent],
   providers: [ResumeService],
   bootstrap: [AppComponent]
 })
