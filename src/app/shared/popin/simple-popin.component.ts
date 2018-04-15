@@ -6,15 +6,18 @@ import { Component } from '@angular/core'
     {{ message }}
   </p>
   <p class="actions">
-    <a class="btn" (click)="handleClick()">Valider</a>
+    <a *ngFor="let action of actions" class="btn" (click)="handleClick(action.value)">{{ action.label }}</a>
   </p>
   `,
   styleUrls: ['./simple-popin.component.scss']
 })
 export class SimplePopinComponent {
   message = 'This is the default popin. You might have forgotten to customize your popin.'
+  actions = [
+    { label: 'Valider', value: null }
+  ]
 
-  handleClick() {
+  handleClick(value) {
     // close
   }
 }
