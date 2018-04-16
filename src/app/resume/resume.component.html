@@ -34,9 +34,14 @@
             {{ exp.duration.end ? '- ' + exp.duration.end : '' }}</span>
         </h4>
         <p>{{ exp.description }}</p>
-        <p>
+        <p i18n>
           For <a [href]="exp.link" *ngIf="exp.link">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
           at {{ exp.location }}
+        </p>
+      </div>
+      <div class="empty-message" *ngIf="displayedExperiences.length < 1">
+        <p i18n>
+          No experiences to show. Maybe webservices don't work as exepected.
         </p>
       </div>
       <p class="actions">
@@ -49,34 +54,44 @@
       <h3 i18n>My studies</h3>
       <div class="study" *ngFor="let study of displayedStudies">
         <h4><span>{{ study.graduation }}</span><span>{{ study.duration.start }} - {{ study.duration.end }}</span></h4>
-        <p>From {{ study.school }} at {{ study.location }}</p>
+        <p i18n>From {{ study.school }} at {{ study.location }}</p>
         <ul>
           <li *ngFor="let event of study.events">{{ event.title }}, {{ event.year }}</li>
         </ul>
+      </div>
+      <div class="empty-message" *ngIf="displayedExperiences.length < 1">
+        <p i18n>
+          No study informations to show. Maybe webservices don't work as exepected.
+        </p>
       </div>
   </div>
 </section>
 <section>
   <div class="content">
       <h3 i18n>My skills</h3>
-      <div class="skills">
+      <div class="skills" *ngIf="displayedSkills.length > 0">
         <div class="skill" *ngFor="let skill of displayedSkills">
           {{ skill }}
         </div>
+      </div>
+      <div class="empty-message" *ngIf="displayedSkills.length < 1">
+        <p i18n>
+          No skill to show. Maybe webservices don't work as exepected.
+        </p>
       </div>
   </div>
 </section>
 <section>
   <div class="content">
-    <h3>Other details you may want to know</h3>
+    <h3 i18n>Other details you may want to know</h3>
     <div class="other">
-      <p>
+      <p i18n>
           My second passion, right after development, is science. Especially stars' science ( astrophysics and cosmology) and life sciences (biology).
       </p>
-      <p>
+      <p i18n>
           If you mix these two passions, you get bio-informatics. I never tried it but it looks really appealing.
       </p>
-      <p>
+      <p i18n>
           Besides that, I really like swimming (but I don't practice it very much) and I write a few blog posts. I play the guitar and a little bit of piano when I feel like it.
       </p>
     </div>
@@ -88,7 +103,7 @@
         The information on this web or PDF version of my resume are updated regularly but the PDF version is not exactly the same. For evident reasons, the PDF resume is shorter and less detailed than the web version, some information might not appear there.
     </p>
     <p class="actions">
-        <a class="btn" href="https://nathanaelcherrier.com/en/docs/cv_nathanael_cherrier.pdf" i18n>Download the PDF version</a>
+        <a class="btn" (click)="openResumeFile()" i18n>Download the PDF version</a>
     </p>
   </div>
 </section>

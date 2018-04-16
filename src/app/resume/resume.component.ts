@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 import { ResumeService } from './resume.service'
+import { PopinService } from '../shared/popin/popin.service'
 
 @Component({
   templateUrl: './resume.component.html',
@@ -13,29 +14,21 @@ export class ResumeComponent implements OnInit {
 
   private experiences = []
 
-  constructor(private resumeService: ResumeService) {}
+  constructor(private resumeService: ResumeService, private popinService: PopinService) {}
 
   ngOnInit() {
-    this.resumeService.getExperiences()
+    this.resumeService.getResume()
       .subscribe(
-        experiences => {
-          this.experiences = experiences
-          this.displayedExperiences = experiences
+        resume => {
+          this.experiences = resume['experiences']
+          this.displayedExperiences = resume['experiences']
+
+          this.displayedSkills = resume['skills']
+
+          this.displayedStudies = resume['studies']
 
           this.toogleExperiences(3)
         },
-        console.error
-      )
-
-    this.resumeService.getStudies()
-      .subscribe(
-        studies => this.displayedStudies = studies,
-        console.error
-      )
-
-    this.resumeService.getSkills()
-      .subscribe(
-        skills => this.displayedSkills = skills,
         console.error
       )
   }
@@ -48,6 +41,21 @@ export class ResumeComponent implements OnInit {
     }
 
     this.displayedExperiences = this.experiences.slice(0, min)
+  }
+
+  openResumeFile() {
+    this.resumeService.getResumeFile()
+      .subscribe(
+        file => window.open(file),
+        error => {
+          this.popinService
+            .openPopin(null, {
+              message: 'An error occured. We are unable to open the resume.'
+            })
+            .afterClose()
+            .subscribe()
+        }
+      )
   }
 }
 

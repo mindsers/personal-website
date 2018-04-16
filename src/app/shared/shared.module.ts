@@ -7,13 +7,15 @@ import { StopClickPropagationDirective } from './stop-click-propagation.directiv
 import { MatchValidatorDirective } from './match-validator.directive'
 import { EmailValidatorDirective } from './email-validator.directive'
 import { PopinService } from './popin/popin.service'
+import { SimplePopinComponent } from './popin/simple-popin.component'
 
 @NgModule({
   declarations: [
     PopinContainerComponent,
     StopClickPropagationDirective,
     MatchValidatorDirective,
-    EmailValidatorDirective
+    EmailValidatorDirective,
+    SimplePopinComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -22,6 +24,7 @@ import { PopinService } from './popin/popin.service'
     MatchValidatorDirective,
     EmailValidatorDirective
   ],
+  entryComponents: [SimplePopinComponent],
   providers: [InstagramService, PopinService]
 })
 export class SharedModule {}

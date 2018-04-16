@@ -9,7 +9,7 @@ import { InstagramService } from '../shared/instagram.service'
 })
 export class HomeComponent implements OnInit {
   instagramUrls: SafeUrl[] = []
-  instagramFollowersCount = 0
+  instagramFollowersCount: number = null
 
   constructor(private instagramService: InstagramService) { }
 
@@ -21,11 +21,11 @@ export class HomeComponent implements OnInit {
         console.error
       )
 
-      this.instagramService
-        .getUserInfo()
-        .subscribe(
-          user => this.instagramFollowersCount = user.followers,
-          console.error
-        )
+    this.instagramService
+      .getUserInfo()
+      .subscribe(
+        user => this.instagramFollowersCount = user.followers,
+        console.error
+      )
   }
 }
