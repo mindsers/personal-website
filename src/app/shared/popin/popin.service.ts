@@ -4,6 +4,8 @@ import {
   ViewContainerRef,
   ComponentFactoryResolver,
   OnDestroy,
+  Injector,
+  InjectionToken
 } from '@angular/core'
 
 import { Observable } from 'rxjs/Observable'
@@ -18,13 +20,13 @@ import { POPIN_VIEWREF, POPIN_DATA } from './popin'
 export class PopinService implements OnDestroy {
   private popinContainer = new BehaviorSubject<PopinContainerComponent>(null)
 
-  constructor(private resolver: ComponentFactoryResolver) { }
+  constructor(private resolver: ComponentFactoryResolver, private injector: Injector) { }
 
   registerContainer(popin: PopinContainerComponent): void {
     this.popinContainer.next(popin)
   }
 
-  openPopin<C>(componentClass?: Type<C>): PopinRef {
+  openPopin<C>(componentClass?: Type<C>, data?: any): PopinRef {
     if (componentClass == null) {
       componentClass = SimplePopinComponent as any
     }
@@ -37,9 +39,13 @@ export class PopinService implements OnDestroy {
           }
 
           const componentFactory = this.resolver.resolveComponentFactory(componentClass)
+          const injector = Injector.create([
+            { provide: POPIN_DATA, useValue: data },
+            { provide: POPIN_VIEWREF, useValue: popinRef }
+          ], this.injector)
 
           popinRef.container.clear()
-          popinRef.container.createComponent<C>(componentFactory)
+          popinRef.container.createComponent<C>(componentFactory, null, injector)
 
           return popinRef.open()
         })
