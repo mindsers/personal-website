@@ -1,8 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+
 import { Observable } from 'rxjs/Observable'
-import 'rxjs/add/observable/of'
+import 'rxjs/add/observable/from'
+
 import { ResumeComponent } from './resume.component'
 import { ResumeService } from './resume.service'
+import { PopinService } from '../shared/popin/popin.service'
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent
@@ -12,11 +15,8 @@ describe('ResumeComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ResumeComponent ],
       providers: [
-        { provide: ResumeService, useValue: {
-          getExperiences() { return Observable.of([]) },
-          getStudies() { return Observable.of([]) },
-          getSkills() { return Observable.of([]) }
-        } }
+        { provide: ResumeService, useValue: { getResume() { return Observable.from([]) } } },
+        { provide: PopinService, useValue: {} }
       ]
     })
     .compileComponents()
