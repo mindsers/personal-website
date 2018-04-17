@@ -34,7 +34,7 @@
             {{ exp.duration.end ? '- ' + exp.duration.end : '' }}</span>
         </h4>
         <p>{{ exp.description }}</p>
-        <p i18n>
+        <p i18n="Experience location|For example: For Econocom at Lyon">
           For <a [href]="exp.link" *ngIf="exp.link">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
           at {{ exp.location }}
         </p>
@@ -54,7 +54,7 @@
       <h3 i18n>My studies</h3>
       <div class="study" *ngFor="let study of displayedStudies">
         <h4><span>{{ study.graduation }}</span><span>{{ study.duration.start }} - {{ study.duration.end }}</span></h4>
-        <p i18n>From {{ study.school }} at {{ study.location }}</p>
+        <p i18n="Graduation sender|For example: From Lycée Blabla at Lyon">From {{ study.school }} at {{ study.location }}</p>
         <ul>
           <li *ngFor="let event of study.events">{{ event.title }}, {{ event.year }}</li>
         </ul>
