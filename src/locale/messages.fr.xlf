@@ -404,7 +404,11 @@
           Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
           I have a lead developer position in a service company where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
         </source>
-        <target>Salut, je m'appelle <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, je suis développeur Javascript/iOS, prof, blogueur, expert technique en devenir et j'habite à Lyon. </target>
+        <target>
+          Salut, je m'appelle <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, je suis développeur Javascript/iOS, prof, blogueur, expert technique en devenir et j'habite à Lyon.
+          Je me passionne pour le développement depuis 13 ans et je ne me lasse jamais d’en apprendre toujours plus sur les technologies et les moyens d’améliorer mon code.
+          Je suis actuellement lead développeur dans une SSII ou je développe, bien sûr, mais j’enseigne également aux autres les bonnes pratiques ainsi que les lagngagues JavaScript, Angular et Swift.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">8</context>
