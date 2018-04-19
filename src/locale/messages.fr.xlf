@@ -12,13 +12,13 @@
       </trans-unit>
       <trans-unit id="824b2abd3cd9d0d94b96feb1047381c4c95a2a0f" datatype="html">
         <source>
-      If you want to send me a message, an offer or a partnership, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      please use this form.
-    </source>
-    <target>
-      Si vous souhaitez m'écrire, m'envoyer une offre ou une demande de partenariat, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-     merci d'utiliser ce formulaire.
-    </target>
+          If you want to send me a message, an offer or a partnership, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          please use this form.
+        </source>
+        <target>
+          Si vous souhaitez m'écrire, m'envoyer une offre ou une demande de partenariat,
+          merci d'utiliser ce formulaire.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/contact/contact.component.ts</context>
           <context context-type="linenumber">4</context>
@@ -162,7 +162,7 @@
       </trans-unit>
       <trans-unit id="34746fb1c7f3d2194d99652bdff89e6e14c9c4f4" datatype="html">
         <source>Contact</source>
-        <target>Contact</target>
+        <target>Me contacter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">13</context>
@@ -335,7 +335,7 @@
       <trans-unit id="77b934afa5fa25649e137d44f77a9a51b96cd4b6" datatype="html">
         <source>Other details you may want to know</source>
         <target>
-          Autres informations qui pourraient vous intéresser.
+          Autres informations qui pourraient vous intéresser
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/resume/resume.component.ts</context>
@@ -347,7 +347,7 @@
           My second passion, right after development, is science. Especially stars&apos; science ( astrophysics and cosmology) and life sciences (biology).
         </source>
         <target>
-          Ma deuxième passion, juste après le développement, c'est la science. Plus spécifiquement l'astrophysique,la cosmologie et la biologie.
+          Ma deuxième passion, juste après le développement, c'est la science. Plus spécifiquement l'astrophysique, la cosmologie et la biologie.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/resume/resume.component.ts</context>
@@ -447,7 +447,7 @@
           For detailed pricing, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>please contact me<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
         </source>
         <target>
-          Pour plus d'informations concernant les prix,<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>contactez-moi.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          Pour plus d'informations concernant les prix, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>contactez-moi<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
