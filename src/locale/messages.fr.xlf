@@ -458,6 +458,28 @@
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="0cc5b7bf471ebc998fd025610fed7119eb895355" datatype="html">
+        <source>
+            <x id="START_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>since<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/>
+            <x id="INTERPOLATION" equiv-text="{{ exp.duration.start }}"/>
+            <x id="INTERPOLATION_1" equiv-text="{{ exp.duration.end ? &apos;- &apos; + exp.duration.end : &apos;&apos; }}"/></source>
+        <target>
+            <x id="START_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>depuis<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/>
+            <x id="INTERPOLATION" equiv-text="{{ exp.duration.start }}"/>
+            <x id="INTERPOLATION_1" equiv-text="{{ exp.duration.end ? &apos;- &apos; + exp.duration.end : &apos;&apos; }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resume/resume.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9446f05fd7acd868d9d01b8ff1e796b04b5e5b06" datatype="html">
+        <source><x id="START_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>More<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/><x id="START_TAG_NG-CONTAINER_1" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>Less<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/> experiences</source>
+        <target><x id="START_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>Plus<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/><x id="START_TAG_NG-CONTAINER_1" ctype="x-ng-container" equiv-text="&lt;ng-container&gt;"/>Moins<x id="CLOSE_TAG_NG-CONTAINER" ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;"/> d'expériences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resume/resume.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
