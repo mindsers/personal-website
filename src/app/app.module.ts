@@ -14,6 +14,7 @@ import { ResumeComponent } from './resume/resume.component'
 import { HomeComponent } from './home/home.component'
 import { ResumeService } from './resume/resume.service'
 import { ContactComponent } from './contact/contact.component'
+import { ContactService } from './contact/contact.service'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ContactComponent } from './contact/contact.component'
     FormsModule
   ],
   entryComponents: [ContactComponent],
-  providers: [ResumeService],
+  providers: [ResumeService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
