@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core'
+import { Injectable, Inject, LOCALE_ID } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { DomSanitizer } from '@angular/platform-browser'
 
@@ -10,15 +10,18 @@ import { environment } from '../../environments/environment'
 
 @Injectable()
 export class ResumeService {
-  constructor(private httpService: HttpClient) {}
+  constructor(
+    private httpService: HttpClient,
+    @Inject(LOCALE_ID) private locale: string
+  ) {}
 
   getResume() {
-    return this.httpService.get(`${environment.api}/resume`)
+    return this.httpService.get(`${environment.api}/resume?locale=${this.locale}`)
       .map(response => response['data'])
   }
 
   getResumeFile() {
-    return this.httpService.get(`${environment.api}/resume/file`, { responseType: 'blob' })
+    return this.httpService.get(`${environment.api}/resume/file?locale=${this.locale}`, { responseType: 'blob' })
       .map(blob => URL.createObjectURL(blob))
   }
 }

@@ -3,7 +3,7 @@
     <h2 i18n>Lead JavaScript and<br>iOS developer</h2>
     <div class="infos">
       <div>
-        <h3 i18n>Contact</h3>
+        <h3 i18n="Contact information|Title of the contact informations section">Contact</h3>
         <p>
           +33 (0) 658 62 44 21<br>
           dev@nathanaelcherrier.com<br>
@@ -28,13 +28,13 @@
       <div class="exp" *ngFor="let exp of displayedExperiences">
         <h4>
           <span>{{ exp.title }}</span>
-          <span>
-            {{ !exp.duration.end ? 'since' : '' }}
+          <span i18n>
+            <ng-container *ngIf="!exp.duration.end">since</ng-container>
             {{ exp.duration.start }}
             {{ exp.duration.end ? '- ' + exp.duration.end : '' }}</span>
         </h4>
         <p>{{ exp.description }}</p>
-        <p i18n>
+        <p i18n="Experience location|For example: For Econocom at Lyon">
           For <a [href]="exp.link" *ngIf="exp.link">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
           at {{ exp.location }}
         </p>
@@ -45,7 +45,7 @@
         </p>
       </div>
       <p class="actions">
-        <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)">{{ displayedExperiences.length <= 3 ? 'More' : 'Less' }} experiences</a>
+        <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)" i18n><ng-container *ngIf="displayedExperiences.length <= 3">More</ng-container><ng-container *ngIf="displayedExperiences.length > 3">Less</ng-container> experiences</a>
       </p>
   </div>
 </section>
@@ -54,7 +54,7 @@
       <h3 i18n>My studies</h3>
       <div class="study" *ngFor="let study of displayedStudies">
         <h4><span>{{ study.graduation }}</span><span>{{ study.duration.start }} - {{ study.duration.end }}</span></h4>
-        <p i18n>From {{ study.school }} at {{ study.location }}</p>
+        <p i18n="Graduation sender|For example: From Lycée Blabla at Lyon">From {{ study.school }} at {{ study.location }}</p>
         <ul>
           <li *ngFor="let event of study.events">{{ event.title }}, {{ event.year }}</li>
         </ul>

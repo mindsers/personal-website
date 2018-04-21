@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core'
 
 import { ResumeService } from './resume.service'
 import { PopinService } from '../shared/popin/popin.service'
@@ -14,7 +14,11 @@ export class ResumeComponent implements OnInit {
 
   private experiences = []
 
-  constructor(private resumeService: ResumeService, private popinService: PopinService) {}
+  constructor(
+    private resumeService: ResumeService,
+    private popinService: PopinService,
+    @Inject(LOCALE_ID) private locale: string
+  ) {}
 
   ngOnInit() {
     this.resumeService.getResume()
@@ -50,7 +54,9 @@ export class ResumeComponent implements OnInit {
         error => {
           this.popinService
             .openPopin(null, {
-              message: 'An error occured. We are unable to open the resume.'
+              message: this.locale === 'fr'
+                ? `Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.`
+                : 'An error occured. We are unable to open the resume.'
             })
             .afterClose()
             .subscribe()
