@@ -10,7 +10,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="824b2abd3cd9d0d94b96feb1047381c4c95a2a0f" datatype="html">
+      <trans-unit id="2850e5eca0d497839cb2014e876d12ae3472d612" datatype="html">
         <source>
           If you want to send me a message, an offer or a partnership, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           please use this form.
@@ -116,7 +116,7 @@
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="c734bc86904f62ea4cf80ec6fe8ec1b144868abf" datatype="html">
+      <trans-unit id="fe8e5b3bc1d11fdd6c960fbc0903c3ce4423ee4f" datatype="html">
         <source>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> All fields are required.
         </source>
