@@ -13,7 +13,6 @@ export class ContactComponent {
   constructor(private contactService: ContactService) {}
 
   handleSubmit(form: NgForm) {
-    console.log(form.value)
     const { email, message, subject } = form.value
 
     this.contactService
