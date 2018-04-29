@@ -13,7 +13,7 @@
       </p>
     </div>
     <div class="form">
-      <form #contactForm="ngForm" (ngSubmit)="handleSubmit(contactForm)" novalidate>
+      <form #contactForm="ngForm" novalidate>
         <div [class.error-field]="name.invalid && name.touched">
           <input #name="ngModel" type="text" name="name" placeholder="Name" i18n-placeholder ngModel required>
           <div class="error" *ngIf="name.invalid && name.touched" i18n>
@@ -47,7 +47,8 @@
           <span class="required-star">*</span> All fields are required.
         </p>
         <div class="actions">
-          <input type="submit" value="Send" i18n-value [disabled]="contactForm.invalid">
+          <!-- TODO: Use (ngSubmit) instead of (click). The solution need to work inside a popin -->
+          <input type="submit" value="Send" i18n-value [disabled]="contactForm.invalid" (click)="handleSubmit(contactForm)">
         </div>
       </form>
     </div>
