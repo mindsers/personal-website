@@ -15,13 +15,15 @@ import { HomeComponent } from './home/home.component'
 import { ResumeService } from './resume/resume.service'
 import { ContactComponent } from './contact/contact.component'
 import { ContactService } from './contact/contact.service'
+import { Error404Component } from './errors/error404.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
