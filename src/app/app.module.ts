@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component'
 import { ResumeService } from './resume/resume.service'
 import { ContactComponent } from './contact/contact.component'
 import { ContactService } from './contact/contact.service'
-import { Error404Component } from './errors/error404.component'
+import { PageNotFoundComponent } from './errors/page-not-found.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { Error404Component } from './errors/error404.component'
     ResumeComponent,
     HomeComponent,
     ContactComponent,
-    Error404Component
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
