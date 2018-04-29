@@ -1,8 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-
-import { ContactComponent } from './contact.component'
 import { NO_ERRORS_SCHEMA } from '@angular/core'
 import { FormsModule } from '@angular/forms'
+
+import { ContactComponent } from './contact.component'
+import { ContactService } from './contact.service'
 
 describe('ContactComponent', () => {
   let component: ContactComponent
@@ -12,7 +13,8 @@ describe('ContactComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ContactComponent ],
       schemas: [NO_ERRORS_SCHEMA],
-      imports: [FormsModule]
+      imports: [FormsModule],
+      providers: [{ provide: ContactService, useValue: {} }]
     })
     .compileComponents()
   }))
