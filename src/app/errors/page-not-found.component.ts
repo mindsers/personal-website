@@ -1,7 +1,12 @@
 import { Component } from '@angular/core'
 
+import { ErrorComponent } from './error-component'
+
 @Component({
-  templateUrl: './page-not-found.component.html',
-  styleUrls: ['./error.components.scss']
+  templateUrl: './error-component.html',
+  styleUrls: ['./error-component.scss']
 })
-export class PageNotFoundComponent {}
+export class PageNotFoundComponent implements ErrorComponent {
+  errorCode = 404
+  message = `Oups! It seems like we didn't find what you want.`
+}
