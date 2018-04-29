@@ -16,6 +16,7 @@ import { ResumeService } from './resume/resume.service'
 import { ContactComponent } from './contact/contact.component'
 import { ContactService } from './contact/contact.service'
 import { PageNotFoundComponent } from './errors/page-not-found.component'
+import { UnknownErrorComponent } from './errors/unknown-error.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PageNotFoundComponent } from './errors/page-not-found.component'
     HomeComponent,
     ContactComponent,
     PageNotFoundComponent,
+    UnknownErrorComponent,
   ],
   imports: [
     BrowserModule,
