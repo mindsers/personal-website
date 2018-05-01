@@ -1,7 +1,9 @@
 {
   "name": "home-nath",
   "version": "1.0.0",
-  "license": "MIT",
+  "author": "Nathanael CHERRIER <dev@nathanaelcherrier.com> (blog.nathanaelcherrier.com)",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +12,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
