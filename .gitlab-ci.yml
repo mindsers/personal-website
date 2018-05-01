@@ -8,7 +8,7 @@ variables:
   PROD_SERVER_PORT: 6421
 
 tests:
-  image: node:latest
+  image: node:9
   stage: test
   variables:
     CHROME_BIN: /opt/google/chrome/google-chrome
