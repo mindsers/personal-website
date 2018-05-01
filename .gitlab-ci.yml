@@ -1,11 +1,75 @@
-image: ubuntu
-
 stages:
+  - test
+  - build
   - deploy
 
-deploy_smalink:
-  environment: production
+variables:
+  PROD_SERVER_IP: 51.255.163.174
+  PROD_SERVER_PORT: 6421
+
+tests:
+  image: node:9
+  stage: test
+  variables:
+    CHROME_BIN: /opt/google/chrome/google-chrome
+  before_script:
+    - curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+    - apt-get update && apt-get install google-chrome-stable -y --no-install-recommends
+    - rm -rf /var/lib/apt/lists/*
+    - yarn
+  script:
+    - yarn test --single-run --browsers ChromeHeadlessNoSandbox
+  tags:
+    - docker
+
+build:dev:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: build
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:next || true
+    - docker build . -f docker/Dockerfile -t $CI_REGISTRY_IMAGE:next --build-arg node_env=development
+    - docker push $CI_REGISTRY_IMAGE:next
+  only:
+    - develop
+  tags:
+    - docker-builder
+
+build:prod:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: build
+  before_script:
+    - "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | sed 's/^ *//;s/ *$//')"
+    - PACKAGE_VERSION_MAJOR=$(echo $PACKAGE_VERSION | cut -d'.' -f1)
+    - PACKAGE_VERSION_MINOR=$PACKAGE_VERSION_MAJOR.$(echo $PACKAGE_VERSION | cut -d'.' -f2)
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:latest || true
+    - docker build . -f docker/Dockerfile -t $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:latest
+    - docker tag $CI_REGISTRY_IMAGE:latest $CI_REGISTRY_IMAGE:$PACKAGE_VERSION
+    - docker push $CI_REGISTRY_IMAGE:$PACKAGE_VERSION
+    - docker tag $CI_REGISTRY_IMAGE:latest $CI_REGISTRY_IMAGE:$PACKAGE_VERSION_MAJOR
+    - docker push $CI_REGISTRY_IMAGE:$PACKAGE_VERSION_MAJOR
+    - docker tag $CI_REGISTRY_IMAGE:latest $CI_REGISTRY_IMAGE:$PACKAGE_VERSION_MINOR
+    - docker push $CI_REGISTRY_IMAGE:$PACKAGE_VERSION_MINOR
+  only:
+    - master
+  tags:
+    - docker-builder
+
+deploy:prod:
+  image: ubuntu:latest
   stage: deploy
+  environment:
+    name: production
+    url: http://nathanaelcherrier.com
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
@@ -13,10 +77,14 @@ deploy_smalink:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - ssh deployer@51.255.163.174 -p 6421 'rm -rf /var/www/nath/* /var/www/nath/.git*'
-    - ssh deployer@51.255.163.174 -p 6421 'git clone git@git.nathanaelcherrier.com:nath-com/home-nath.git /var/www/nath'
-    - ssh deployer@51.255.163.174 -p 6421 'chmod -R 775 /var/www/nath/*'
-    - ssh deployer@51.255.163.174 -p 6421 'chown :www-data -R /var/www/nath/*'
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker pull $CI_REGISTRY_IMAGE:latest"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker stop mindsersit-home" || true
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker container rm mindsersit-home" || true
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker container prune -f"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker run -p 9081:80 -d -m "300M" --memory-swap "1G" --name mindsersit-home --restart=always $CI_REGISTRY_IMAGE:latest"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker image prune -f"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker logout $CI_REGISTRY"
   only:
     - master
   tags:
