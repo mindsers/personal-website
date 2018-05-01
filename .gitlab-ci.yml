@@ -82,7 +82,7 @@ deploy:prod:
     - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker stop mindsersit-home" || true
     - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker container rm mindsersit-home" || true
     - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker container prune -f"
-    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker run -p 9080:9000 -d -m "300M" --memory-swap "1G" --name mindsersit-home --restart=always $CI_REGISTRY_IMAGE:latest"
+    - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker run -p 9081:80 -d -m "300M" --memory-swap "1G" --name mindsersit-home --restart=always $CI_REGISTRY_IMAGE:latest"
     - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker image prune -f"
     - ssh "deployer@$PROD_SERVER_IP" -p $PROD_SERVER_PORT "docker logout $CI_REGISTRY"
   only:
