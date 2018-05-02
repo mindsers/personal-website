@@ -160,3 +160,20 @@ section:not(.featured) {
       transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px 50px 10px;
+    }
+
+    &:not(.featured) {
+      .skills .skill {
+        height: 95px; width: 95px;
+        line-height: 95px;
+      }
+    }
+  }
+}
