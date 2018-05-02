@@ -96,3 +96,18 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px;
+    }
+
+    &.instagram .pictures img {
+      width: 225px;
+      height: 225px;
+    }
+  }
+}
