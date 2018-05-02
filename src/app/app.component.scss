@@ -116,3 +116,19 @@ footer {
     margin: 30px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 10px;
+
+    .items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        min-width: 45vw;
+        margin: 40px inherit;
+      }
+    }
+  }
+}
