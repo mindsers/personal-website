@@ -132,3 +132,25 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  header .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    &> div.title, &> div.menu, &> div.shop {
+      padding: 0; margin: 20px 0;
+    }
+  }
+
+  footer {
+    .items {
+      flex-direction: column-reverse;
+      .item {
+        text-align: center;
+      }
+    }
+  }
+}

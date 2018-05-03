@@ -15,7 +15,13 @@
 }
 
 @media screen and (max-width: 800px) {
-    .content {
-      max-width: 750px;
-    }
+  .content {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content {
+    max-width: 375px;
+  }
 }
