@@ -97,6 +97,16 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  section {
+    padding: 20px;
+
+    &.featured {
+      padding: 150px 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   section {
     padding: 10px;
