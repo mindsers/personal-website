@@ -177,3 +177,47 @@ section:not(.featured) {
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 40px 10px;
+
+      h2 {
+        font-size: 2em;
+      }
+
+      .infos {
+        flex-direction: column;
+        align-content: center;
+
+        div {
+          margin: 10px;
+        }
+      }
+    }
+
+    &:not(.featured) {
+      .exp {
+        h4 {
+          span:last-child {
+            text-align: right;
+          }
+        }
+      }
+
+      .skills {
+        flex-wrap: wrap;
+        height: 420px;
+
+        .skill:hover {
+          height: 95px; width: 95px;
+          line-height: 95px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
