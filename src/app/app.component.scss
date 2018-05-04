@@ -150,6 +150,10 @@ footer {
       flex-direction: column-reverse;
       .item {
         text-align: center;
+
+        .coin-address {
+          display: block;
+        }
       }
     }
   }
