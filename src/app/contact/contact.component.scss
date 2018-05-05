@@ -136,3 +136,23 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  $width: 290px;
+
+  .contact {
+    padding: 0; margin: auto;
+    max-width: $width;
+
+    &> div.contact-body {
+      align-content: center;
+      width: $width;
+
+      div {
+        &.form, form {
+          width: $width;
+        }
+      }
+    }
+  }
+}
