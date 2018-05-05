@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { DomSanitizer } from '@angular/platform-browser'
 
-import { Observable } from 'rxjs/Observable'
+import { Observable } from 'rxjs'
 import 'rxjs/add/operator/switchMap'
 import 'rxjs/add/observable/from'
 import 'rxjs/add/observable/of'
