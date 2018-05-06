@@ -50,7 +50,13 @@ export class ResumeComponent implements OnInit {
   openResumeFile() {
     this.resumeService.getResumeFile()
       .subscribe(
-        file => window.open(file),
+        file => {
+          const link = document.createElement('a')
+          link.href = file
+          link.download = 'cv_nathanael_cherrier.pdf'
+
+          link.click()
+        },
         error => {
           this.popinService
             .openPopin(null, {
