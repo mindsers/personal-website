@@ -22,6 +22,7 @@ export class ResumeService {
 
   getResumeFile() {
     return this.httpService.get(`${environment.api}/resume/file?locale=${this.locale}`, { responseType: 'blob' })
+      .map(blob => new Blob([blob], { type: 'application/pdf' }))
       .map(blob => URL.createObjectURL(blob))
   }
 }
