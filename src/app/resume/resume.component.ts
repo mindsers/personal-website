@@ -2,6 +2,7 @@ import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core'
 
 import { ResumeService } from './resume.service'
 import { PopinService } from '../shared/popin/popin.service'
+import { DOCUMENT } from '../shared/native-api'
 
 @Component({
   templateUrl: './resume.component.html',
@@ -17,7 +18,8 @@ export class ResumeComponent implements OnInit {
   constructor(
     private resumeService: ResumeService,
     private popinService: PopinService,
-    @Inject(LOCALE_ID) private locale: string
+    @Inject(LOCALE_ID) private locale: string,
+    @Inject(DOCUMENT) private document: Document
   ) {}
 
   ngOnInit() {
@@ -51,7 +53,7 @@ export class ResumeComponent implements OnInit {
     this.resumeService.getResumeFile()
       .subscribe(
         file => {
-          const link = document.createElement('a')
+          const link = this.document.createElement('a')
           link.href = file
           link.download = 'cv_nathanael_cherrier.pdf'
 
