@@ -7,12 +7,14 @@ import 'rxjs/add/observable/from'
 import 'rxjs/add/observable/of'
 
 import { environment } from '../../environments/environment'
+import { WINDOW } from '../shared/native-api'
 
 @Injectable()
 export class ResumeService {
   constructor(
     private httpService: HttpClient,
-    @Inject(LOCALE_ID) private locale: string
+    @Inject(LOCALE_ID) private locale: string,
+    @Inject(WINDOW) private window: Window
   ) {}
 
   getResume() {
@@ -23,6 +25,6 @@ export class ResumeService {
   getResumeFile() {
     return this.httpService.get(`${environment.api}/resume/file?locale=${this.locale}`, { responseType: 'blob' })
       .map(blob => new Blob([blob], { type: 'application/pdf' }))
-      .map(blob => URL.createObjectURL(blob))
+      .map(blob => this.window.URL.createObjectURL(blob))
   }
 }

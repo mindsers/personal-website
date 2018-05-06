@@ -8,7 +8,7 @@ import { MatchValidatorDirective } from './match-validator.directive'
 import { EmailValidatorDirective } from './email-validator.directive'
 import { PopinService } from './popin/popin.service'
 import { SimplePopinComponent } from './popin/simple-popin.component'
-import { URL, WINDOW, DOCUMENT } from './native-api'
+import { WINDOW, DOCUMENT } from './native-api'
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { URL, WINDOW, DOCUMENT } from './native-api'
     InstagramService,
     PopinService,
     { provide: WINDOW, useValue: window },
-    { provide: URL, useValue: window.URL || (window as any).webkitURL },
     { provide: DOCUMENT, useValue: window.document }
   ]
 })
