@@ -6,6 +6,7 @@ import 'rxjs/add/observable/from'
 import { ResumeComponent } from './resume.component'
 import { ResumeService } from './resume.service'
 import { PopinService } from '../shared/popin/popin.service'
+import { DOCUMENT } from '../shared/native-api'
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent
@@ -16,7 +17,8 @@ describe('ResumeComponent', () => {
       declarations: [ ResumeComponent ],
       providers: [
         { provide: ResumeService, useValue: { getResume() { return Observable.from([]) } } },
-        { provide: PopinService, useValue: {} }
+        { provide: PopinService, useValue: {} },
+        { provide: DOCUMENT, useValue: {} }
       ]
     })
     .compileComponents()

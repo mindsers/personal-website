@@ -8,6 +8,7 @@ import { MatchValidatorDirective } from './match-validator.directive'
 import { EmailValidatorDirective } from './email-validator.directive'
 import { PopinService } from './popin/popin.service'
 import { SimplePopinComponent } from './popin/simple-popin.component'
+import { WINDOW, DOCUMENT } from './native-api'
 
 @NgModule({
   declarations: [
@@ -25,6 +26,11 @@ import { SimplePopinComponent } from './popin/simple-popin.component'
     EmailValidatorDirective
   ],
   entryComponents: [SimplePopinComponent],
-  providers: [InstagramService, PopinService]
+  providers: [
+    InstagramService,
+    PopinService,
+    { provide: WINDOW, useValue: window },
+    { provide: DOCUMENT, useValue: window.document }
+  ]
 })
 export class SharedModule {}

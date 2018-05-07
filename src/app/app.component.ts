@@ -15,6 +15,6 @@ export class AppComponent {
     this.popinService
       .openPopin(ContactComponent)
       .afterClose()
-      .subscribe(data => console.log('done', data))
+      .subscribe()
   }
 }
