@@ -17,3 +17,14 @@
     margin: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .content {
+    min-height: 200px;
+
+    h1 {
+      font-size: 12em;
+      margin: 20px;
+    }
+  }
+}

@@ -160,3 +160,64 @@ section:not(.featured) {
       transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px 50px 10px;
+    }
+
+    &:not(.featured) {
+      .skills .skill {
+        height: 95px; width: 95px;
+        line-height: 95px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 40px 10px;
+
+      h2 {
+        font-size: 2em;
+      }
+
+      .infos {
+        flex-direction: column;
+        align-content: center;
+
+        div {
+          margin: 10px;
+        }
+      }
+    }
+
+    &:not(.featured) {
+      .exp {
+        h4 {
+          span:last-child {
+            text-align: right;
+          }
+        }
+      }
+
+      .skills {
+        flex-wrap: wrap;
+        height: 420px;
+
+        .skill:hover {
+          height: 95px; width: 95px;
+          line-height: 95px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

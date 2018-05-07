@@ -116,3 +116,45 @@ footer {
     margin: 30px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 10px;
+
+    .items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        min-width: 45vw;
+        margin: 40px inherit;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    &> div.title, &> div.menu, &> div.shop {
+      padding: 0; margin: 20px 0;
+    }
+  }
+
+  footer {
+    .items {
+      flex-direction: column-reverse;
+      .item {
+        text-align: center;
+
+        .coin-address {
+          display: block;
+        }
+      }
+    }
+  }
+}
