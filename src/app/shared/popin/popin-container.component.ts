@@ -1,6 +1,5 @@
 import { Component, ViewChild, ViewContainerRef, AfterViewInit } from '@angular/core'
-import { Subject } from 'rxjs/Subject'
-import { Observable } from 'rxjs/Observable'
+import { Subject, Observable } from 'rxjs'
 
 import { PopinService } from './popin.service'
 
