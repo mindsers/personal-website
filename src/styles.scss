@@ -20,8 +20,10 @@
   }
 }
 
-@media screen and (max-width: 450px) {
-  .content {
-    max-width: 375px;
+@for $i from 1 through 5 {
+  @media screen and (max-width: 450px - ($i*50)) {
+    .content {
+      max-width: 375px - ($i*40);
+    }
   }
 }
