@@ -120,3 +120,39 @@
     }
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .contact {
+    padding: 20px;
+    width: auto;
+
+    &> div.contact-body {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        padding: 0; margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  $width: 290px;
+
+  .contact {
+    padding: 0; margin: auto;
+    max-width: $width;
+
+    &> div.contact-body {
+      align-content: center;
+      width: $width;
+
+      div {
+        &.form, form {
+          width: $width;
+        }
+      }
+    }
+  }
+}

@@ -96,3 +96,59 @@
     }
   }
 }
+
+@media screen and (max-width: 1150px) {
+  section {
+    padding: 20px;
+
+    &.featured {
+      padding: 150px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px;
+    }
+
+    &.instagram .pictures img {
+      width: 225px;
+      height: 225px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    padding: 10px;
+
+    &.featured {
+      padding: 40px 10px;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    &.instagram {
+      .pictures {
+        display: none !important;
+      }
+
+      ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-around;
+
+        li {
+          margin: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
