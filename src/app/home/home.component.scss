@@ -98,7 +98,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-  section {
+  section, .section {
     padding: 20px;
 
     &.featured {
@@ -108,7 +108,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  section {
+  section, .section {
     padding: 10px;
 
     &.featured {
@@ -123,7 +123,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  section {
+  section, .section {
     padding: 10px;
 
     &.featured {
@@ -149,6 +149,48 @@
           text-align: center;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section, .section {
+    &.featured {
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+
+    &.instagram {
+      p.followers {
+        font-size: 2.2em;
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      font-size: 1.35em;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  section, .section {
+    &.featured {
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+    &.instagram {
+      p.followers {
+        font-size: 1.9em;
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
     }
   }
 }
