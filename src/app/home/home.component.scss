@@ -152,3 +152,45 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  section, .section {
+    &.featured {
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+
+    &.instagram {
+      p.followers {
+        font-size: 2.2em;
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      font-size: 1.35em;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  section, .section {
+    &.featured {
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+    &.instagram {
+      p.followers {
+        font-size: 1.9em;
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
