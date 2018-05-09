@@ -7,7 +7,7 @@ COPY ./yarn.lock /app/
 
 RUN yarn install
 
-COPY ./.angular-cli.json /app/
+COPY ./angular.json /app/
 COPY ./tsconfig.json /app/
 COPY ./src /app/src/
 
