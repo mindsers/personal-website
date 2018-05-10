@@ -7,12 +7,11 @@ COPY ./yarn.lock /app/
 
 RUN yarn install
 
-COPY ./.angular-cli.json /app/
+COPY ./angular.json /app/
 COPY ./tsconfig.json /app/
 COPY ./src /app/src/
 
-RUN yarn build --build-optimizer --output-path dist/en --base-href /en/ --locale en --i18n-format xlf --i18n-file src/locale/messages.en.xlf --missing-translation ignore
-RUN yarn build --build-optimizer --output-path dist/fr --base-href /fr/ --locale fr --i18n-format xlf --i18n-file src/locale/messages.fr.xlf --missing-translation ignore
+RUN yarn build:i18n
 
 FROM nginx:latest
 LABEL maintainer="Nathaanel Cherrier <dev@nathanaelcherrier.com>"

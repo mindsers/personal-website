@@ -32,7 +32,7 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="b51aea17590102ddfc7253d1078fa0849457e922" datatype="html">
+      <trans-unit id="87b0c89239f8959f4af963f3e90395743a8e0af1" datatype="html">
         <source>
           Your name is required.
         </source>
@@ -52,7 +52,7 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="08479621a132a9f1d376687a5c67925cb94044e5" datatype="html">
+      <trans-unit id="cd3fca988938404456abfe1d20917d2697b5d07d" datatype="html">
         <source>
           Your email is required.
         </source>
@@ -64,7 +64,7 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3a46ac0b9e967d9df4d1c1b2dc81f7469e97110e" datatype="html">
+      <trans-unit id="840ffab9ea1886589e3512f46f0e91ee0b3e4bb3" datatype="html">
         <source>
           You need to enter a valid address email.
         </source>
@@ -84,7 +84,7 @@
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="282e123c8cc669fd1b83e7dc046348c7a339cf87" datatype="html">
+      <trans-unit id="65304ffff0c20d185bf87a809ea652ded93ba35d" datatype="html">
         <source>
           The subject of your message is required.
         </source>
@@ -104,7 +104,7 @@
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="45af88ff9ac94d744c15af34edb3b57b139969d5" datatype="html">
+      <trans-unit id="97f5708ffe2f5424b17bafd562b08617f343b1ae" datatype="html">
         <source>
           Your message is required.
         </source>
@@ -422,9 +422,9 @@
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="e577d50b6330a73a74267ae0b0f283052702d185" datatype="html">
-        <source><x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="INTERPOLATION" equiv-text="{{ instagramFollowersCount || &apos;3k+&apos; }}"/> followers</source>
-        <target><x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="INTERPOLATION" equiv-text="{{ instagramFollowersCount || &apos;3k+&apos; }}"/> abonnés</target>
+      <trans-unit id="a2c4de44aa1483fa2708ec34f74589ee234a10e6" datatype="html">
+        <source><x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="INTERPOLATION" equiv-text="{{ instagramFollowersCount || &apos;4k+&apos; }}"/> followers</source>
+        <target><x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> <x id="INTERPOLATION" equiv-text="{{ instagramFollowersCount || &apos;4k+&apos; }}"/> abonnés</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">20</context>
