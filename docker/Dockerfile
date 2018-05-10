@@ -11,8 +11,7 @@ COPY ./angular.json /app/
 COPY ./tsconfig.json /app/
 COPY ./src /app/src/
 
-RUN yarn build --build-optimizer --output-path dist/en --base-href /en/ --i18n-locale en --i18n-format xlf --i18n-file src/locale/messages.en.xlf --i18n-missing-translation ignore
-RUN yarn build --build-optimizer --output-path dist/fr --base-href /fr/ --i18n-locale fr --i18n-format xlf --i18n-file src/locale/messages.fr.xlf --i18n-missing-translation ignore
+RUN yarn build:i18n
 
 FROM nginx:latest
 LABEL maintainer="Nathaanel Cherrier <dev@nathanaelcherrier.com>"
