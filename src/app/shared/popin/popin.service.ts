@@ -38,10 +38,13 @@ export class PopinService implements OnDestroy {
           }
 
           const componentFactory = this.resolver.resolveComponentFactory(componentClass)
-          const injector = Injector.create([
-            { provide: POPIN_DATA, useValue: data },
-            { provide: POPIN_VIEWREF, useValue: popinRef }
-          ], this.injector)
+          const injector = Injector.create({
+            providers: [
+              { provide: POPIN_DATA, useValue: data },
+              { provide: POPIN_VIEWREF, useValue: popinRef }
+            ],
+            parent: this.injector
+          })
 
           popinRef.container.clear()
           popinRef.container.createComponent<C>(componentFactory, null, injector)
