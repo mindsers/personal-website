@@ -60,14 +60,11 @@ export class ResumeComponent implements OnInit {
           link.click()
         },
         error => {
-          this.popinService
-            .openPopin(null, {
-              message: this.locale === 'fr'
-                ? `Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.`
-                : 'An error occured. We are unable to open the resume.'
-            })
-            .afterClose()
-            .subscribe()
+          this.popinService.openPopin(null, {
+            message: this.locale === 'fr'
+              ? `Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.`
+              : 'An error occured. We are unable to open the resume.'
+          })
         }
       )
   }

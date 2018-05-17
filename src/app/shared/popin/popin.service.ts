@@ -8,7 +8,7 @@ import {
   InjectionToken
 } from '@angular/core'
 
-import { Observable, BehaviorSubject } from 'rxjs'
+import { Observable, BehaviorSubject, AsyncSubject } from 'rxjs'
 import 'rxjs/add/operator/switchMap'
 
 import { PopinContainerComponent } from './popin-container.component'
@@ -30,30 +30,33 @@ export class PopinService implements OnDestroy {
       componentClass = SimplePopinComponent as any
     }
 
-    const afterClose = () => {
-      return this.popinContainer
-        .switchMap(popinRef => {
-          if (popinRef == null || popinRef.container == null) {
-            return
-          }
+    const afterCloseSubject = new AsyncSubject<any>()
+    const popinSubscription = this.popinContainer
+      .switchMap(popinRef => {
+        if (popinRef == null || popinRef.container == null) {
+          return
+        }
 
-          const componentFactory = this.resolver.resolveComponentFactory(componentClass)
-          const injector = Injector.create({
-            providers: [
-              { provide: POPIN_DATA, useValue: data },
-              { provide: POPIN_VIEWREF, useValue: popinRef }
-            ],
-            parent: this.injector
-          })
-
-          popinRef.container.clear()
-          popinRef.container.createComponent<C>(componentFactory, null, injector)
-
-          return popinRef.open()
+        const componentFactory = this.resolver.resolveComponentFactory(componentClass)
+        const injector = Injector.create({
+          providers: [
+            { provide: POPIN_DATA, useValue: data },
+            { provide: POPIN_VIEWREF, useValue: popinRef }
+          ],
+          parent: this.injector
         })
-    }
 
-    return { afterClose }
+        popinRef.container.clear()
+        popinRef.container.createComponent<C>(componentFactory, null, injector)
+
+        return popinRef.open()
+      })
+      .subscribe(popinResult => {
+        afterCloseSubject.next(popinResult)
+        afterCloseSubject.complete()
+      })
+
+    return { afterClose: (callback: (value) => void) => afterCloseSubject.subscribe(callback) }
   }
 
   ngOnDestroy(): void {
@@ -62,5 +65,5 @@ export class PopinService implements OnDestroy {
 }
 
 interface PopinRef {
-  afterClose: () => Observable<any>
+  afterClose: (callback: (value) => void) => void
 }
