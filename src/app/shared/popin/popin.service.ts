@@ -53,7 +53,7 @@ export class PopinService implements OnDestroy {
         afterCloseSubject.complete()
       })
 
-    return { afterClose: () => afterCloseSubject }
+    return { afterClose: (callback: (value) => void) => afterCloseSubject.subscribe(callback) }
   }
 
   ngOnDestroy(): void {
@@ -62,5 +62,5 @@ export class PopinService implements OnDestroy {
 }
 
 interface PopinRef {
-  afterClose: () => Observable<any>
+  afterClose: (callback: (value) => void) => void
 }
