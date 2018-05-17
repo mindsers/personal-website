@@ -19,7 +19,7 @@ export class PopinContainerComponent implements AfterViewInit {
   constructor(private popinService: PopinService) {}
 
   ngAfterViewInit(): void {
-    this.popinService.registerContainer(this)
+    this.registerSelfAsMainContainer()
   }
 
   open(): Observable<any> {
@@ -35,5 +35,9 @@ export class PopinContainerComponent implements AfterViewInit {
 
     this.closeFnCalled.next(data)
     this.closeFnCalled.complete()
+  }
+
+  private registerSelfAsMainContainer(): void {
+    this.popinService.registerContainer(this)
   }
 }
