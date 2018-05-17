@@ -12,9 +12,6 @@ export class AppComponent {
   constructor(private popinService: PopinService) {}
 
   handleOnContactButtonClick() {
-    this.popinService
-      .openPopin(ContactComponent)
-      .afterClose()
-      .subscribe()
+    this.popinService.openPopin(ContactComponent)
   }
 }
