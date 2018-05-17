@@ -5,6 +5,7 @@
       "name": "Launch",
       "type": "chrome",
       "request": "launch",
+      "preLaunchTask": "serve",
       "url": "http://localhost:4200",
       "webRoot": "${workspaceRoot}"
     },
