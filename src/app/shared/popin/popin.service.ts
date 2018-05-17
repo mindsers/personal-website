@@ -8,7 +8,7 @@ import {
   InjectionToken
 } from '@angular/core'
 
-import { Observable, BehaviorSubject } from 'rxjs'
+import { Observable, BehaviorSubject, AsyncSubject } from 'rxjs'
 import 'rxjs/add/operator/switchMap'
 
 import { PopinContainerComponent } from './popin-container.component'
@@ -30,7 +30,7 @@ export class PopinService implements OnDestroy {
       componentClass = SimplePopinComponent as any
     }
 
-    const afterCloseSubject = new BehaviorSubject<any>(null)
+    const afterCloseSubject = new AsyncSubject<any>()
     const popinSubscription = this.popinContainer
       .switchMap(popinRef => {
         if (popinRef == null || popinRef.container == null) {
