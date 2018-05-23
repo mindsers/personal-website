@@ -10,9 +10,9 @@ export class RuntimeTranslatorService {
   constructor() {}
 
   load(data: XMLDocument, locale?: string, scope: string = 'default') {
-    const xmlLocale = locale || data.getElementsByTagName('file')[0].getAttribute('target')
+    const _locale = this.localeOrNull(data, locale)
 
-    if (xmlLocale == null) {
+    if (_locale == null) {
       throw new NoLanguageForTranslationUnits()
     }
 
@@ -22,13 +22,33 @@ export class RuntimeTranslatorService {
       this.data[scope] = {}
     }
 
-    this.data[scope][xmlLocale] = units.map<TranslationUnit>(element => ({
+    this.data[scope][_locale] = units.map<TranslationUnit>(element => ({
       key: element.getAttribute('id'),
       source: element.getElementsByTagName('source')[0].childNodes[0].nodeValue,
       target: element.getElementsByTagName('target')[0].childNodes[0].nodeValue
     }))
 
     return this.data
+  }
+
+  private localeOrNull(document: XMLDocument, locale?: string): string {
+    if (locale != null) {
+      return locale
+    }
+
+    const files = Array.from(document.getElementsByTagName('file'))
+
+    if (files.length !== 1) {
+      return null
+    }
+
+    const target = files.shift().getAttribute('target')
+
+    if (target == null) {
+      return null
+    }
+
+    return target
   }
 }
 
