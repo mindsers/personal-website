@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core'
 
+import { TranslationScope } from './translation-scope'
+import { TranslationUnit } from './translation-unit'
+
 @Injectable({ providedIn: 'root' })
 export class RuntimeTranslatorService {
   private data: { [scope: string]: TranslationScope } = {}
@@ -10,7 +13,7 @@ export class RuntimeTranslatorService {
     const units = Array.from(data.getElementsByTagName('trans-unit'))
 
     this.data[scope] = {
-      en: units.map(element => ({
+      en: units.map<TranslationUnit>(element => ({
         key: element.getAttribute('id'),
         source: element.getElementsByTagName('source')[0].childNodes[0].nodeValue,
         target: element.getElementsByTagName('target')[0].childNodes[0].nodeValue
@@ -21,12 +24,3 @@ export class RuntimeTranslatorService {
   }
 }
 
-interface TranslationScope {
-  [language: string]: TranslationString[]
-}
-
-interface TranslationString {
-  key: string
-  source: string
-  target: string
-}
