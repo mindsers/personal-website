@@ -16,17 +16,15 @@ export class RuntimeTranslatorService {
       throw new NoLanguageForTranslationUnits()
     }
 
-    const units = Array.from(data.getElementsByTagName('trans-unit'))
+    const units = this.loadFromXML(data)
 
-    if (this.data[scope] == null) {
-      this.data[scope] = {}
+    if (units.length < 1) {
+      return this.data
     }
 
-    this.data[scope][_locale] = units.map<TranslationUnit>(element => ({
-      key: element.getAttribute('id'),
-      source: element.getElementsByTagName('source')[0].childNodes[0].nodeValue,
-      target: element.getElementsByTagName('target')[0].childNodes[0].nodeValue
-    }))
+    this.prepareScope(scope)
+
+    this.data[scope][_locale] = units
 
     return this.data
   }
@@ -49,6 +47,26 @@ export class RuntimeTranslatorService {
     }
 
     return target
+  }
+
+  private loadFromXML(document: XMLDocument): TranslationUnit[] {
+    return Array
+      .from(document.getElementsByTagName('trans-unit'))
+      .map<TranslationUnit>(element => ({
+        key: element.getAttribute('id'),
+        source: element.getElementsByTagName('source')[0].childNodes[0].nodeValue,
+        target: element.getElementsByTagName('target')[0].childNodes[0].nodeValue
+      }))
+  }
+
+  private prepareScope(scope: string): void {
+    if (scope == null) {
+      return
+    }
+
+    if (this.data[scope] == null) {
+      this.data[scope] = {}
+    }
   }
 }
 
