@@ -39,7 +39,7 @@ export class ResumeComponent implements OnInit {
       )
   }
 
-  toogleExperiences(min = 0) {
+  toogleExperiences(min = 0): void {
     if (this.displayedExperiences.length <= min) {
       this.displayedExperiences = this.experiences
 
@@ -49,7 +49,7 @@ export class ResumeComponent implements OnInit {
     this.displayedExperiences = this.experiences.slice(0, min)
   }
 
-  openResumeFile() {
+  openResumeFile(): void {
     this.resumeService.getResumeFile()
       .subscribe(
         file => {

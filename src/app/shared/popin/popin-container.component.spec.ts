@@ -26,4 +26,28 @@ describe('PopinComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy()
   })
+
+  describe('#open()', () => {
+    it('should make popup visible when called', () => {
+      expect(component.isVisible).toBeFalsy()
+      component.open()
+      expect(component.isVisible).toBeTruthy()
+    })
+  })
+
+  describe('#close()', () => {
+    it('should make popup hidden when called', () => {
+      component.open()
+      expect(component.isVisible).toBeTruthy()
+      component.close(null)
+      expect(component.isVisible).toBeFalsy()
+    })
+
+    it('should emit args via observable of open methode', () => {
+      const wantedValue = 'Bla'
+
+      component.open().subscribe(value => expect(value).toEqual(wantedValue))
+      component.close(wantedValue)
+    })
+  })
 })

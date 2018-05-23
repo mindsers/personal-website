@@ -10,14 +10,13 @@ describe('StopClickPropagationDirective', () => {
     it('should call stopPropagation', () => {
       const directive = new StopClickPropagationDirective()
       const event: any = {
-        callCount: 0,
-        stopPropagation() { this.callCount += 1 },
-        preventDefault() {}
+        stopPropagation: jasmine.createSpy('stopPropagation'),
+        preventDefault: jasmine.createSpy('preventDefault')
       }
 
       directive.handleClickEvent(event as Event)
 
-      expect(event.callCount).toBeGreaterThan(0)
+      expect(event.stopPropagation).toHaveBeenCalled()
     })
   })
 })
