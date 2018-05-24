@@ -44,6 +44,14 @@ export class AppComponent implements OnInit {
             <source>Your message has been send.</source>
             <target>Your message has been send.</target>
           </trans-unit>
+          <trans-unit id="error-page.404.message">
+            <source>Oups! It seems like we didn't find what you want.</source>
+            <target>Oups! It seems like we didn't find what you want.</target>
+          </trans-unit>
+          <trans-unit id="error-page.500.message">
+            <source>An unknown error occured. Sorry for trouble.</source>
+            <target>An unknown error occured. Sorry for trouble.</target>
+          </trans-unit>
         </body>
       </file>
     </xliff>
@@ -68,6 +76,14 @@ export class AppComponent implements OnInit {
           <trans-unit id="contact.result.success">
             <source>Your message has been send.</source>
             <target>Votre message a été correctement envoyé.</target>
+          </trans-unit>
+          <trans-unit id="error-page.404.message">
+            <source>Oups! It seems like we didn't find what you want.</source>
+            <target>Oups! On dirait bien que nous n'arrivons pas à trouver ce que vous voulez voir.</target>
+          </trans-unit>
+          <trans-unit id="error-page.500.message">
+            <source>An unknown error occured. Sorry for trouble.</source>
+            <target>Une erreur inconnue s'est produite. Excusez-nous pour le dérangement.</target>
           </trans-unit>
         </body>
         </body>
