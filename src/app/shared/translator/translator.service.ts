@@ -2,6 +2,7 @@ import { Injectable, Inject, LOCALE_ID } from '@angular/core'
 
 import { TranslationScope } from './translation-scope'
 import { TranslationUnit } from './translation-unit'
+import { NoLanguageForTranslationUnits } from './no-language-for-translation-units'
 
 @Injectable({ providedIn: 'root' })
 export class RuntimeTranslatorService {
@@ -78,11 +79,5 @@ export class RuntimeTranslatorService {
     if (this.data[scope] == null) {
       this.data[scope] = {}
     }
-  }
-}
-
-export class NoLanguageForTranslationUnits extends Error {
-  constructor(...args) {
-    super(...args)
   }
 }
