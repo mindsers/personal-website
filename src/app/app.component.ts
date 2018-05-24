@@ -16,6 +16,14 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.loadTranslatedStrings()
+  }
+
+  handleOnContactButtonClick() {
+    this.popinService.openPopin(ContactComponent)
+  }
+
+  loadTranslatedStrings() {
     this.translator.load((new DOMParser).parseFromString(`
     <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
       <file source-language="en" target="en" datatype="plaintext">
@@ -27,6 +35,14 @@ export class AppComponent implements OnInit {
           <trans-unit id="resume.file.error">
             <source>An error occured. We are unable to open the resume.</source>
             <target>An error occured. We are unable to open the resume.</target>
+          </trans-unit>
+          <trans-unit id="contact.result.error">
+            <source>An error occured when trying to send the message.</source>
+            <target>An error occured when trying to send the message.</target>
+          </trans-unit>
+          <trans-unit id="contact.result.success">
+            <source>Your message has been send.</source>
+            <target>Your message has been send.</target>
           </trans-unit>
         </body>
       </file>
@@ -45,14 +61,18 @@ export class AppComponent implements OnInit {
             <source>An error occured. We are unable to open the resume.</source>
             <target>Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.</target>
           </trans-unit>
+          <trans-unit id="contact.result.error">
+            <source>An error occured when trying to send the message.</source>
+            <target>Nous avons rencontré une erreur pendant l'envoie du message.</target>
+          </trans-unit>
+          <trans-unit id="contact.result.success">
+            <source>Your message has been send.</source>
+            <target>Votre message a été correctement envoyé.</target>
+          </trans-unit>
         </body>
         </body>
       </file>
     </xliff>
     `, 'text/xml'))
-  }
-
-  handleOnContactButtonClick() {
-    this.popinService.openPopin(ContactComponent)
   }
 }
