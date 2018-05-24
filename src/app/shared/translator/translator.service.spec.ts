@@ -75,8 +75,47 @@ describe('RuntimeTranslatorService', () => {
   })
 
   describe('#translate()', () => {
+    const parser = new DOMParser()
+    const dataEn = parser.parseFromString(`
+      <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+        <file source-language="en" datatype="plaintext" target="en" original="ng2.template">
+          <body>
+            <trans-unit id="home.title" datatype="html">
+              <source>Welcome to this page</source>
+              <target>Welcome to this page</target>
+              <context-group purpose="location">
+                <context context-type="sourcefile">app/contact/contact.component.ts</context>
+                <context context-type="linenumber">3</context>
+              </context-group>
+            </trans-unit>
+          </body>
+        </file>
+      </xliff>
+      `, 'text/xml')
+    const dataFr = parser.parseFromString(`
+      <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+        <file source-language="en" datatype="plaintext" original="ng2.template">
+          <body>
+            <trans-unit id="home.title" datatype="html">
+              <source>Welcome to this page</source>
+              <target>Bienvenue sur cette page</target>
+              <context-group purpose="location">
+                <context context-type="sourcefile">app/contact/contact.component.ts</context>
+                <context context-type="linenumber">3</context>
+              </context-group>
+            </trans-unit>
+          </body>
+        </file>
+      </xliff>
+      `, 'text/xml')
+
     it('should return the key when no mathing unit were found',  inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
       expect(service.translate('home.welcome')).toEqual('home.welcome')
+    }))
+
+    it('should return the target string',  inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+      service.load(dataEn)
+      expect(service.translate('home.title')).toEqual('Welcome to this page')
     }))
   })
 })

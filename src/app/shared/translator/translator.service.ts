@@ -16,6 +16,8 @@ export class RuntimeTranslatorService {
     if (unit == null) {
       return key
     }
+
+    return unit.target
   }
 
   load(data: XMLDocument, locale?: string, scope: string = 'default') {
