@@ -3,7 +3,7 @@ import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core'
 import { ResumeService } from './resume.service'
 import { PopinService } from '../shared/popin/popin.service'
 import { DOCUMENT } from '../shared/native-api'
-import { RuntimeTranslatorService } from '../shared/translator/translator.service'
+import { RuntimeTranslationService } from '../shared/translator/translator.service'
 
 @Component({
   templateUrl: './resume.component.html',
@@ -19,7 +19,7 @@ export class ResumeComponent implements OnInit {
   constructor(
     private resumeService: ResumeService,
     private popinService: PopinService,
-    private translator: RuntimeTranslatorService,
+    private translator: RuntimeTranslationService,
     @Inject(DOCUMENT) private document: Document
   ) {}
 

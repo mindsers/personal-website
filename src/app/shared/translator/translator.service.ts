@@ -5,7 +5,7 @@ import { TranslationUnit } from './translation-unit'
 import { NoLanguageForTranslationUnits } from './no-language-for-translation-units'
 
 @Injectable({ providedIn: 'root' })
-export class RuntimeTranslatorService {
+export class RuntimeTranslationService {
   private data: { [scope: string]: TranslationScope } = {}
 
   constructor(@Inject(LOCALE_ID) private userLocale: string) {}

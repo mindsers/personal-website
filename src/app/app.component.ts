@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 
 import { PopinService } from './shared/popin/popin.service'
 import { ContactComponent } from './contact/contact.component'
-import { RuntimeTranslatorService } from './shared/translator/translator.service'
+import { RuntimeTranslationService } from './shared/translator/translator.service'
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { RuntimeTranslatorService } from './shared/translator/translator.service
 })
 export class AppComponent implements OnInit {
   constructor(
-    private translator: RuntimeTranslatorService,
+    private translator: RuntimeTranslationService,
     private popinService: PopinService
   ) {}
 

@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { NgForm } from '@angular/forms'
 
 import { ContactService } from './contact.service'
-import { RuntimeTranslatorService } from '../shared/translator/translator.service'
+import { RuntimeTranslationService } from '../shared/translator/translator.service'
 
 @Component({
   templateUrl: './contact.component.html',
@@ -11,7 +11,7 @@ import { RuntimeTranslatorService } from '../shared/translator/translator.servic
 export class ContactComponent {
   flashMessages: { type: string, text: string }[] = []
 
-  constructor(private contactService: ContactService, private translator: RuntimeTranslatorService) {}
+  constructor(private contactService: ContactService, private translator: RuntimeTranslationService) {}
 
   handleSubmit(form: NgForm) {
     const { email, message, subject } = form.value
