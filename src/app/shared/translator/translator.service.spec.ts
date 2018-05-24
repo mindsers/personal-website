@@ -1,11 +1,12 @@
 import { TestBed, inject } from '@angular/core/testing'
+import { LOCALE_ID } from '@angular/core'
 
 import { RuntimeTranslatorService, NoLanguageForTranslationUnits } from './translator.service'
 
 describe('RuntimeTranslatorService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RuntimeTranslatorService]
+      providers: [RuntimeTranslatorService, { provide: LOCALE_ID, useValue: 'fr' }]
     })
   })
 
@@ -109,13 +110,20 @@ describe('RuntimeTranslatorService', () => {
       </xliff>
       `, 'text/xml')
 
-    it('should return the key when no mathing unit were found',  inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+    it('should return the key when no mathing unit were found', inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
       expect(service.translate('home.welcome')).toEqual('home.welcome')
     }))
 
-    it('should return the target string',  inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+    it('should return the target string', inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+      service.load(dataFr, 'fr')
+      expect(service.translate('home.title')).toEqual('Bienvenue sur cette page')
+    }))
+
+    it('should choose user locale in many unit list', inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
       service.load(dataEn)
-      expect(service.translate('home.title')).toEqual('Welcome to this page')
+      service.load(dataFr, 'fr')
+
+      expect(service.translate('home.title')).toEqual('Bienvenue sur cette page')
     }))
   })
 })

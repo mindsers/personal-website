@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core'
+import { Injectable, Inject, LOCALE_ID } from '@angular/core'
 
 import { TranslationScope } from './translation-scope'
 import { TranslationUnit } from './translation-unit'
@@ -7,10 +7,10 @@ import { TranslationUnit } from './translation-unit'
 export class RuntimeTranslatorService {
   private data: { [scope: string]: TranslationScope } = {}
 
-  constructor() {}
+  constructor(@Inject(LOCALE_ID) private userLocale: string) {}
 
   translate(key: string, scope: string = 'default'): string {
-    const { [scope]: { en: units = [] } = {} } = this.data
+    const { [scope]: { [this.userLocale]: units = [] } = {} } = this.data
     const unit = units.find(el => el.key === key)
 
     if (unit == null) {
