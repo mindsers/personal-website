@@ -84,9 +84,5 @@ export class RuntimeTranslatorService {
 export class NoLanguageForTranslationUnits extends Error {
   constructor(...args) {
     super(...args)
-
-    if (Error.captureStackTrace) {
-      Error.captureStackTrace(this, NoLanguageForTranslationUnits)
-    }
   }
 }
