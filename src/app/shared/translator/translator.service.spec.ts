@@ -44,8 +44,7 @@ describe('RuntimeTranslatorService', () => {
       })
     )
 
-    it('should load data in right language',
-      inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+    it('should load data in right language', inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
         const data = (new DOMParser()).parseFromString(`
         <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
           <file source-language="en" datatype="plaintext" original="ng2.template">
@@ -73,5 +72,11 @@ describe('RuntimeTranslatorService', () => {
         })
       })
     )
+  })
+
+  describe('#translate()', () => {
+    it('should return the key when no mathing unit were found',  inject([RuntimeTranslatorService], (service: RuntimeTranslatorService) => {
+      expect(service.translate('home.welcome')).toEqual('home.welcome')
+    }))
   })
 })

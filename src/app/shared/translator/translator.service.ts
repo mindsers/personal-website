@@ -9,6 +9,15 @@ export class RuntimeTranslatorService {
 
   constructor() {}
 
+  translate(key: string, scope: string = 'default'): string {
+    const { [scope]: { en: units = [] } = {} } = this.data
+    const unit = units.find(el => el.key === key)
+
+    if (unit == null) {
+      return key
+    }
+  }
+
   load(data: XMLDocument, locale?: string, scope: string = 'default') {
     const _locale = this.localeOrNull(data, locale)
 
