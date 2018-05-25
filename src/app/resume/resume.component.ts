@@ -3,6 +3,7 @@ import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core'
 import { ResumeService } from './resume.service'
 import { PopinService } from '../shared/popin/popin.service'
 import { DOCUMENT } from '../shared/native-api'
+import { RuntimeTranslationService } from '../shared/translator/translator.service'
 
 @Component({
   templateUrl: './resume.component.html',
@@ -18,7 +19,7 @@ export class ResumeComponent implements OnInit {
   constructor(
     private resumeService: ResumeService,
     private popinService: PopinService,
-    @Inject(LOCALE_ID) private locale: string,
+    private translator: RuntimeTranslationService,
     @Inject(DOCUMENT) private document: Document
   ) {}
 
@@ -61,9 +62,7 @@ export class ResumeComponent implements OnInit {
         },
         error => {
           this.popinService.openPopin(null, {
-            message: this.locale === 'fr'
-              ? `Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.`
-              : 'An error occured. We are unable to open the resume.'
+            message: this.translator.translate('resume.file.error')
           })
         }
       )

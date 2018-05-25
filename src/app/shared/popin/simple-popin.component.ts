@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core'
 
 import { POPIN_VIEWREF, POPIN_DATA } from './popin'
+import { RuntimeTranslationService } from '../translator/translator.service'
 
 @Component({
   template: `
@@ -19,12 +20,13 @@ export class SimplePopinComponent implements OnInit {
 
   constructor(
     @Inject(POPIN_VIEWREF) private popinRef,
-    @Inject(POPIN_DATA) private data: SimplePopinData = {}
+    @Inject(POPIN_DATA) private data: SimplePopinData = {},
+    private translator: RuntimeTranslationService
   ) {}
 
   ngOnInit() {
     const {
-      message = 'This is the default popin. You might have forgotten to customize your popin.',
+      message = this.translator.translate('popin.default-message'),
       actions = [
         { label: 'OK', value: null }
       ]

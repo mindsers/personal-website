@@ -2,6 +2,7 @@ import { Component } from '@angular/core'
 
 import { PopinService } from './shared/popin/popin.service'
 import { ContactComponent } from './contact/contact.component'
+import { RuntimeTranslationService } from './shared/translator/translator.service'
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { ContactComponent } from './contact/contact.component'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private popinService: PopinService) {}
+  constructor(
+    private translator: RuntimeTranslationService,
+    private popinService: PopinService
+  ) {}
 
   handleOnContactButtonClick() {
     this.popinService.openPopin(ContactComponent)
