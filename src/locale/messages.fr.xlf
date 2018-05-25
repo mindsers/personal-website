@@ -480,6 +480,31 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
+
+      <trans-unit id="popin.default-message">
+        <source>This is the default popin. You might have forgotten to customize your popin.</source>
+        <target>Ceci est la popin par défaut. Vous avez peut-être oublié de paramétrer votre popin.</target>
+      </trans-unit>
+      <trans-unit id="resume.file.error">
+        <source>An error occured. We are unable to open the resume.</source>
+        <target>Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.</target>
+      </trans-unit>
+      <trans-unit id="contact.result.error">
+        <source>An error occured when trying to send the message.</source>
+        <target>Nous avons rencontré une erreur pendant l'envoie du message.</target>
+      </trans-unit>
+      <trans-unit id="contact.result.success">
+        <source>Your message has been send.</source>
+        <target>Votre message a été correctement envoyé.</target>
+      </trans-unit>
+      <trans-unit id="error-page.404.message">
+        <source>Oups! It seems like we didn't find what you want.</source>
+        <target>Oups! On dirait bien que nous n'arrivons pas à trouver ce que vous voulez voir.</target>
+      </trans-unit>
+      <trans-unit id="error-page.500.message">
+        <source>An unknown error occured. Sorry for trouble.</source>
+        <target>Une erreur inconnue s'est produite. Excusez-nous pour le dérangement.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
