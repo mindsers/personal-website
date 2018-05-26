@@ -200,6 +200,8 @@ section:not(.featured) {
     }
 
     &:not(.featured) {
+      padding: 10px;
+
       .exp {
         h4 {
           span:last-child {
@@ -217,6 +219,10 @@ section:not(.featured) {
           line-height: 95px;
           font-size: 1em;
         }
+      }
+
+      p {
+        padding: 5px;
       }
     }
   }
