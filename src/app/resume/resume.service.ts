@@ -2,9 +2,7 @@ import { Injectable, Inject, LOCALE_ID } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { DomSanitizer } from '@angular/platform-browser'
 
-import { Observable } from 'rxjs'
-import 'rxjs/add/observable/from'
-import 'rxjs/add/observable/of'
+import { map } from 'rxjs/operators'
 
 import { environment } from '../../environments/environment'
 import { WINDOW } from '../shared/native-api'
@@ -18,13 +16,19 @@ export class ResumeService {
   ) {}
 
   getResume() {
-    return this.httpService.get(`${environment.api}/resume?locale=${this.locale}`)
-      .map(response => response['data'])
+    return this.httpService
+      .get(`${environment.api}/resume?locale=${this.locale}`)
+      .pipe(
+        map(response => response['data'])
+      )
   }
 
   getResumeFile() {
-    return this.httpService.get(`${environment.api}/resume/file?locale=${this.locale}`, { responseType: 'blob' })
-      .map(blob => new Blob([blob], { type: 'application/pdf' }))
-      .map(blob => this.window.URL.createObjectURL(blob))
+    return this.httpService
+      .get(`${environment.api}/resume/file?locale=${this.locale}`, { responseType: 'blob' })
+      .pipe(
+        map(blob => new Blob([blob], { type: 'application/pdf' })),
+        map(blob => this.window.URL.createObjectURL(blob))
+      )
   }
 }

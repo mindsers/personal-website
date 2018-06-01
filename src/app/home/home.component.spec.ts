@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { Observable } from 'rxjs/Observable'
-import 'rxjs/add/observable/of'
-import { HomeComponent } from './home.component'
 import { NO_ERRORS_SCHEMA } from '@angular/core'
+import { of } from 'rxjs'
+
+import { HomeComponent } from './home.component'
 import { InstagramService } from '../shared/instagram.service'
 
 describe('HomeComponent', () => {
@@ -14,10 +14,12 @@ describe('HomeComponent', () => {
       declarations: [ HomeComponent ],
       schemas: [NO_ERRORS_SCHEMA],
       providers: [
-        { provide: InstagramService, useValue: {
-          getRandomPictures() { return Observable.of([]) },
-          getUserInfo() { return Observable.of([]) }
-        } }
+        { provide: InstagramService,
+          useValue: {
+            getRandomPictures() { return of([]) },
+            getUserInfo() { return of([]) }
+          }
+        }
       ]
     })
     .compileComponents()
