@@ -8,8 +8,8 @@ import {
   InjectionToken
 } from '@angular/core'
 
-import { Observable, BehaviorSubject, AsyncSubject } from 'rxjs'
-import 'rxjs/add/operator/switchMap'
+import { BehaviorSubject, AsyncSubject } from 'rxjs'
+import { switchMap } from 'rxjs/operators'
 
 import { PopinContainerComponent } from './popin-container.component'
 import { SimplePopinComponent } from './simple-popin.component'
@@ -32,25 +32,27 @@ export class PopinService implements OnDestroy {
 
     const afterCloseSubject = new AsyncSubject<any>()
     const popinSubscription = this.popinContainer
-      .switchMap(popinRef => {
-        if (popinRef == null || popinRef.container == null) {
-          return
-        }
+      .pipe(
+        switchMap(popinRef => {
+          if (popinRef == null || popinRef.container == null) {
+            return
+          }
 
-        const componentFactory = this.resolver.resolveComponentFactory(componentClass)
-        const injector = Injector.create({
-          providers: [
-            { provide: POPIN_DATA, useValue: data },
-            { provide: POPIN_VIEWREF, useValue: popinRef }
-          ],
-          parent: this.injector
+          const componentFactory = this.resolver.resolveComponentFactory(componentClass)
+          const injector = Injector.create({
+            providers: [
+              { provide: POPIN_DATA, useValue: data },
+              { provide: POPIN_VIEWREF, useValue: popinRef }
+            ],
+            parent: this.injector
+          })
+
+          popinRef.container.clear()
+          popinRef.container.createComponent<C>(componentFactory, null, injector)
+
+          return popinRef.open()
         })
-
-        popinRef.container.clear()
-        popinRef.container.createComponent<C>(componentFactory, null, injector)
-
-        return popinRef.open()
-      })
+      )
       .subscribe(popinResult => {
         afterCloseSubject.next(popinResult)
         afterCloseSubject.complete()

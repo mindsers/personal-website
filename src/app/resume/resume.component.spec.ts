@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { Observable } from 'rxjs/Observable'
-import 'rxjs/add/observable/from'
+import { from } from 'rxjs'
 
 import { ResumeComponent } from './resume.component'
 import { ResumeService } from './resume.service'
@@ -16,7 +15,7 @@ describe('ResumeComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ResumeComponent ],
       providers: [
-        { provide: ResumeService, useValue: { getResume() { return Observable.from([]) } } },
+        { provide: ResumeService, useValue: { getResume() { return from([]) } } },
         { provide: PopinService, useValue: {} },
         { provide: DOCUMENT, useValue: {} }
       ]
