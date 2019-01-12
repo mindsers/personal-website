@@ -1,8 +1,7 @@
-import { Component } from '@angular/core'
+import { Component, Inject, LOCALE_ID } from '@angular/core'
 
 import { PopinService } from './shared/popin/popin.service'
 import { ContactComponent } from './contact/contact.component'
-import { RuntimeTranslationService } from './shared/translator/translator.service'
 
 @Component({
   selector: 'app-root',
@@ -10,8 +9,12 @@ import { RuntimeTranslationService } from './shared/translator/translator.servic
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  get blogURL() {
+    return `https://blog.nathanaelcherrier.com/${this.userLocale}/`
+  }
+
   constructor(
-    private translator: RuntimeTranslationService,
+    @Inject(LOCALE_ID) private userLocale: string,
     private popinService: PopinService
   ) {}
 
