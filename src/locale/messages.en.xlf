@@ -396,16 +396,16 @@
           <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="08ef406c11801d8a56241e3b146b5dbe16b65194" datatype="html">
+      <trans-unit id="e84b44ff8677b82bf83873caac486573f2488e23" datatype="html">
         <source>
       Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
       Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
-      I have a lead developer position in a service company where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
     </source>
         <target>
       Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
       Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
-      I have a lead developer position in a service company where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
