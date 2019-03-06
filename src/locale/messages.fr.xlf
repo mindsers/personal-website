@@ -513,31 +513,31 @@
         <source>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
-            I have been coding for 15+ years and love using this blog to show what I learned during 
-            this continuous process of being a developper! I work full-time so this blog and my open 
+            I have been coding for 15+ years and love using this blog to show what I learned during
+            this continuous process of being a developper! I work full-time so this blog and my open
             source projects are mainly updated on my free time which is, as a dad and husband, very precious.
           <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
             I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
             though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
             <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer 
+            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer
             you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
           <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Avez-vous lu quelque chose qui vous a aidé sur le blog aujourd'hui? Si vous souhaitez montrer votre reconnaissance, c'est par ici. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
-            I have been coding for 15+ years and love using this blog to show what I learned during 
-            this continuous process of being a developper! I work full-time so this blog and my open 
-            source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+            Je développe depuis plus de 15 ans et j'adore utiliser mon blog pour partager avec vous tout ce que j'apprends à ce sujet.
+            Je travaille à plein temps donc j'écris des articles et je travaille sur mes projets open source
+            sur mon temps libre qui, puisque j'ai une femme et une petite fille, est bien précieux.
           <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
-            I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
-            though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
+            J'apprécie de pouvoir partager tout cela avec vous <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>gratuitement<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> et je fais tout pour que ça le reste,
+            mais les coûts de maintien étant de plus en plus importants, je ne saurai refuser l'aide que vous pourrez m'apporter.
             <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer 
-            you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+            Vos contributions me permetteront de poser quelques jours de congés par mois ou d'organiser mon emploi du temps différemment
+            pour pouvoir produire <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>plus de contenu en maintenant la qualité<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
           <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
         </target>
         <context-group purpose="location">
@@ -550,7 +550,7 @@
           It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
         </source>
         <target>
-          It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
+          Les gens me demandent souvent ce que je fais de mes journées donc voilà un petit récapitulatif :
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -559,12 +559,12 @@
       </trans-unit>
       <trans-unit id="support-page.workload.blog" datatype="html">
         <source>
-          I share my knowledge on my blog in the form of tech posts, tech event reports, 
+          I share my knowledge on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>my blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in the form of tech posts, tech event reports,
           product reviews and tutorials.
         </source>
         <target>
-          I share my knowledge on my blog in the form of tech posts, tech event reports, 
-          product reviews and tutorials.
+          Je partage mes connaissances sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>le blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> en écrivant des articles techniques, des recap d'events tech,
+          des revues de produits et des tutoriels.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -573,12 +573,12 @@
       </trans-unit>
       <trans-unit id="support-page.workload.instagram" datatype="html">
         <source>
-          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot; 
+          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot;
           posts, and friendly advice for newbies.
         </source>
         <target>
-          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot; 
-          posts, and friendly advice for newbies.
+          Je documente ma vie de dev sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Vous trouverez des posts pour vous motiver, sur la vie de dev en général
+          et des conseils pour les débutants.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -586,8 +586,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.workload.projects" datatype="html">
-        <source>I maintain several open source projects on github.</source>
-        <target>I maintain several open source projects on github.</target>
+        <source>I maintain several open source projects on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Je maintiens plusieurs projet open source sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">39</context>
@@ -595,12 +595,12 @@
       </trans-unit>
       <trans-unit id="support-page.payments.intro" datatype="html">
         <source>
-          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails 
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails
           you guys send me telling me how my posts or projects helped in some ways.
         </source>
         <target>
-          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails 
-          you guys send me telling me how my posts or projects helped in some ways.
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Je suis vraiment reconnaissant<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> pour la communauté qui s'est créée autour de ce blog et pour tous
+          les emails que je reçois de votre part me disant que tel ou tel articles ou projets vous a aidé de quelque façon.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -613,7 +613,7 @@
           Here are a few ways you can support the blog.
         </source>
         <target>
-          Here are a few ways you can support the blog.
+          Voilà quelques moyens de soutenir le blog.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -622,12 +622,12 @@
       </trans-unit>
       <trans-unit id="support-page.payments.patreon.description" datatype="html">
         <source>
-          Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards 
+          Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
           available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
         </source>
         <target>
-          Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards 
-          available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
+          Patreon est une opportunité pour vous de soutenir le blog tout en recevant quelque chose en échange. Vous pouvez voir les offres
+          disponibles directement sur ma page Patreon. C'est à partir de 1$/mois et pour la durée de votre choix.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -639,7 +639,7 @@
           If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
         </source>
         <target>
-          If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
+          Si vous ne voulez pas être engagé sur un contribution mensuelle, vous pouvez aussi faire une paiement ponctuel par Paypal ou directement avec votre carte bancaire.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -648,12 +648,12 @@
       </trans-unit>
       <trans-unit id="support-page.payments.crypto.description" datatype="html">
         <source>
-          If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies. 
+          If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
           The website supports Litecoin, Bitcoin, Ethereum and Ripple.
         </source>
         <target>
-          If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies. 
-          The website supports Litecoin, Bitcoin, Ethereum and Ripple.
+          Et si vous êtes un peu geek (comme moi), vous pouvez aussi utiliser vos crypto-monnaies pour soutenir le blog.
+          Vous pouvez contribuer via Litecoin, Bitcoin, Ethereum ou Ripple.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -662,17 +662,33 @@
       </trans-unit>
       <trans-unit id="support-page.payments.nomoney" datatype="html">
         <source>
-          Can&apos;t support my blog with money? Please do share on social media the posts you appreciate! 
+          Can&apos;t support my blog with money? Please do share on social media the posts you appreciate!
           It helps tremendously.
         </source>
         <target>
-          Can&apos;t support my blog with money? Please do share on social media the posts you appreciate! 
-          It helps tremendously.
+          Vous ne pouvez pas contribuer financièrement ? N'hésitez pas à partager les articles que vous aimez sur les réseaux sociaux !
+          Ça aide vraiment.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.crypto.title" datatype="html">
+        <source>Crypto-currencies</source>
+        <target>Crypto-monnaies</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.title" datatype="html">
+        <source>Patreon</source>
+        <target>Patreon</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.title" datatype="html">
+        <source>One-shot payment</source>
+        <target>Contribution ponctuelle</target>
+      </trans-unit>
+      <trans-unit id="blog.url" datatype="html">
+        <source>https://blog.nathanaelcherrier.com/en/</source>
+        <target>https://blog.nathanaelcherrier.com/fr/</target>
       </trans-unit>
     </body>
   </file>
