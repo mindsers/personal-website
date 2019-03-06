@@ -690,6 +690,22 @@
         <source>https://blog.nathanaelcherrier.com/en/</source>
         <target>https://blog.nathanaelcherrier.com/fr/</target>
       </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.title" datatype="html">
+        <source>Donate with Patreon and get rewards</source>
+        <target>Contribuer via Patreon</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.alt" datatype="html">
+        <source>Become a Patron button</source>
+        <target>Bouton "Devenir un patron"</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.title" datatype="html">
+        <source>Donate with Paypal or by credit card</source>
+        <target>Contribuer avec Paypal ou par carte bancaire</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.alt" datatype="html">
+        <source>Donate with PayPal button</source>
+        <target>Bouton "Contribuer avec Paypal"</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

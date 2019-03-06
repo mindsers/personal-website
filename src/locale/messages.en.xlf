@@ -634,6 +634,18 @@
       <trans-unit id="blog.url" datatype="html">
         <target>https://blog.nathanaelcherrier.com/en/</target>
       </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.title" datatype="html">
+        <target>Donate with Patreon and get rewards</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.alt" datatype="html">
+        <target>Become a Patron button</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.title" datatype="html">
+        <target>Donate with Paypal or by credit card</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.alt" datatype="html">
+        <target>Donate with PayPal button</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
