@@ -1,0 +1,113 @@
+.featured {
+  background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+  padding: 150px 50px 50px 50px;
+
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 4em;
+    font-family: 'Source Code Pro', monospace;
+  }
+}
+
+.section {
+  padding: 30px;
+
+  p, ul {
+    margin: 15px 0; padding: 5px;
+    font-size: 1.5em;
+
+    strong {
+      text-decoration: underline;
+    }
+
+    a {
+      color: rgba(0, 118, 223, 1);
+      background-color: rgba(0, 118, 223, 0.2);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.more {
+        text-transform: lowercase;
+        background-color: transparent;
+
+        &::before {
+          content: '</'
+        }
+
+        &::after {
+          content: '>'
+        }
+      }
+    }
+
+    &.actions {
+      text-align: center;
+    }
+  }
+
+  ul {
+    margin: 15px 40px;
+  }
+}
+
+section:not(.featured) {
+  padding: 30px;
+
+  &:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+  }
+
+  h2 {
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section, .section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px 50px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section, .section {
+    padding: 10px;
+
+    &.featured {
+      padding: 40px 10px;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    &:not(.featured) {
+      padding: 10px;
+
+      p {
+        padding: 5px;
+      }
+    }
+  }
+}
