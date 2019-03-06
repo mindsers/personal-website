@@ -43,10 +43,24 @@
           content: '>'
         }
       }
+
+      &.button {
+        background-color: unset;
+      }
     }
 
     &.actions {
       text-align: center;
+
+      .patreon-img {
+        margin: 5px 5px 15px 5px;
+        height: 50px;
+        transition: box-shadow 1s ease-out;
+
+        &:hover {
+          box-shadow: 5px 5px 5px #AAA;
+        }
+      }
     }
   }
 
