@@ -639,7 +639,7 @@
           If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
         </source>
         <target>
-          Si vous ne voulez pas être engagé sur un contribution mensuelle, vous pouvez aussi faire une paiement ponctuel par Paypal ou directement avec votre carte bancaire.
+          Si vous ne voulez pas être engagé sur un contribution mensuelle, vous pouvez aussi faire un paiement ponctuel par Paypal ou directement avec votre carte bancaire.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
