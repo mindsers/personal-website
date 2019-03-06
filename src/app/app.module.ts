@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component'
 import { ContactService } from './contact/contact.service'
 import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
+import { SupportComponent } from './support/support.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UnknownErrorComponent } from './errors/unknown-error.component'
     ContactComponent,
     PageNotFoundComponent,
     UnknownErrorComponent,
+    SupportComponent,
   ],
   imports: [
     BrowserModule,
