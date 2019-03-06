@@ -52,10 +52,10 @@
     &.actions {
       text-align: center;
 
-      .patreon-img {
+      .patreon-img, .paypal-img {
         margin: 5px 5px 15px 5px;
         height: 50px;
-        transition: box-shadow 1s ease-out;
+        transition: box-shadow .9s ease-out;
 
         &:hover {
           box-shadow: 5px 5px 5px #AAA;
