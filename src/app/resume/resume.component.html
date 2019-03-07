@@ -13,10 +13,10 @@
       <div>
         <h3 i18n>Social</h3>
         <p>
-          <a href="https://www.facebook.com/MindsersIT"><img class="logo" src="assets/img/facebook.svg" alt="Facebook logo"></a>
-          <a href="https://twitter.com/MindsersIT"><img class="logo" src="assets/img/twitter.svg" alt="Twitter logo"></a>
-          <a href="https://www.instagram.com/mindsers.it/"><img class="logo" src="assets/img/instagram.png" alt="Instagram logo"></a>
-          <a href="https://github.com/Mindsers"><img class="logo" src="assets/img/github.svg" alt="Github logo"></a>
+          <a href="https://www.facebook.com/MindsersIT" rel="nofollow"><img class="logo" src="assets/img/facebook.svg" alt="Facebook logo"></a>
+          <a href="https://twitter.com/MindsersIT" rel="nofollow"><img class="logo" src="assets/img/twitter.svg" alt="Twitter logo"></a>
+          <a href="https://www.instagram.com/mindsers.it/" rel="nofollow"><img class="logo" src="assets/img/instagram.png" alt="Instagram logo"></a>
+          <a href="https://github.com/Mindsers" rel="nofollow"><img class="logo" src="assets/img/github.svg" alt="Github logo"></a>
         </p>
       </div>
     </div>
@@ -35,7 +35,7 @@
         </h4>
         <p>{{ exp.description }}</p>
         <p i18n="Experience location|For example: For Econocom at Lyon">
-          For <a [href]="exp.link" *ngIf="exp.link">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
+          For <a [href]="exp.link" *ngIf="exp.link" rel="nofollow">{{ exp.company }}</a> <ng-container *ngIf="!exp.link">{{ exp.company }}</ng-container>
           at {{ exp.location }}
         </p>
       </div>
