@@ -506,8 +506,8 @@
         <target>Une erreur inconnue s'est produite. Excusez-nous pour le dérangement.</target>
       </trans-unit>
       <trans-unit id="support-page.title">
-        <source>Please give me money</source>
-        <target>S'il vous plait donnez l'argent !</target>
+        <source>Support my work</source>
+        <target>Soutenir mes projets</target>
       </trans-unit>
       <trans-unit id="support-page.intro" datatype="html">
         <source>

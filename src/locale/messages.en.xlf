@@ -504,8 +504,7 @@
         <target>An unknown error occured. Sorry for trouble.</target>
       </trans-unit>
       <trans-unit id="support-page.title">
-        <source>Please give me money</source>
-        <target>Please give me money</target>
+        <target>Support my work</target>
       </trans-unit>
       <trans-unit id="support-page.intro" datatype="html">
         <target>
