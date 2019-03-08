@@ -10,6 +10,8 @@ import { InstagramService } from '../shared/instagram.service'
 export class HomeComponent implements OnInit {
   instagramUrls: SafeUrl[] = []
   instagramFollowersCount: number = null
+  postCount: number = null
+  ossProjectCount: number = null
 
   constructor(private instagramService: InstagramService) { }
 
@@ -27,5 +29,8 @@ export class HomeComponent implements OnInit {
         user => this.instagramFollowersCount = user.followers,
         console.error
       )
+
+    this.postCount = 160
+    this.ossProjectCount = 3
   }
 }
