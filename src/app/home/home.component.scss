@@ -21,6 +21,8 @@
   p {
     margin: 15px 0; padding: 5px;
     font-size: 1.5em;
+    word-break: break-word;
+    hyphens: auto;
 
     strong {
       text-decoration: underline;
@@ -55,6 +57,11 @@
   }
 
   &.insights {
+    .insights-board {
+      display: flex;
+      justify-content: space-around;
+    }
+
     .insight {
       text-align: center;
       font-size: 2.5em;
