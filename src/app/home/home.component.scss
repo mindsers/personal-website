@@ -14,6 +14,10 @@
 .section {
   padding: 30px;
 
+  &:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+  }
+
   p {
     margin: 15px 0; padding: 5px;
     font-size: 1.5em;
@@ -51,8 +55,6 @@
   }
 
   &.insights {
-    background-color: rgb(245, 245, 245);
-
     .insight {
       text-align: center;
       font-size: 2.5em;
