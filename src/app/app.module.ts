@@ -15,7 +15,7 @@ import { ContactComponent } from './contact/contact.component'
 import { ContactService } from './contact/contact.service'
 import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
-import { LegalComponent } from './app/legal/legal.component'
+import { LegalComponent } from './legal/legal.component'
 
 @NgModule({
   declarations: [

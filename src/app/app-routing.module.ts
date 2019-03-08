@@ -6,7 +6,7 @@ import { ResumeComponent } from './resume/resume.component'
 import { ContactComponent } from './contact/contact.component'
 import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
-import { LegalComponent } from './app/legal/legal.component'
+import { LegalComponent } from './legal/legal.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
