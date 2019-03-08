@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 
-
-import { ServiceWorkerModule } from '@angular/service-worker'
 import { HttpClientModule } from '@angular/common/http'
 
 import { environment } from '../environments/environment'
@@ -30,7 +28,6 @@ import { UnknownErrorComponent } from './errors/unknown-error.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     SharedModule,
     HttpClientModule,
     FormsModule
