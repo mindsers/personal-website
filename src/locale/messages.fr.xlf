@@ -212,16 +212,20 @@
           <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="03c034ad5755386c760c1360cc2e030a3e32575d" datatype="html">
+      <trans-unit id="site.copyright" datatype="html">
         <source>
           ©2014 Nathanaël Cherrier. All rights reserved.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Legal notices<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
         </source>
         <target>
           ©2014 Nathanaël Cherrier. Tous droits réservés.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Mentions légales<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
         </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="93e4b9b21556e959b456ca36d487dfbf9eede170" datatype="html">
@@ -504,6 +508,101 @@
       <trans-unit id="error-page.500.message">
         <source>An unknown error occured. Sorry for trouble.</source>
         <target>Une erreur inconnue s'est produite. Excusez-nous pour le dérangement.</target>
+      </trans-unit>
+
+      <trans-unit id="legal.title" datatype="html">
+        <source>Legal notices</source>
+        <target>Mentions légales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.editor.title" datatype="html">
+        <source>Editor</source>
+        <target>Éditeur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.editor.name" datatype="html">
+        <source>
+          The website &quot;nathanaelcherrier.com&quot; is edited by the company <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>MindsersIT<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+        </source>
+        <target>
+          Le site &quot;nathanaelcherrier.com&quot; est édité par la société <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>MindsersIT<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.editor.structure" datatype="html">
+        <source>
+          Legal structure: &quot;Profession libérale&quot;<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          RCS de Lyon n°SIREN 841 104 052
+        </source>
+        <target>
+          Structure juridique: &quot;Profession libérale&quot;<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          RCS de Lyon n°SIREN 841 104 052
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.editor.contact" datatype="html">
+        <source>
+          155b rue Marcel Merieux - 69007 Lyon - France<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          + 33 (0) 6 58 62 44 21<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Contact email<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          155b rue Marcel Merieux - 69007 Lyon - France<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          + 33 (0) 6 58 62 44 21<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>E-mail de contact<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.publishing.title" datatype="html">
+        <source>Publishing Director</source>
+        <target>Directeur de publication</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.publishing.name" datatype="html">
+        <source>Mr. Nathanaël Cherrier</source>
+        <target>M. Nathanaël Cherrier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.host.title" datatype="html">
+        <source>Host</source>
+        <target>Hébergeur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.host.name" datatype="html">
+        <source>
+          The website is hosted by OVH, SAS
+        </source>
+        <target>
+          Ce site est hébergé par OVH, SAS
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/legal/legal.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
