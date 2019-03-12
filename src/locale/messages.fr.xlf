@@ -706,6 +706,63 @@
         <source>Donate with PayPal button</source>
         <target>Bouton "Contribuer avec Paypal"</target>
       </trans-unit>
+
+      <trans-unit id="home-page.support.post-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> tech posts</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> articles techniques</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.oss-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintained</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintenus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.why" datatype="html">
+        <source>
+          As a passionate developer, I pour my heart into giving back to open source.
+          I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+          I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+        </source>
+        <target>
+          En tant que développeur, je suis vraiment passionné par ce que je fais et cela me tient vraiment à coeur de contribuer à l'open source.
+          J'ai appris la plupart de tout ce que je sais grâce au contenu open source donc il me semble normal d'aider et d'enseigner à mon tour par ce biais.
+          J'utilise des projets open source tous les jours donc ma contribution permet de montrer ma gratitude envers tout ceux qui maintiennent également des projets open source.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.work" datatype="html">
+        <source>
+          Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I&apos;m the maintainer of <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> of them.
+        </source>
+        <target>
+         A l'heure actuelle, j'écris entre 1 et 2 articles par semaine, je contribue à plusieurs projets open source et j'en maintiens <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/>.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.invite" datatype="html">
+        <source>
+          If you want to know how to support my projects, please click down below.
+        </source>
+        <target>
+          Pour en savoir plus sur les moyens de soutenir mon blog, vous pouvez cliquer sur le lien ci-dessous.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
