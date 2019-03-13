@@ -509,6 +509,264 @@
         <source>An unknown error occured. Sorry for trouble.</source>
         <target>Une erreur inconnue s'est produite. Excusez-nous pour le dérangement.</target>
       </trans-unit>
+      <trans-unit id="support-page.title">
+        <source>Support my work</source>
+        <target>Soutenir mes projets</target>
+      </trans-unit>
+      <trans-unit id="support-page.intro" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I have been coding for 15+ years and love using this blog to show what I learned during
+            this continuous process of being a developper! I work full-time so this blog and my open
+            source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
+            though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
+            <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer
+            you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Avez-vous lu quelque chose qui vous a aidé sur le blog aujourd'hui? Si vous souhaitez montrer votre reconnaissance, c'est par ici. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            Je développe depuis plus de 15 ans et j'adore utiliser mon blog pour partager avec vous tout ce que j'apprends à ce sujet.
+            Je travaille à plein temps donc j'écris des articles et je travaille sur mes projets open source
+            sur mon temps libre qui, puisque j'ai une femme et une petite fille, est bien précieux.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            J'apprécie de pouvoir partager tout cela avec vous <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>gratuitement<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> et je fais tout pour que ça le reste,
+            mais les coûts de maintien étant de plus en plus importants, je ne saurai refuser l'aide que vous pourrez m'apporter.
+            <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Vos contributions me permetteront de poser quelques jours de congés par mois ou d'organiser mon emploi du temps différemment
+            pour pouvoir produire <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>plus de contenu en maintenant la qualité<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.workload.intro" datatype="html">
+        <source>
+          It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
+        </source>
+        <target>
+          Les gens me demandent souvent ce que je fais de mes journées donc voilà un petit récapitulatif :
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.workload.blog" datatype="html">
+        <source>
+          I share my knowledge on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>my blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in the form of tech posts, tech event reports,
+          product reviews and tutorials.
+        </source>
+        <target>
+          Je partage mes connaissances sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>le blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> en écrivant des articles techniques, des recap d'events tech,
+          des revues de produits et des tutoriels.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.workload.instagram" datatype="html">
+        <source>
+          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot;
+          posts, and friendly advice for newbies.
+        </source>
+        <target>
+          Je documente ma vie de dev sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Vous trouverez des posts pour vous motiver, sur la vie de dev en général
+          et des conseils pour les débutants.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.workload.projects" datatype="html">
+        <source>I maintain several open source projects on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Je maintiens plusieurs projet open source sur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.intro" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails
+          you guys send me telling me how my posts or projects helped in some ways.
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Je suis vraiment reconnaissant<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> pour la communauté qui s'est créée autour de ce blog et pour tous
+          les emails que je reçois de votre part me disant que tel ou tel articles ou projets vous a aidé de quelque façon.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="support-page.payments.list-intro" datatype="html">
+        <source>
+          Here are a few ways you can support the blog.
+        </source>
+        <target>
+          Voilà quelques moyens de soutenir le blog.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.description" datatype="html">
+        <source>
+          Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
+          available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
+        </source>
+        <target>
+          Patreon est une opportunité pour vous de soutenir le blog tout en recevant quelque chose en échange. Vous pouvez voir les offres
+          disponibles directement sur ma page Patreon. C'est à partir de 1$/mois et pour la durée de votre choix.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.description" datatype="html">
+        <source>
+          If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
+        </source>
+        <target>
+          Si vous ne voulez pas être engagé sur un contribution mensuelle, vous pouvez aussi faire un paiement ponctuel par Paypal ou directement avec votre carte bancaire.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.crypto.description" datatype="html">
+        <source>
+          If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
+          The website supports Litecoin, Bitcoin, Ethereum and Ripple.
+        </source>
+        <target>
+          Et si vous êtes un peu geek (comme moi), vous pouvez aussi utiliser vos crypto-monnaies pour soutenir le blog.
+          Vous pouvez contribuer via Litecoin, Bitcoin, Ethereum ou Ripple.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.nomoney" datatype="html">
+        <source>
+          Can&apos;t support my blog with money? Please do share on social media the posts you appreciate!
+          It helps tremendously.
+        </source>
+        <target>
+          Vous ne pouvez pas contribuer financièrement ? N'hésitez pas à partager les articles que vous aimez sur les réseaux sociaux !
+          Ça aide vraiment.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="support-page.payments.crypto.title" datatype="html">
+        <source>Crypto-currencies</source>
+        <target>Crypto-monnaies</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.title" datatype="html">
+        <source>Patreon</source>
+        <target>Patreon</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.title" datatype="html">
+        <source>One-shot payment</source>
+        <target>Contribution ponctuelle</target>
+      </trans-unit>
+      <trans-unit id="blog.url" datatype="html">
+        <source>https://blog.nathanaelcherrier.com/en/</source>
+        <target>https://blog.nathanaelcherrier.com/fr/</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.title" datatype="html">
+        <source>Donate with Patreon and get rewards</source>
+        <target>Contribuer via Patreon</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.patreon.button.alt" datatype="html">
+        <source>Become a Patron button</source>
+        <target>Bouton "Devenir un patron"</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.title" datatype="html">
+        <source>Donate with Paypal or by credit card</source>
+        <target>Contribuer avec Paypal ou par carte bancaire</target>
+      </trans-unit>
+      <trans-unit id="support-page.payments.cb.button.alt" datatype="html">
+        <source>Donate with PayPal button</source>
+        <target>Bouton "Contribuer avec Paypal"</target>
+      </trans-unit>
+
+      <trans-unit id="home-page.support.post-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> tech posts</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> articles techniques</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.oss-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintained</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintenus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.why" datatype="html">
+        <source>
+          As a passionate developer, I pour my heart into giving back to open source.
+          I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+          I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+        </source>
+        <target>
+          En tant que développeur, je suis vraiment passionné par ce que je fais et cela me tient vraiment à coeur de contribuer à l'open source.
+          J'ai appris la plupart de tout ce que je sais grâce au contenu open source donc il me semble normal d'aider et d'enseigner à mon tour par ce biais.
+          J'utilise des projets open source tous les jours donc ma contribution permet de montrer ma gratitude envers tout ceux qui maintiennent également des projets open source.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.work" datatype="html">
+        <source>
+          Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I&apos;m the maintainer of <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> of them.
+        </source>
+        <target>
+         A l'heure actuelle, j'écris entre 1 et 2 articles par semaine, je contribue à plusieurs projets open source et j'en maintiens <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/>.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.invite" datatype="html">
+        <source>
+          If you want to know how to support my projects, please click down below.
+        </source>
+        <target>
+          Pour en savoir plus sur les moyens de soutenir mon blog, vous pouvez cliquer sur le lien ci-dessous.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
 
       <trans-unit id="legal.title" datatype="html">
         <source>Legal notices</source>

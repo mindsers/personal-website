@@ -14,9 +14,15 @@
 .section {
   padding: 30px;
 
+  &:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+  }
+
   p {
     margin: 15px 0; padding: 5px;
     font-size: 1.5em;
+    word-break: break-word;
+    hyphens: auto;
 
     strong {
       text-decoration: underline;
@@ -50,10 +56,13 @@
     }
   }
 
-  &.instagram {
-    background-color: rgb(245, 245, 245);
+  &.insights {
+    .insights-board {
+      display: flex;
+      justify-content: space-around;
+    }
 
-    .followers {
+    .insight {
       text-align: center;
       font-size: 2.5em;
 

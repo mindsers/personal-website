@@ -15,9 +15,9 @@
     </p>
   </div>
 </section>
-<section class="instagram section">
+<section class="section insights">
   <div class="content">
-    <p class="followers" i18n><img src="assets/img/instagram.png" alt="instagram logo"> {{ instagramFollowersCount || '4k+' }} followers</p>
+    <p class="insight" i18n><img src="assets/img/instagram.png" alt="instagram logo"> {{ instagramFollowersCount || '4k+' }} followers</p>
     <p i18n>
       I have an <a href="https://www.instagram.com/mindsers.it/" rel="nofollow">instagram account</a> where I share my life as a developer.
       My audience is international and I'll be glad to use it to help you reach out more people with your company!
@@ -35,5 +35,27 @@
       <li><a href="https://github.com/Mindsers" rel="nofollow"><img src="assets/img/github.svg" alt="Github logo"> Github</a></li>
       <li><a href="https://www.youtube.com/channel/UC9FajTyEA4M8K6cF4174Zlw" rel="nofollow"><img src="assets/img/youtube.svg" alt="Youtube logo"> Youtube</a></li>
     </ul>
+  </div>
+</section>
+<section class="section insights">
+  <div class="content">
+    <div class="insights-board">
+      <p class="insight" i18n="@@home-page.support.post-count">{{ postCount }} tech posts</p>
+      <p class="insight" i18n="@@home-page.support.oss-count">{{ ossProjectCount }} OSS maintained</p>
+    </div>
+    <p i18n="@@home-page.support.why">
+      As a passionate developer, I pour my heart into giving back to open source.
+      I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+      I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+    </p>
+    <p i18n="@@home-page.support.work">
+      Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I'm the maintainer of {{ ossProjectCount }} of them.
+    </p>
+    <p i18n="@@home-page.support.invite">
+      If you want to know how to support my projects, please click down below.
+    </p>
+    <p class="actions">
+      <a class="more" [routerLink]="['support']" i18n>Learn more</a>
+    </p>
   </div>
 </section>
