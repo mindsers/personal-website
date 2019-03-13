@@ -645,6 +645,50 @@
       <trans-unit id="support-page.payments.cb.button.alt" datatype="html">
         <target>Donate with PayPal button</target>
       </trans-unit>
+
+      <trans-unit id="home-page.support.post-count" datatype="html">
+        <target><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> tech posts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.oss-count" datatype="html">
+        <target><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintained</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.why" datatype="html">
+        <target>
+          As a passionate developer, I pour my heart into giving back to open source.
+          I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+          I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.work" datatype="html">
+        <target>
+          Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I&apos;m the maintainer of <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> of them.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home-page.support.invite" datatype="html">
+        <target>
+          If you want to know how to support my projects, please click down below.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
