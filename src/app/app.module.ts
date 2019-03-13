@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http'
 
-import { environment } from '../environments/environment'
 import { SharedModule } from './shared/shared.module'
 import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
@@ -16,6 +15,7 @@ import { ContactService } from './contact/contact.service'
 import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
+import { LegalComponent } from './legal/legal.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { SupportComponent } from './support/support.component'
     PageNotFoundComponent,
     UnknownErrorComponent,
     SupportComponent,
+    LegalComponent,
   ],
   imports: [
     BrowserModule,

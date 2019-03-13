@@ -1,0 +1,38 @@
+
+section {
+  padding: 80px;
+  min-height: 58vh;
+
+  h1 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3em;
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    margin: 20px;
+    margin-top: 30px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 40px 10px;
+    text-align: center;
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+}
