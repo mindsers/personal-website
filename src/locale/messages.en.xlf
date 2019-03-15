@@ -213,6 +213,11 @@
         </context-group>
       </trans-unit>
       <trans-unit id="site.copyright" datatype="html">
+        <source>
+          ©2014 Nathanaël Cherrier. All rights reserved.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Legal notices<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
         <target>
           ©2014 Nathanaël Cherrier. All rights reserved.
           <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
@@ -397,15 +402,15 @@
       </trans-unit>
       <trans-unit id="e84b44ff8677b82bf83873caac486573f2488e23" datatype="html">
         <source>
-      Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
-      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
-      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
-    </source>
+          Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
+          Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+          I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+        </source>
         <target>
-      Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
-      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
-      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
-    </target>
+          Hi, my name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Nathanaël Cherrier<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
+          Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+          I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -429,15 +434,15 @@
       </trans-unit>
       <trans-unit id="a83a1cf261bb244cdb1fb2123d3c145d75b38eb1" datatype="html">
         <source>
-      I have an <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>instagram account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> where I share my life as a developer.
-      My audience is international and I&apos;ll be glad to use it to help you reach out more people with your company!
-      I am willing to promote your products/brands if I like them and they suit my account guidelines.
-    </source>
+          I have an <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>instagram account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> where I share my life as a developer.
+          My audience is international and I&apos;ll be glad to use it to help you reach out more people with your company!
+          I am willing to promote your products/brands if I like them and they suit my account guidelines.
+        </source>
         <target>
-      I have an <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>instagram account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> where I share my life as a developer.
-      My audience is international and I&apos;ll be glad to use it to help you reach out more people with your company!
-      I am willing to promote your products/brands if I like them and they suit my account guidelines.
-    </target>
+          I have an <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>instagram account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> where I share my life as a developer.
+          My audience is international and I&apos;ll be glad to use it to help you reach out more people with your company!
+          I am willing to promote your products/brands if I like them and they suit my account guidelines.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">21</context>
@@ -445,11 +450,11 @@
       </trans-unit>
       <trans-unit id="6614e0e88c23a15dd84608bdddea8cd1deb9bf21" datatype="html">
         <source>
-      For detailed pricing, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>please contact me<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
-    </source>
+          For detailed pricing, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>please contact me<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
+        </source>
         <target>
-      For detailed pricing, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>please contact me<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
-    </target>
+          For detailed pricing, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>please contact me<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
           <context context-type="linenumber">26</context>
@@ -503,33 +508,52 @@
         <target>An unknown error occured. Sorry for trouble.</target>
       </trans-unit>
       <trans-unit id="support-page.title">
+        <source>Support my work</source>
         <target>Support my work</target>
       </trans-unit>
       <trans-unit id="support-page.intro" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I have been coding for 15+ years and love using this blog to show what I learned during
+            this continuous process of being a developper! I work full-time so this blog and my open
+            source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
+            though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
+            <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer
+            you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
         <target>
-    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
-      I have been coding for 15+ years and love using this blog to show what I learned during
-      this continuous process of being a developper! I work full-time so this blog and my open
-      source projects are mainly updated on my free time which is, as a dad and husband, very precious.
-    <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-    <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
-      I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
-      though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
-      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer
-      you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
-    <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-  </target>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Did you find something helpful on the blog and are feeling a little grateful today?<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I have been coding for 15+ years and love using this blog to show what I learned during
+            this continuous process of being a developper! I work full-time so this blog and my open
+            source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            I love to share with you what I learn everyday for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>free<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and I am trying my best to keep it this way,
+            though costs are getting higher for me and I wouldn&apos;t say no to a little help from you.
+            <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Your support would mean I could take days off or make more room in my schedule <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>to offer
+            you better quality content more often<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.workload.intro" datatype="html">
+        <source>
+          It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
+        </source>
         <target>
-      It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
-    </target>
+          It&apos;s often hard for people to figure out what is part of my daily workload. So, here what I do:
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">27</context>
@@ -537,25 +561,34 @@
       </trans-unit>
       <trans-unit id="support-page.workload.blog" datatype="html">
         <target>
-        I share my knowledge on my blog in the form of tech posts, tech event reports,
-        product reviews and tutorials.
-      </target>
+          I share my knowledge on my blog in the form of tech posts, tech event reports,
+          product reviews and tutorials.
+        </target>
+        <source>
+          I share my knowledge on my blog in the form of tech posts, tech event reports,
+          product reviews and tutorials.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.workload.instagram" datatype="html">
+        <source>
+          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot;
+          posts, and friendly advice for newbies.
+        </source>
         <target>
-        I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot;
-        posts, and friendly advice for newbies.
-      </target>
+          I document my life on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Instagram<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. You&apos;ll find motivational posts, &quot;dev life&quot;
+          posts, and friendly advice for newbies.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.workload.projects" datatype="html">
+        <source>I maintain several open source projects on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
         <target>I maintain several open source projects on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/support/support.component.html</context>
@@ -563,6 +596,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.intro" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails
+          you guys send me telling me how my posts or projects helped in some ways.
+        </source>
         <target>
           <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>I am very grateful<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for the community I have build with this platform and all the emails
           you guys send me telling me how my posts or projects helped in some ways.
@@ -573,6 +610,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.list-intro" datatype="html">
+        <source>
+            Here are a few ways you can support the blog.
+        </source>
         <target>
             Here are a few ways you can support the blog.
         </target>
@@ -582,6 +622,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.patreon.description" datatype="html">
+        <source>
+          Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
+          available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
+        </source>
         <target>
           Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
           available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
@@ -592,6 +636,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.cb.description" datatype="html">
+        <source>
+          If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
+        </source>
         <target>
           If you don&apos;t want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
         </target>
@@ -601,6 +648,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.crypto.description" datatype="html">
+        <source>
+          If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
+          The website supports Litecoin, Bitcoin, Ethereum and Ripple.
+        </source>
         <target>
           If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
           The website supports Litecoin, Bitcoin, Ethereum and Ripple.
@@ -611,6 +662,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.nomoney" datatype="html">
+        <source>
+          Can&apos;t support my blog with money? Please do share on social media the posts you appreciate!
+          It helps tremendously.
+        </source>
         <target>
           Can&apos;t support my blog with money? Please do share on social media the posts you appreciate!
           It helps tremendously.
@@ -621,31 +676,40 @@
         </context-group>
       </trans-unit>
       <trans-unit id="support-page.payments.crypto.title" datatype="html">
+        <source>Crypto-currencies</source>
         <target>Crypto-currencies</target>
       </trans-unit>
       <trans-unit id="support-page.payments.patreon.title" datatype="html">
+        <source>Patreon</source>
         <target>Patreon</target>
       </trans-unit>
       <trans-unit id="support-page.payments.cb.title" datatype="html">
+        <source>One-shot payment</source>
         <target>One-shot payment</target>
       </trans-unit>
       <trans-unit id="blog.url" datatype="html">
+        <source>https://blog.nathanaelcherrier.com/en/</source>
         <target>https://blog.nathanaelcherrier.com/en/</target>
       </trans-unit>
       <trans-unit id="support-page.payments.patreon.button.title" datatype="html">
+        <source>Donate with Patreon and get rewards</source>
         <target>Donate with Patreon and get rewards</target>
       </trans-unit>
       <trans-unit id="support-page.payments.patreon.button.alt" datatype="html">
+        <source>Become a Patron button</source>
         <target>Become a Patron button</target>
       </trans-unit>
       <trans-unit id="support-page.payments.cb.button.title" datatype="html">
+        <source>Donate with Paypal or by credit card</source>
         <target>Donate with Paypal or by credit card</target>
       </trans-unit>
       <trans-unit id="support-page.payments.cb.button.alt" datatype="html">
+        <source>Donate with PayPal button</source>
         <target>Donate with PayPal button</target>
       </trans-unit>
 
       <trans-unit id="home-page.support.post-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> tech posts</source>
         <target><x id="INTERPOLATION" equiv-text="{{ postCount }}"/> tech posts</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -653,6 +717,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home-page.support.oss-count" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintained</source>
         <target><x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> OSS maintained</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -660,6 +725,11 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home-page.support.why" datatype="html">
+        <source>
+          As a passionate developer, I pour my heart into giving back to open source.
+          I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+          I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+        </source>
         <target>
           As a passionate developer, I pour my heart into giving back to open source.
           I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
@@ -671,6 +741,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home-page.support.work" datatype="html">
+        <source>
+          Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I&apos;m the maintainer of <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> of them.
+        </source>
         <target>
           Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I&apos;m the maintainer of <x id="INTERPOLATION" equiv-text="{{ ossProjectCount }}"/> of them.
         </target>
@@ -680,6 +753,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="home-page.support.invite" datatype="html">
+        <source>
+          If you want to know how to support my projects, please click down below.
+        </source>
         <target>
           If you want to know how to support my projects, please click down below.
         </target>
@@ -690,6 +766,7 @@
       </trans-unit>
 
       <trans-unit id="legal.title" datatype="html">
+        <source>Legal notices</source>
         <target>Legal notices</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/legal/legal.component.html</context>
@@ -697,6 +774,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.editor.title" datatype="html">
+        <source>Editor</source>
         <target>Editor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/legal/legal.component.html</context>
@@ -704,6 +782,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.editor.name" datatype="html">
+        <source>
+          The website &quot;nathanaelcherrier.com&quot; is edited by the company <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>MindsersIT<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
+        </source>
         <target>
           The website &quot;nathanaelcherrier.com&quot; is edited by the company <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>MindsersIT<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.
         </target>
@@ -713,6 +794,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.editor.structure" datatype="html">
+        <source>
+          Legal structure: &quot;Profession libérale&quot;<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          RCS de Lyon n°SIREN 841 104 052
+        </source>
         <target>
           Legal structure: &quot;Profession libérale&quot;<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           RCS de Lyon n°SIREN 841 104 052
@@ -723,6 +808,11 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.editor.contact" datatype="html">
+        <source>
+          155b rue Marcel Merieux - 69007 Lyon - France<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          + 33 (0) 6 58 62 44 21<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Contact email<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
         <target>
           155b rue Marcel Merieux - 69007 Lyon - France<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           + 33 (0) 6 58 62 44 21<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
@@ -734,6 +824,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.publishing.title" datatype="html">
+        <source>Publishing Director</source>
         <target>Publishing Director</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/legal/legal.component.html</context>
@@ -741,6 +832,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.publishing.name" datatype="html">
+        <source>Mr. Nathanaël Cherrier</source>
         <target>Mr. Nathanaël Cherrier</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/legal/legal.component.html</context>
@@ -748,6 +840,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.host.title" datatype="html">
+        <source>Host</source>
         <target>Host</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/legal/legal.component.html</context>
@@ -755,6 +848,9 @@
         </context-group>
       </trans-unit>
       <trans-unit id="legal.host.name" datatype="html">
+        <source>
+          The website is hosted by OVH, SAS
+        </source>
         <target>
           The website is hosted by OVH, SAS
         </target>
