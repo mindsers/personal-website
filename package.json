@@ -8,7 +8,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build:i18n": "yarn build --configuration=fr && yarn build --configuration=en",
+
+    "build:i18n:dev": "yarn build --configuration=fr && yarn build --configuration=en",
+    "build:i18n:prod": "yarn build --configuration=production-fr && yarn build --configuration=production-en",
+    "build:i18n": "yarn build:i18n:prod",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
