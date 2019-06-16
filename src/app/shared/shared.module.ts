@@ -1,7 +1,6 @@
 import { NgModule, TRANSLATIONS, LOCALE_ID } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
-import { InstagramService } from './instagram.service'
 import { PopinContainerComponent } from './popin/popin-container.component'
 import { StopClickPropagationDirective } from './stop-click-propagation.directive'
 import { MatchValidatorDirective } from './match-validator.directive'
@@ -44,7 +43,6 @@ export function translatorFactory(locale: string, translations: string) {
   ],
   entryComponents: [SimplePopinComponent],
   providers: [
-    InstagramService,
     PopinService,
     { provide: WINDOW, useValue: window },
     { provide: DOCUMENT, useValue: window.document },

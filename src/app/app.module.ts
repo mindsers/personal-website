@@ -17,6 +17,7 @@ import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
 import { InstagramLinksComponent } from './influencer/instagram-links.component'
+import { InstagramService } from './influencer/shared/instagram.service'
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { InstagramLinksComponent } from './influencer/instagram-links.component'
     FormsModule
   ],
   entryComponents: [ContactComponent],
-  providers: [ResumeService, ContactService],
+  providers: [ResumeService, ContactService, InstagramService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
