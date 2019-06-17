@@ -1,0 +1,23 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin: 20px 0;
+
+  &> li {
+    margin: 10px;
+    padding: 20px 10px;
+    list-style: none;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
