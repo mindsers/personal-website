@@ -3,7 +3,6 @@ import { Component } from '@angular/core'
 @Component({
   template: `
   <div class="instagram-links">
-    <h1>@mindsers.it</h1>
     <ul class="links">
       <li><a class="amazon" href="#">My favorite products</a></li>
       <li><a class="wiki" href="#">How to support MindsersIT</a></li>
