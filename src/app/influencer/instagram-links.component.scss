@@ -5,6 +5,7 @@
   align-items: center;
   padding: 5px 0;
   margin: 20px 0;
+  min-height: calc(100vh - 343px - 74px);
 
   &> li {
     margin: 10px;
@@ -14,6 +15,7 @@
     border-radius: 5px;
     text-align: center;
     background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+    max-width: 500px;
 
     a {
       color: white;
