@@ -675,6 +675,16 @@
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="support-page.payments.brave" datatype="html">
+        <source>
+          You can also send some Basic Atention Token (BAT) using the Brave browser. It is easier and secure. You just have <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>to install the browser<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and start using it.
+          When you are on my website you can choose to send a tip to me by clicking on the icon of BAT in the address bar. <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Here is a video<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to better show you how to do so.
+        </source>
+        <target>
+          You can also send some Basic Atention Token (BAT) using the Brave browser. It is easier and secure. You just have <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>to install the browser<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and start using it.
+          When you are on my website you can choose to send a tip to me by clicking on the icon of BAT in the address bar. <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Here is a video<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to better show you how to do so.
+        </target>
+      </trans-unit>
       <trans-unit id="support-page.payments.crypto.title" datatype="html">
         <source>Crypto-currencies</source>
         <target>Crypto-currencies</target>
