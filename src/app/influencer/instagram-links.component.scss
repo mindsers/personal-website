@@ -16,10 +16,41 @@
     text-align: center;
     background: linear-gradient(70deg, #1B9CFC, #25CCF7);
     max-width: 500px;
+    position: relative;
+
 
     a {
       color: white;
       text-decoration: none;
+
+      &::before {
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+        position: absolute;
+        left: 20px;
+      }
+
+      &.wiki::before {
+        content: url('assets/img/info-circle-solid.svg');
+      }
+
+      &.external::before {
+        content: url('assets/img/external-link-alt-solid.svg');
+      }
+
+      &.amazon::before {
+        content: url('assets/img/amazon-brands.svg');
+      }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .links > li a::before {
+    left: 10px;
+    margin: 0;
+    width: 15px;
   }
 }
