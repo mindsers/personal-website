@@ -13,6 +13,7 @@ tests:
   variables:
     CHROME_BIN: /opt/google/chrome/google-chrome
   before_script:
+    - printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
     - curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
     - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
     - apt-get update && apt-get install google-chrome-stable -y --no-install-recommends
