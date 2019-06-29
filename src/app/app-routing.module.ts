@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
+import { InstagramLinksComponent } from './influencer/instagram-links.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'support', component: SupportComponent },
+  { path: 'influencer/instagram-links', component: InstagramLinksComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '500', component: UnknownErrorComponent },
   { path: '**', redirectTo: '404' }

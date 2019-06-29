@@ -3,7 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core'
 import { of } from 'rxjs'
 
 import { HomeComponent } from './home.component'
-import { InstagramService } from '../shared/instagram.service'
+import { InstagramService } from '../influencer/shared/instagram.service'
 
 describe('HomeComponent', () => {
   let component: HomeComponent

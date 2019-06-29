@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http'
 import { DomSanitizer } from '@angular/platform-browser'
 import { switchMap, map, mergeMap } from 'rxjs/operators'
 
-import { environment } from '../../environments/environment'
+import { environment } from '../../../environments/environment'
 
 @Injectable()
 export class InstagramService {

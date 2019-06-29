@@ -16,6 +16,8 @@ import { PageNotFoundComponent } from './errors/page-not-found.component'
 import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
+import { InstagramLinksComponent } from './influencer/instagram-links.component'
+import { InstagramService } from './influencer/shared/instagram.service'
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { LegalComponent } from './legal/legal.component'
     UnknownErrorComponent,
     SupportComponent,
     LegalComponent,
+    InstagramLinksComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import { LegalComponent } from './legal/legal.component'
     FormsModule
   ],
   entryComponents: [ContactComponent],
-  providers: [ResumeService, ContactService],
+  providers: [ResumeService, ContactService, InstagramService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

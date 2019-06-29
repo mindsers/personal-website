@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { SafeUrl } from '@angular/platform-browser'
 
-import { InstagramService } from '../shared/instagram.service'
+import { InstagramService } from '../influencer/shared/instagram.service'
 
 @Component({
   templateUrl: './home.component.html',
