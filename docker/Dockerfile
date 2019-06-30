@@ -1,11 +1,11 @@
-FROM node:9 as builder
+FROM node:10 as builder
 
 WORKDIR /app
 
 COPY ./package.json /app/
 COPY ./yarn.lock /app/
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --ignore-engines
 
 COPY ./angular.json /app/
 COPY ./tsconfig.json /app/
