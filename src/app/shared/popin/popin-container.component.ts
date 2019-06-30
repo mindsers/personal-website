@@ -9,7 +9,7 @@ import { PopinService } from './popin.service'
   styleUrls: ['./popin-container.component.scss']
 })
 export class PopinContainerComponent implements AfterViewInit {
-  @ViewChild('container', { read: ViewContainerRef }) container: ViewContainerRef
+  @ViewChild('container', { read: ViewContainerRef, static: true }) container: ViewContainerRef
 
   get isVisible(): boolean { return this._isVisible }
 
