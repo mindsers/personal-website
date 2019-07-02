@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'support', component: SupportComponent },
-  { path: 'influencer/instagram-links', component: InstagramLinksComponent },
+  { path: 'instalinks', component: InstagramLinksComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '500', component: UnknownErrorComponent },
   { path: '**', redirectTo: '404' }
