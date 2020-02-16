@@ -2,9 +2,9 @@
 
 # @mindsersit/website
 
-_"MindsersIT Web"_ is a portfolio and freelance showcase for nathanaelcherrier.com. This part of the site is based on [Angular](https://angular.com).
+_"MindsersIT Website"_ is a portfolio and freelance showcase for [nathanaelcherrier.com](https://nathanaelcherrier.com). This part of the site is based on [Angular](https://angular.com).
 
-This repo host the Angular application that powers nathanaelcherrier.com.
+This repo host the Angular application that powers [nathanaelcherrier.com](https://nathanaelcherrier.com).
 
 ## Getting started
 
