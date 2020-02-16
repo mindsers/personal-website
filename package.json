@@ -7,8 +7,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
 
+    "build": "ng build --prod",
     "build:i18n:dev": "yarn build --configuration=fr --optimization=false --sourceMap=true --no-buildOptimizer --statsJson && yarn build --configuration=en --optimization=false --sourceMap=true --no-buildOptimizer --statsJson",
     "build:i18n:prod": "yarn build --configuration=fr && yarn build --configuration=en",
     "build:i18n": "yarn build:i18n:prod",
@@ -18,24 +18,24 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/animations": "8.0.1",
-    "@angular/common": "8.0.1",
-    "@angular/compiler": "8.0.1",
-    "@angular/core": "8.0.1",
-    "@angular/forms": "8.0.1",
-    "@angular/platform-browser": "8.0.1",
-    "@angular/platform-browser-dynamic": "8.0.1",
-    "@angular/router": "8.0.1",
+    "@angular/animations": "8.2.14",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
     "core-js": "^3.1.4",
-    "rxjs": "6.5.2",
+    "rxjs": "6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.800.0",
-    "@angular/cli": "8.0.3",
-    "@angular/compiler-cli": "8.0.1",
-    "@angular/language-service": "8.0.1",
+    "@angular-devkit/build-angular": "~0.803.25",
+    "@angular/cli": "8.3.25",
+    "@angular/compiler-cli": "8.2.14",
+    "@angular/language-service": "8.2.14",
     "@types/jasmine": "~3.3.13",
     "@types/jasminewd2": "~2.0.6",
     "@types/node": "~12.0.8",
@@ -50,6 +50,6 @@
     "protractor": "~5.4.2",
     "ts-node": "~8.3.0",
     "tslint": "~5.17.0",
-    "typescript": "3.4.5"
+    "typescript": "3.5.3"
   }
 }
