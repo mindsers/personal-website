@@ -1,8 +1,8 @@
 {
-  "name": "@mindsersit/main",
+  "name": "@mindsersit/website",
   "version": "1.6.1",
-  "author": "Nathanael CHERRIER <dev@nathanaelcherrier.com> (blog.nathanaelcherrier.com)",
-  "license": "UNLICENSED",
+  "author": "Nathanael CHERRIER <dev@nathanaelcherrier.com> (nathanaelcherrier.com)",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "ng": "ng",
