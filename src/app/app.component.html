@@ -1,0 +1,69 @@
+<header>
+  <div class="content">
+    <div class="title" routerLink="/">
+      <img src="assets/img/logo.svg" alt="MindsersIT logo">
+      <h1>Nathanaël Cherrier</h1>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a [href]="blogURL" i18n>Blog</a></li>
+          <li><a [routerLink]="['/', 'resume']" i18n>Resume</a></li>
+          <li><a href="https://community.nathanaelcherrier.com" i18n="@@header.forum">Forum</a></li>
+          <li *ngIf="false"><a i18n>Portfolio</a></li>
+          <li (click)="handleOnContactButtonClick()" i18n>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="shop" *ngIf="false">
+      <a routerLink="/" i18n>Shop</a>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<footer>
+  <div class="content">
+    <div class="items">
+      <div class="item">
+        <h2 i18n>Itunes Store</h2>
+        <ul>
+          <li><a href="https://itunes.apple.com/us/app/european-converter/id824107489?mt=8" rel="nofollow">European Converter</a></li>
+          <li><a href="https://itunes.apple.com/us/app/checkyourvat/id862501089?mt=8" rel="nofollow">CheckyourVAT</a></li>
+          <li><a href="https://itunes.apple.com/us/app/flight-companion/id890826910?mt=8" rel="nofollow">Flight Companion</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h2 i18n>Open Sources</h2>
+        <ul>
+          <li><a href="https://github.com/mindsers/configfile" rel="nofollow">Configfile</a></li>
+          <li><a href="https://github.com/mindsers/yabf" rel="nofollow">Yabf</a></li>
+          <li><a href="https://github.com/mindsers/nativetable" rel="nofollow">Nativetable</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h2 i18n>Social</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/mindsers.it/" rel="nofollow">Instagram</a></li>
+          <li><a href="https://twitter.com/MindsersIT" rel="nofollow">Twitter</a></li>
+          <li><a href="https://www.facebook.com/MindsersIT" rel="nofollow">Facebook</a></li>
+          <li><a href="https://github.com/Mindsers" rel="nofollow">Github</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h2 i18n>Support</h2>
+        <ul>
+          <li>Bitcoin: <span class="coin-address">3N7iAYWKz5rqdtbYJ4r1SRJHq9sEQbXHDk</span></li>
+          <li>Ethereum: <span class="coin-address">0x30B42B1487262fE55aD8CDF046342AB6bF4d4e73</span></li>
+          <li>Ripple: <span class="coin-address">rUwDYme9YMzNo8ufvgKE7VET1QgbKgJuGT</span></li>
+          <li>Litecoin: <span class="coin-address">MU47RMv5KGHiBU8Kw5PNPbn3cyFLjmQXPt</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright" i18n="@@site.copyright">
+        ©2014 Nathanaël Cherrier. All rights reserved.
+        <br>
+        <a class="legal" [href]="['legal']">Legal notices</a>
+      </p>
+  </div>
+</footer>
+<app-popin-container></app-popin-container>

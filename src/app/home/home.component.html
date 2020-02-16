@@ -1,0 +1,61 @@
+<section class="featured">
+  <div class="content">
+    <h2 i18n>Lead JavaScript and<br>iOS developer</h2>
+  </div>
+</section>
+<section class="description section">
+  <div class="content">
+    <p i18n>
+      Hi, my name is <strong>Nathanaël Cherrier</strong>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
+      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+    </p>
+    <p class="actions">
+      <a class="more" [routerLink]="['resume']" i18n>Learn more</a>
+    </p>
+  </div>
+</section>
+<section class="section insights">
+  <div class="content">
+    <p class="insight" i18n><img src="assets/img/instagram.png" alt="instagram logo"> {{ instagramFollowersCount || '4k+' }} followers</p>
+    <p i18n>
+      I have an <a href="https://www.instagram.com/mindsers.it/" rel="nofollow">instagram account</a> where I share my life as a developer.
+      My audience is international and I'll be glad to use it to help you reach out more people with your company!
+      I am willing to promote your products/brands if I like them and they suit my account guidelines.
+    </p>
+    <p i18n>
+      For detailed pricing, <a [routerLink]="['contact']">please contact me</a>.
+    </p>
+    <div class="pictures">
+      <img *ngFor="let url of instagramUrls" [src]="url" alt="An instagram picture">
+    </div>
+    <ul>
+      <li><a href="https://twitter.com/MindsersIT" rel="nofollow"><img src="assets/img/twitter.svg" alt="Twitter logo"> Twitter</a></li>
+      <li><a href="https://www.facebook.com/MindsersIT" rel="nofollow"><img src="assets/img/facebook.svg" alt="Facebook logo"> Facebook</a></li>
+      <li><a href="https://github.com/Mindsers" rel="nofollow"><img src="assets/img/github.svg" alt="Github logo"> Github</a></li>
+      <li><a href="https://www.youtube.com/channel/UC9FajTyEA4M8K6cF4174Zlw" rel="nofollow"><img src="assets/img/youtube.svg" alt="Youtube logo"> Youtube</a></li>
+    </ul>
+  </div>
+</section>
+<section class="section insights">
+  <div class="content">
+    <div class="insights-board">
+      <p class="insight" i18n="@@home-page.support.post-count">{{ postCount }} tech posts</p>
+      <p class="insight" i18n="@@home-page.support.oss-count">{{ ossProjectCount }} OSS maintained</p>
+    </div>
+    <p i18n="@@home-page.support.why">
+      As a passionate developer, I pour my heart into giving back to open source.
+      I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+      I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+    </p>
+    <p i18n="@@home-page.support.work">
+      Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I'm the maintainer of {{ ossProjectCount }} of them.
+    </p>
+    <p i18n="@@home-page.support.invite">
+      If you want to know how to support my projects, please click down below.
+    </p>
+    <p class="actions">
+      <a class="more" [routerLink]="['support']" i18n>Learn more</a>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,165 @@
+header {
+  border-bottom: 1px solid lightgray;
+  margin: 0; padding: 20px;
+  color: #34495e;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &> div {
+      &.title {
+        margin-right: auto;
+        cursor: pointer;
+        outline: none;
+
+        img, h1 {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        img {
+          width: 50px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+          font-weight: 500;
+          margin-left: 10px;
+
+          a {
+            text-decoration: none;
+            color: initial;
+          }
+        }
+      }
+
+      &.shop {
+        a {
+          border: 1px solid #2980b9;
+          border-radius: 3px;
+          margin-left: 15px; padding: 8px 15px;
+          color: #2980b9;
+          font-size: 0.95em;
+          text-decoration: none;
+
+          &:active {
+            box-shadow: 0;
+          }
+
+          &:hover {
+            background: #1B9CFC;
+            color: white;
+            border-color: transparent;
+          }
+        }
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 15px;
+        font-weight: lighter;
+        font-size: 0.95em;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #34495e;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #34495e;
+  padding: 50px;
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      color: white;
+      font-weight: 300;
+
+      h2 {
+        font-weight: 300;
+        margin: 20px 0;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+
+      li {
+        list-style: none;
+        margin: 10px;
+        font-size: 0.85em;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .coin-address {
+          color: #1B9CFC;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin: 30px;
+
+    .legal {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 10px;
+
+    .items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item {
+        min-width: 45vw;
+        margin: 40px inherit;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    &> div.title, &> div.menu, &> div.shop {
+      padding: 0; margin: 20px 0;
+    }
+  }
+
+  footer {
+    .items {
+      flex-direction: column-reverse;
+      .item {
+        text-align: center;
+
+        .coin-address {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.featured {
+  background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+  padding: 150px 50px 50px 50px;
+
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 4em;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: white;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    img.logo {
+      height: 30px;
+      filter: grayscale(100%) brightness(0%) invert(1);
+      margin: 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+section:not(.featured) {
+  padding: 30px;
+
+  &:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    //color: #1B9CFC;
+  }
+
+  .empty-message {
+    padding: 40px 0 20px 0;
+  }
+
+  .exp {
+    margin: 35px 0;
+    animation: show 0.4s ease;
+
+    p {
+      margin: 10px 0;
+
+      a {
+        color: rgba(0, 118, 223, 1);
+        background-color: rgba(0, 118, 223, 0.2);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .study {
+    margin: 35px 0;
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 20px 40px;
+    }
+  }
+
+  .skills {
+    $height: 110px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around; align-items: center;
+    margin: 20px 0;
+    height: $height + 60px;
+
+    .skill {
+      transition: height 0.5s, width 0.5s, line-height 0.5s, font-size 0.5s;
+      padding: 10px;
+      height: $height; width: $height;
+      line-height: $height;
+      border-radius: 50%;
+      font-family: 'Source Code Pro', monospace;
+      color: white;
+      text-align: center;
+
+      &:nth-child(even) {
+        background: linear-gradient(10deg, #5f27cd, #25CCF7);
+        align-self: flex-end;
+      }
+
+      &:nth-child(odd) {
+        background: linear-gradient(70deg, #1B9CFC, #25CCF7);
+        align-self: flex-start;
+      }
+
+      &:hover {
+        height: $height + 30; width: $height + 30;
+        line-height: $height + 30;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .other p {
+    margin: 20px 0;
+  }
+
+  .actions {
+    text-align: center;
+
+    .btn {
+      transition: background-color 0.4s, border 0.4s, color 0.4s;
+      border: 1px solid #2980b9;
+      border-radius: 3px;
+      margin: 15px; padding: 8px 15px;
+      color: #2980b9;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        background: #1B9CFC;
+        color: white;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section, .section {
+    padding: 10px;
+
+    &.featured {
+      padding: 150px 10px 50px 10px;
+    }
+
+    &:not(.featured) {
+      .skills .skill {
+        height: 95px; width: 95px;
+        line-height: 95px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section, .section {
+    padding: 10px;
+
+    &.featured {
+      padding: 40px 10px;
+
+      h2 {
+        font-size: 2em;
+      }
+
+      .infos {
+        flex-direction: column;
+        align-content: center;
+
+        div {
+          margin: 10px;
+        }
+      }
+    }
+
+    &:not(.featured) {
+      padding: 10px;
+
+      .exp {
+        h4 {
+          span:last-child {
+            text-align: right;
+          }
+        }
+      }
+
+      .skills {
+        flex-wrap: wrap;
+        height: 420px;
+
+        .skill:hover {
+          height: 95px; width: 95px;
+          line-height: 95px;
+          font-size: 1em;
+        }
+      }
+
+      p {
+        padding: 5px;
+      }
+    }
+  }
+}
