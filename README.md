@@ -1,4 +1,4 @@
-![Repo header image](https://repository-images.githubusercontent.com/189204408/ea286180-8cf2-11e9-9c88-ad7a2517c8f8)
+![Repo header image](https://repository-images.githubusercontent.com/217519248/74458700-5118-11ea-9d97-7563f10f9067)
 
 # @mindsersit/website
 
