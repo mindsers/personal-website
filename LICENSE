@@ -1,40 +1,4 @@
-![Repo header image](https://repository-images.githubusercontent.com/189204408/ea286180-8cf2-11e9-9c88-ad7a2517c8f8)
-
-# @mindsersit/website
-
-_"MindsersIT Web"_ is a portfolio and freelance showcase for nathanaelcherrier.com. This part of the site is based on [Angular](https://angular.com).
-
-This repo host the Angular application that powers nathanaelcherrier.com.
-
-## Getting started
-
-```bash
-yarn --pure-lockfile
-```
-
-As this is a localized application you need to specify the language when you start the project (even in development mode):
-
-```bash
-yarn start --configuration=en
-```
-
-Navigate to `http://localhost:4200/en/`. The app will automatically reload if you change any of the source files.
-
-### Production build
-
-A command helps you build the project targetting a production environment.
-
-```bash
-yarn build:i18n
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## License
-
-MIT License
-
-**Copyright (c) 2012 Nathanaël CHERRIER**
+Copyright (c) 2012 Nathanaël CHERRIER
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
