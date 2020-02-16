@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "home-nath": {
+      "i18n": {
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf",
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,6 +34,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -44,6 +57,15 @@
               ]
             },
             "fr": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+            "localize": [
+              "fr"
+            ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -59,14 +81,19 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputPath": "dist/fr/",
-              "i18nFile": "src/locale/messages.fr.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "fr",
-              "baseHref": "/fr/",
+              "outputPath": "dist",
               "i18nMissingTranslation": "error"
             },
             "en": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+            "localize": [
+              "en"
+            ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -82,11 +109,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputPath": "dist/en/",
-              "i18nFile": "src/locale/messages.en.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "en",
-              "baseHref": "/en/",
+              "outputPath": "dist",
               "i18nMissingTranslation": "error"
             }
           }
@@ -175,7 +198,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "style": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"
