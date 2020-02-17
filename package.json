@@ -6,15 +6,19 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+
+    "start": "yarn start:en",
+    "start:fr": "ng serve --configuration=production,fr",
+    "start:en": "ng serve --configuration=production,en",
 
     "build": "yarn build:prod",
     "build:prod": "ng build --prod",
     "build:dev": "yarn build --optimization=false --sourceMap=true --no-buildOptimizer --statsJson",
 
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "yarn test:lint && yarn test:unit && yarn test:e2e",
+    "test:unit": "ng test",
+    "test:lint": "ng lint",
+    "test:e2e": "ng e2e"
   },
   "dependencies": {
     "@angular/animations": "9.0.1",

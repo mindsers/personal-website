@@ -53,6 +53,14 @@
               }],
               "i18nMissingTranslation": "error",
               "localize": ["en", "fr"]
+            },
+            "fr": {
+              "localize": ["fr"],
+              "baseHref": "/fr/"
+            },
+            "en": {
+              "localize": ["en"],
+              "baseHref": "/en/"
             }
           }
         },
@@ -64,6 +72,12 @@
           "configurations": {
             "production": {
               "browserTarget": "mindsersit-website:build:production"
+            },
+            "fr": {
+              "browserTarget": "mindsersit-website:build:fr"
+            },
+            "en": {
+              "browserTarget": "mindsersit-website:build:en"
             }
           }
         },
