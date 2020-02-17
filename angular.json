@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "home-nath": {
+    "mindsersit-website": {
       "i18n": {
         "locales": {
           "fr": "src/locale/messages.fr.xlf",
@@ -34,12 +34,10 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
+              "budgets": [{
+                "type": "anyComponentStyle",
+                "maximumWarning": "6kb"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -49,92 +47,30 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
-            },
-            "fr": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-            "localize": [
-              "fr"
-            ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "outputPath": "dist",
-              "i18nMissingTranslation": "error"
-            },
-            "en": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-            "localize": [
-              "en"
-            ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "outputPath": "dist",
-              "i18nMissingTranslation": "error"
+              "fileReplacements": [{
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }],
+              "i18nMissingTranslation": "error",
+              "localize": ["en", "fr"]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "home-nath:build"
+            "browserTarget": "mindsersit-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "home-nath:build:production"
-            },
-            "fr": {
-              "browserTarget": "home-nath:build:fr"
-            },
-            "en": {
-              "browserTarget": "home-nath:build:en"
+              "browserTarget": "mindsersit-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "home-nath:build"
+            "browserTarget": "mindsersit-website:build"
           }
         },
         "test": {
@@ -168,7 +104,7 @@
         }
       }
     },
-    "home-nath-e2e": {
+    "mindsersit-website-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -177,7 +113,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "home-nath:serve"
+            "devServerTarget": "mindsersit-website:serve"
           }
         },
         "lint": {
@@ -194,7 +130,7 @@
       }
     }
   },
-  "defaultProject": "home-nath",
+  "defaultProject": "mindsersit-website",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
