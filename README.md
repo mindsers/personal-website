@@ -6,6 +6,12 @@ _"MindsersIT Website"_ is a portfolio and freelance showcase for [nathanaelcherr
 
 This repo host the Angular application that powers [nathanaelcherrier.com](https://nathanaelcherrier.com).
 
+All the repositories part of the MindsersIT project:
+
+- [@mindsersit/website](https://github.com/mindsers/mindsersit-website)
+- [@mindsersit/blog](https://github.com/mindsers/mindsersit-blog)
+- [@mindsersit/community](https://github.com/mindsers/mindsersit-community)
+
 ## Getting started
 
 ```bash
