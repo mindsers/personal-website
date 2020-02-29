@@ -15,17 +15,19 @@ yarn --pure-lockfile
 As this is a localized application you need to specify the language when you start the project (even in development mode):
 
 ```bash
-yarn start --configuration=en
+yarn start
 ```
 
 Navigate to `http://localhost:4200/en/`. The app will automatically reload if you change any of the source files.
+
+To load different language you have to specify it like `yarn start:fr`. You can then access to the website at `http://localhost:4200/fr/`. Available languages are listed in the `package.json`.
 
 ### Production build
 
 A command helps you build the project targetting a production environment.
 
 ```bash
-yarn build:i18n
+yarn build
 ```
 
 The build artifacts will be stored in the `dist/` directory.
