@@ -21,8 +21,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install
       run: yarn install --purelock-file
-    - name: Test
-      run: yarn test --sourceMap=false --browsers=ChromeHeadless --watch=false
+    - name: Run lint tests
+      run: yarn test:lint
+      env:
+        CI: true
+    - name: Run unit tests
+      run: yarn test:unit --sourceMap=false --browsers=ChromeHeadless --watch=false
       env:
         CI: true
 
