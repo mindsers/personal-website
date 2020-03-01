@@ -1,1 +1,6 @@
-/* /index.html 200
+/                                           /fr/                                    302         Language=fr
+/                                           /en/                                    302         Language=en
+/                                           /fr/                                    302
+
+/en/*                                       /en/index.html                          200
+/fr/*                                       /fr/index.html                          200
