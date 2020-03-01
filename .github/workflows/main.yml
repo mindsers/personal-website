@@ -22,7 +22,7 @@ jobs:
     - name: Install
       run: yarn install --purelock-file
     - name: Test
-      run: yarn test
+      run: yarn test --sourceMap=false --browsers=ChromeHeadless --watch=false
       env:
         CI: true
 
