@@ -1,11 +1,9 @@
 import {
   Injectable,
   Type,
-  ViewContainerRef,
   ComponentFactoryResolver,
   OnDestroy,
   Injector,
-  InjectionToken
 } from '@angular/core'
 
 import { BehaviorSubject, AsyncSubject } from 'rxjs'
