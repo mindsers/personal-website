@@ -7,11 +7,10 @@
     <div class="menu">
       <nav>
         <ul>
-          <li><a [href]="blogURL" i18n>Blog</a></li>
-          <li><a [routerLink]="['/', 'resume']" i18n>Resume</a></li>
+          <li><a [href]="blogURL" i18n="@@header.blog">Blog</a></li>
+          <li><a [routerLink]="['/', 'resume']" i18n="@@header.resume">Resume</a></li>
           <li><a href="https://community.nathanaelcherrier.com" i18n="@@header.forum">Forum</a></li>
-          <li *ngIf="false"><a i18n>Portfolio</a></li>
-          <li (click)="handleOnContactButtonClick()" i18n>Contact</li>
+          <li *ngIf="false"><a i18n="@@header.portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </div>
