@@ -136,7 +136,7 @@
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="013acfd8797bf5ade4a15c71fa24178f913c4cae" datatype="html">
+      <trans-unit id="header.blog" datatype="html">
         <source>Blog</source>
         <target>Blog</target>
         <context-group purpose="location">
@@ -144,7 +144,7 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4cd979821c89535df23df1c8ac8f260673610d90" datatype="html">
+      <trans-unit id="header.resume" datatype="html">
         <source>Resume</source>
         <target>Resume</target>
         <context-group purpose="location">
@@ -160,7 +160,7 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="323af13292ecc714ab3848b9dff48f923893be32" datatype="html">
+      <trans-unit id="header.portfolio" datatype="html">
         <source>Portfolio</source>
         <target>Portfolio</target>
         <context-group purpose="location">
@@ -168,7 +168,7 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="34746fb1c7f3d2194d99652bdff89e6e14c9c4f4" datatype="html">
+      <trans-unit id="header.contact" datatype="html">
         <source>Contact</source>
         <target>Contact</target>
         <context-group purpose="location">
@@ -192,7 +192,7 @@
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="fbebe9748ec982e2ed26dc72aed331385bc7d552" datatype="html">
+      <trans-unit id="footer.open-source.title" datatype="html">
         <source>Open Sources</source>
         <target>Open Sources</target>
         <context-group purpose="location">
@@ -200,7 +200,7 @@
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4be06a67a260eb987672b61be425914f5f451369" datatype="html">
+      <trans-unit id="footer.social.title" datatype="html">
         <source>Social</source>
         <target>Social</target>
         <context-group purpose="location">
@@ -212,7 +212,7 @@
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="b5629d298ff1a69b8db19a4ba2995c76b52da604" datatype="html">
+      <trans-unit id="footer.support.title" datatype="html">
         <source>Support</source>
         <target>Support</target>
         <context-group purpose="location">

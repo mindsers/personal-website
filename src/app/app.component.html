@@ -7,15 +7,15 @@
     <div class="menu">
       <nav>
         <ul>
-          <li><a [href]="blogURL" i18n="@@header.blog">Blog</a></li>
-          <li><a [routerLink]="['/', 'resume']" i18n="@@header.resume">Resume</a></li>
-          <li><a href="https://community.nathanaelcherrier.com" i18n="@@header.forum">Forum</a></li>
-          <li *ngIf="false"><a i18n="@@header.portfolio">Portfolio</a></li>
+          <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog</a></li>
+          <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume in the header">Resume</a></li>
+          <li><a href="https://community.nathanaelcherrier.com" i18n="forum link|A link to the forum">Forum</a></li>
+          <li *ngIf="false"><a i18n="portfolio link|A link to the portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </div>
     <div class="shop" *ngIf="false">
-      <a routerLink="/" i18n>Shop</a>
+      <a routerLink="/" i18n="shop link|A link to the MindsersIT shop">Shop</a>
     </div>
   </div>
 </header>
@@ -24,7 +24,7 @@
   <div class="content">
     <div class="items">
       <div class="item">
-        <h2 i18n>Open Sources</h2>
+        <h2 i18n="opensource section title|The title of a footer section about Open Source projects">Open Sources</h2>
         <ul>
           <li><a href="https://github.com/mindsers/configfile" rel="nofollow">Configfile</a></li>
           <li><a href="https://github.com/mindsers/yabf" rel="nofollow">Yabf</a></li>
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div class="item">
-        <h2 i18n>Social</h2>
+        <h2 i18n="social section title|The title of a footer section about social media links">Social</h2>
         <ul>
           <li><a href="https://www.instagram.com/mindsers.it/" rel="nofollow">Instagram</a></li>
           <li><a href="https://twitter.com/MindsersIT" rel="nofollow">Twitter</a></li>
@@ -41,7 +41,7 @@
         </ul>
       </div>
       <div class="item">
-        <h2 i18n>Support</h2>
+        <h2 i18n="support section title|The title of a footer section about contribution">Support</h2>
         <ul>
           <li>Bitcoin: <span class="coin-address">3N7iAYWKz5rqdtbYJ4r1SRJHq9sEQbXHDk</span></li>
           <li>Ethereum: <span class="coin-address">0x30B42B1487262fE55aD8CDF046342AB6bF4d4e73</span></li>
@@ -49,8 +49,15 @@
           <li>Litecoin: <span class="coin-address">MU47RMv5KGHiBU8Kw5PNPbn3cyFLjmQXPt</span></li>
         </ul>
       </div>
+      <div class="item">
+        <h2 i18n="useful links section title| The title of a footer section full of useful links">More links</h2>
+        <ul>
+          <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume">Resume</a></li>
+          <li><a href="#" (click)="handleOnContactButtonClick()" i18n="contact link|A link to a contact form">Contact me</a></li>
+        </ul>
+      </div>
     </div>
-    <p class="copyright" i18n="@@site.copyright">
+    <p class="copyright" i18n="site copyright|A legal copyright message at the bottom of the footer">
         ©2014 Nathanaël Cherrier. All rights reserved.
         <br>
         <a class="legal" [href]="['legal']">Legal notices</a>
