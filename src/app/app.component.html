@@ -24,6 +24,15 @@
   <div class="content">
     <div class="items">
       <div class="item">
+        <h2 i18n="useful links section title| The title of a footer section full of useful links">More links</h2>
+        <ul>
+          <li><a href="https://community.nathanaelcherrier.com" i18n="forum link|A link to the forum">Forum</a></li>
+          <li><a href="https://discord.gg/WrHUfSC" i18n="discord link|A link to the discord server">Discord</a></li>
+          <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume">Resume</a></li>
+          <li><a href="#" (click)="handleOnContactButtonClick()" i18n="contact link|A link to a contact form">Contact me</a></li>
+        </ul>
+      </div>
+      <div class="item">
         <h2 i18n="opensource section title|The title of a footer section about Open Source projects">Open Sources</h2>
         <ul>
           <li><a href="https://github.com/mindsers/changelog-reader-action" rel="nofollow">Changelog Reader</a></li>
@@ -51,13 +60,6 @@
           <li>Ethereum: <span class="coin-address">0x30B42B1487262fE55aD8CDF046342AB6bF4d4e73</span></li>
           <li>Ripple: <span class="coin-address">rUwDYme9YMzNo8ufvgKE7VET1QgbKgJuGT</span></li>
           <li>Litecoin: <span class="coin-address">MU47RMv5KGHiBU8Kw5PNPbn3cyFLjmQXPt</span></li>
-        </ul>
-      </div>
-      <div class="item">
-        <h2 i18n="useful links section title| The title of a footer section full of useful links">More links</h2>
-        <ul>
-          <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume">Resume</a></li>
-          <li><a href="#" (click)="handleOnContactButtonClick()" i18n="contact link|A link to a contact form">Contact me</a></li>
         </ul>
       </div>
     </div>
