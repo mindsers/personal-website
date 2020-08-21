@@ -2,11 +2,37 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="e3665cd70790a5ef4cc7e0e254008d990bb7d09b" datatype="html">
+        <source>
+      This is the default popin. You might have forgotten to customize your popin.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/popin/simple-popin.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Fallback message of the popin</note>
+      </trans-unit>
+      <trans-unit id="725111e94826895e2c68072701a3db6132c9ce52" datatype="html">
+        <source>An error occured when trying to send the message.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Contact form error message</note>
+      </trans-unit>
+      <trans-unit id="461c2bcda834e12c5465f5a108ee8fff00368182" datatype="html">
+        <source>Your message has been send.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Contact form success message</note>
+      </trans-unit>
       <trans-unit id="74697d73b94ed9da271a1c5a8c8610dcb8ee0082" datatype="html">
         <source>Leave me a message</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2850e5eca0d497839cb2014e876d12ae3472d612" datatype="html">
@@ -16,14 +42,14 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
         <source>Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">Name field label</note>
       </trans-unit>
@@ -33,7 +59,7 @@
           </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Name field error</note>
       </trans-unit>
@@ -41,7 +67,7 @@
         <source>Email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Email field label</note>
       </trans-unit>
@@ -51,7 +77,7 @@
           </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">Email field error: user didn&apos;t fill the field</note>
       </trans-unit>
@@ -61,7 +87,7 @@
           </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">Email field error: Invalid user input</note>
       </trans-unit>
@@ -69,7 +95,7 @@
         <source>Subject</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <note priority="1" from="description">Topic field label</note>
       </trans-unit>
@@ -79,7 +105,7 @@
           </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">Topic field error: empty field</note>
       </trans-unit>
@@ -87,7 +113,7 @@
         <source>Message</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">Message field label</note>
       </trans-unit>
@@ -97,7 +123,7 @@
           </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">Message field error: empty field</note>
       </trans-unit>
@@ -107,14 +133,14 @@
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2c5ff8fa9c9aaec93f97e37c9a0edcd797194573" datatype="html">
         <source>Send</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">52</context>
         </context-group>
         <note priority="1" from="description">The submit button of the contact form</note>
       </trans-unit>
@@ -206,15 +232,6 @@
         </context-group>
         <note priority="1" from="description">The title of a footer section full of useful links</note>
         <note priority="1" from="meaning">useful links section title</note>
-      </trans-unit>
-      <trans-unit id="ca145090a6b3382f84d38208a335f9a0df003176" datatype="html">
-        <source>Discord</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">37</context>
-        </context-group>
-        <note priority="1" from="description">A link to the discord server</note>
-        <note priority="1" from="meaning">discord link</note>
       </trans-unit>
       <trans-unit id="02e550b9ddff6fa4ec353aac01bb117bec35cd23" datatype="html">
         <source>Contact me</source>
@@ -534,6 +551,24 @@
           <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2e107c93811a645197836a3028c31f86cedd9054" datatype="html">
+        <source>
+          Oups! It seems like we didn&apos;t find what you want.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/errors/page-not-found.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="807e142b4b0d7fca1f2f23220487a370ed863638" datatype="html">
+        <source>
+          An unknown error occured. Sorry for trouble.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/errors/unknown-error.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="support-page.title" datatype="html">
         <source>Support my work</source>
         <context-group purpose="location">
@@ -661,8 +696,8 @@
         <note priority="1" from="description">The introduction paragraph about Patreon</note>
         <note priority="1" from="meaning">Patreon description</note>
       </trans-unit>
-      <trans-unit id="e83d16fe2b4c2482eefa54590dab98832815eeb8" datatype="html">
-        <source>Donate with Patreon</source>
+      <trans-unit id="bb02f2de7d69d4aa0e61d22b7a4fb532db9a8595" datatype="html">
+        <source>Donate with Patreon and get rewards</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/support/support.component.html</context>
           <context context-type="linenumber">63</context>
@@ -699,8 +734,8 @@
         <note priority="1" from="description">The description paragraph for one-shot payments</note>
         <note priority="1" from="meaning">One-shot payment description</note>
       </trans-unit>
-      <trans-unit id="3be63f87d4c656d4ccf44d5c399f48384a6ca0a2" datatype="html">
-        <source>Donate with PayPal</source>
+      <trans-unit id="ecdf9ba598ceccac467c5f4c34447429203b4f90" datatype="html">
+        <source>Donate with Paypal or by credit card</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/support/support.component.html</context>
           <context context-type="linenumber">79</context>

@@ -1,8 +1,9 @@
 <div class="contact">
   <div class="flash">
-    <div class="message" *ngFor="let message of flashMessages" [ngClass]="{ error: message.type === 'error', success: message.type === 'success' }">
-      {{ message.text }}
-    </div>
+    <ng-container *ngFor="let message of flashMessages">
+      <div class="message error" *ngIf="message.type === 'error'" i18n="Contact form error message">An error occured when trying to send the message.</div>
+      <div class="message error" *ngIf="message.type === 'success'" i18n="Contact form success message">Your message has been send.</div>
+    </ng-container>
   </div>
   <div class="contact-body">
     <div class="text">
