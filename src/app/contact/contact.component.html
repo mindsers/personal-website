@@ -15,31 +15,31 @@
     <div class="form">
       <form #contactForm="ngForm" novalidate>
         <div [class.error-field]="name.invalid && name.touched">
-          <input #name="ngModel" type="text" name="name" placeholder="Name" i18n-placeholder ngModel required>
-          <div class="error" *ngIf="name.invalid && name.touched" i18n>
+          <input #name="ngModel" type="text" name="name" placeholder="Name" i18n-placeholder="Name field label" ngModel required>
+          <div class="error" *ngIf="name.invalid && name.touched" i18n="Name field error">
             Your name is required.
           </div>
         </div>
         <div [class.error-field]="email.invalid && email.touched">
           <input #email="ngModel" ngModel
-            type="email" name="email" placeholder="Email" i18n-placeholder
+            type="email" name="email" placeholder="Email" i18n-placeholder="Email field label"
             matchEmail required>
-          <div class="error" *ngIf="email.invalid && email.touched && email.hasError('required')" i18n>
+          <div class="error" *ngIf="email.invalid && email.touched && email.hasError('required')" i18n="Email field error: user didn't fill the field">
             Your email is required.
           </div>
-          <div class="error" *ngIf="email.invalid && email.touched && email.hasError('matchEmail') && !email.hasError('required')" i18n>
+          <div class="error" *ngIf="email.invalid && email.touched && email.hasError('matchEmail') && !email.hasError('required')" i18n="Email field error: Invalid user input">
             You need to enter a valid address email.
           </div>
         </div>
         <div [class.error-field]="subject.invalid && subject.touched">
-          <input #subject="ngModel" type="text" name="subject" placeholder="Subject" i18n-placeholder ngModel required>
-          <div class="error" *ngIf="subject.invalid && subject.touched" i18n>
+          <input #subject="ngModel" type="text" name="subject" placeholder="Subject" i18n-placeholder="Topic field label" ngModel required>
+          <div class="error" *ngIf="subject.invalid && subject.touched" i18n="Topic field error: empty field">
             The subject of your message is required.
           </div>
         </div>
         <div [class.error-field]="msg.invalid && msg.touched">
-          <textarea #msg="ngModel" name="message" placeholder="Message" i18n-placeholder cols="30" rows="10" ngModel required></textarea>
-          <div class="error" *ngIf="msg.invalid && msg.touched" i18n>
+          <textarea #msg="ngModel" name="message" placeholder="Message" i18n-placeholder="Message field label" cols="30" rows="10" ngModel required></textarea>
+          <div class="error" *ngIf="msg.invalid && msg.touched" i18n="Message field error: empty field">
             Your message is required.
           </div>
         </div>
@@ -48,7 +48,7 @@
         </p>
         <div class="actions">
           <!-- TODO: Use (ngSubmit) instead of (click). The solution need to work inside a popin -->
-          <input type="submit" value="Send" i18n-value [disabled]="contactForm.invalid" (click)="handleSubmit(contactForm)">
+          <input type="submit" value="Send" i18n-value="The submit button of the contact form" [disabled]="contactForm.invalid" (click)="handleSubmit(contactForm)">
         </div>
       </form>
     </div>

@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "yarn start:en",
-    "start:fr": "ng serve --configuration=production,fr",
-    "start:en": "ng serve --configuration=production,en",
+    "start": "ng serve --configuration=development",
+    "start:fr": "ng serve --configuration=development,fr",
+    "start:en": "ng serve --configuration=development,en",
     "build": "yarn build:prod",
     "build:prod": "ng build --prod",
     "build:dev": "yarn build --optimization=false --sourceMap=true --no-buildOptimizer --statsJson",

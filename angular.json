@@ -14,9 +14,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
+        "sourceLocale": "en",
         "locales": {
-          "fr": "src/locale/messages.fr.xlf",
-          "en": "src/locale/messages.en.xlf"
+          "fr": "src/locale/messages.fr.xlf"
         }
       },
       "architect": {
@@ -41,7 +41,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "localize": true
           },
           "configurations": {
             "production": {
@@ -71,8 +72,18 @@
                 "maximumError": "10kb"
               }
             ],
-              "i18nMissingTranslation": "error",
-              "localize": ["en", "fr"]
+              "i18nMissingTranslation": "error"
+            },
+            "development": {
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": false,
+              "aot": true,
+              "extractLicenses": false,
+              "vendorChunk": false,
+              "buildOptimizer": false,
+              "localize": false
             },
             "fr": {
               "localize": ["fr"],
@@ -90,8 +101,8 @@
             "browserTarget": "mindsersit-website:build"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "mindsersit-website:build:production"
+            "development": {
+              "browserTarget": "mindsersit-website:build:development"
             },
             "fr": {
               "browserTarget": "mindsersit-website:build:fr"

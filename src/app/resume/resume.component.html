@@ -1,6 +1,6 @@
 <section class="featured">
   <div class="content">
-    <h2 i18n>Lead JavaScript and<br>iOS developer</h2>
+    <h2 i18n="Job title|Resume title">Lead JavaScript and<br>iOS developer</h2>
     <div class="infos">
       <div>
         <h3 i18n="Contact information|Title of the contact informations section">Contact</h3>
@@ -11,7 +11,7 @@
         </p>
       </div>
       <div>
-        <h3 i18n>Social</h3>
+        <h3 i18n="Social section title">Social</h3>
         <p>
           <a href="https://www.facebook.com/MindsersIT" rel="nofollow"><img class="logo" src="assets/img/facebook.svg" alt="Facebook logo"></a>
           <a href="https://twitter.com/MindsersIT" rel="nofollow"><img class="logo" src="assets/img/twitter.svg" alt="Twitter logo"></a>
@@ -24,11 +24,11 @@
 </section>
 <section>
   <div class="content">
-      <h3 i18n>My professional experiences</h3>
+      <h3 i18n="Title of the professional experiences section">My professional experiences</h3>
       <div class="exp" *ngFor="let exp of displayedExperiences">
         <h4>
           <span>{{ exp.title }}</span>
-          <span i18n>
+          <span i18n="The time spent in the company">
             <ng-container *ngIf="!exp.duration.end">since</ng-container>
             {{ exp.duration.start }}
             {{ exp.duration.end ? '- ' + exp.duration.end : '' }}</span>
@@ -40,18 +40,18 @@
         </p>
       </div>
       <div class="empty-message" *ngIf="displayedExperiences.length < 1">
-        <p i18n>
+        <p i18n="Experience list's fallback text">
           No experiences to show. Maybe webservices don't work as exepected.
         </p>
       </div>
       <p class="actions">
-        <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)" i18n><ng-container *ngIf="displayedExperiences.length <= 3">More</ng-container><ng-container *ngIf="displayedExperiences.length > 3">Less</ng-container> experiences</a>
+        <a class="btn" *ngIf="displayedExperiences.length >= 3" (click)="toogleExperiences(3)" i18n="Button to toggle the experiences list"><ng-container *ngIf="displayedExperiences.length <= 3">More</ng-container><ng-container *ngIf="displayedExperiences.length > 3">Less</ng-container> experiences</a>
       </p>
   </div>
 </section>
 <section>
   <div class="content">
-      <h3 i18n>My studies</h3>
+      <h3 i18n="Title of the studies section">My studies</h3>
       <div class="study" *ngFor="let study of displayedStudies">
         <h4><span>{{ study.graduation }}</span><span>{{ study.duration.start }} - {{ study.duration.end }}</span></h4>
         <p i18n="Graduation sender|For example: From Lycée Blabla at Lyon">From {{ study.school }} at {{ study.location }}</p>
@@ -60,7 +60,7 @@
         </ul>
       </div>
       <div class="empty-message" *ngIf="displayedExperiences.length < 1">
-        <p i18n>
+        <p i18n="Studies list's fallback text">
           No study informations to show. Maybe webservices don't work as exepected.
         </p>
       </div>
@@ -68,14 +68,14 @@
 </section>
 <section>
   <div class="content">
-      <h3 i18n>My skills</h3>
+      <h3 i18n="Title of the skills section">My skills</h3>
       <div class="skills" *ngIf="displayedSkills.length > 0">
         <div class="skill" *ngFor="let skill of displayedSkills">
           {{ skill }}
         </div>
       </div>
       <div class="empty-message" *ngIf="displayedSkills.length < 1">
-        <p i18n>
+        <p i18n="Skills list's fallback text">
           No skill to show. Maybe webservices don't work as exepected.
         </p>
       </div>
@@ -83,7 +83,7 @@
 </section>
 <section>
   <div class="content">
-    <h3 i18n>Other details you may want to know</h3>
+    <h3 i18n="Title of the other section">Other details you may want to know</h3>
     <div class="other">
       <p i18n>
           My second passion, right after development, is science. Especially stars' science ( astrophysics and cosmology) and life sciences (biology).
