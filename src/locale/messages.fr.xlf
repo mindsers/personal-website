@@ -82,7 +82,7 @@
       </trans-unit>
       <trans-unit datatype="html" id="244aae9346da82b0922506c2d2581373a15641cc">
         <source>Email</source>
-        <target>Email</target>
+        <target>Adresse mail</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">26</context>
