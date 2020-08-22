@@ -1,12 +1,14 @@
 import { Component, Inject, OnInit } from '@angular/core'
 
 import { POPIN_VIEWREF, POPIN_DATA } from './popin'
-import { RuntimeTranslationService } from '../translator/translator.service'
 
 @Component({
   template: `
   <p>
     {{ message }}
+    <ng-container *ngIf="message == null || message.length < 1" i18n="Fallback message of the popin">
+      This is the default popin. You might have forgotten to customize your popin.
+    </ng-container>
   </p>
   <p class="actions">
     <a *ngFor="let action of actions" class="btn" (click)="handleClick(action.value)">{{ action.label }}</a>
@@ -20,13 +22,12 @@ export class SimplePopinComponent implements OnInit {
 
   constructor(
     @Inject(POPIN_VIEWREF) private popinRef,
-    @Inject(POPIN_DATA) private data: SimplePopinData = {},
-    private translator: RuntimeTranslationService
+    @Inject(POPIN_DATA) private data: SimplePopinData = {}
   ) {}
 
   ngOnInit() {
     const {
-      message = this.translator.translate('popin.default-message'),
+      message = null,
       actions = [
         { label: 'OK', value: null }
       ]
