@@ -31,12 +31,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "_redirects",
-                "input": "src",
-                "output": "../"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -50,6 +45,15 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "_redirects",
+                  "input": "src",
+                  "output": "../"
                 }
               ],
               "optimization": true,
