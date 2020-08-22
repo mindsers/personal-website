@@ -53,7 +53,7 @@
                 {
                   "glob": "_redirects",
                   "input": "src",
-                  "output": "../"
+                  "output": "./../"
                 }
               ],
               "optimization": true,
