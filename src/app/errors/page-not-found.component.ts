@@ -1,7 +1,4 @@
-import { Component, OnInit } from '@angular/core'
-
-import { ErrorComponent } from './error-component'
-import { RuntimeTranslationService } from '../shared/translator/translator.service'
+import { Component } from '@angular/core'
 
 @Component({
   template: `
