@@ -1,0 +1,1091 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="plaintext" original="ng2.template" source-language="en" target-language="fr">
+    <body>
+      <trans-unit datatype="html" id="e3665cd70790a5ef4cc7e0e254008d990bb7d09b">
+        <source>
+      This is the default popin. You might have forgotten to customize your popin.
+    </source>
+        <target>Ceci est la popin par défaut. Vous avez peut-être oublié de paramétrer votre popin.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/popin/simple-popin.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note from="description" priority="1">Fallback message of the popin</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="6859128858106983687">
+        <source>
+          An error occured. We are unable to open the resume.
+        </source>
+        <target>Il y a eu une erreur. Nous ne somme pas capable d'ouvrir le CV.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note from="description" priority="1">Error message when trying to download the PDF resume</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="725111e94826895e2c68072701a3db6132c9ce52">
+        <source>An error occured when trying to send the message.</source>
+        <target>An error occured when trying to send the message.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note from="description" priority="1">Contact form error message</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="461c2bcda834e12c5465f5a108ee8fff00368182">
+        <source>Your message has been send.</source>
+        <target>Your message has been send.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note from="description" priority="1">Contact form success message</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="74697d73b94ed9da271a1c5a8c8610dcb8ee0082">
+        <source>Leave me a message</source>
+        <target>Leave me a message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="2850e5eca0d497839cb2014e876d12ae3472d612">
+        <source>
+        If you want to send me a message, an offer or a partnership, <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+        please use this form.
+      </source>
+        <target>
+        If you want to send me a message, an offer or a partnership, <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+        please use this form.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="cff1428d10d59d14e45edec3c735a27b5482db59">
+        <source>Name</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note from="description" priority="1">Name field label</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="87b0c89239f8959f4af963f3e90395743a8e0af1">
+        <source>
+            Your name is required.
+          </source>
+        <target>
+            Your name is required.
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note from="description" priority="1">Name field error</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="244aae9346da82b0922506c2d2581373a15641cc">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note from="description" priority="1">Email field label</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="cd3fca988938404456abfe1d20917d2697b5d07d">
+        <source>
+            Your email is required.
+          </source>
+        <target>
+            Your email is required.
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note from="description" priority="1">Email field error: user didn't fill the field</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="840ffab9ea1886589e3512f46f0e91ee0b3e4bb3">
+        <source>
+            You need to enter a valid address email.
+          </source>
+        <target>
+            You need to enter a valid address email.
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note from="description" priority="1">Email field error: Invalid user input</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="4b0ca852bafa5037c4e64c7b18f9cd1e14b799de">
+        <source>Subject</source>
+        <target>Subject</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note from="description" priority="1">Topic field label</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="65304ffff0c20d185bf87a809ea652ded93ba35d">
+        <source>
+            The subject of your message is required.
+          </source>
+        <target>
+            The subject of your message is required.
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note from="description" priority="1">Topic field error: empty field</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="ccac601bf473fa28c9ac46794f1cd40542f74347">
+        <source>Message</source>
+        <target>Message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note from="description" priority="1">Message field label</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="97f5708ffe2f5424b17bafd562b08617f343b1ae">
+        <source>
+            Your message is required.
+          </source>
+        <target>
+            Your message is required.
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note from="description" priority="1">Message field error: empty field</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="fe8e5b3bc1d11fdd6c960fbc0903c3ce4423ee4f">
+        <source>
+          <x ctype="x-span" equiv-text="&lt;span&gt;" id="START_TAG_SPAN"/>*<x ctype="x-span" equiv-text="&lt;/span&gt;" id="CLOSE_TAG_SPAN"/> All fields are required.
+        </source>
+        <target>
+          <x ctype="x-span" equiv-text="&lt;span&gt;" id="START_TAG_SPAN"/>*<x ctype="x-span" equiv-text="&lt;/span&gt;" id="CLOSE_TAG_SPAN"/> All fields are required.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="2c5ff8fa9c9aaec93f97e37c9a0edcd797194573">
+        <source>Send</source>
+        <target>Send</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note from="description" priority="1">The submit button of the contact form</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="c3ab9aa95a631ef63fa49287a1e4478ca86c330f">
+        <source>Blog</source>
+        <target>Blog</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note from="description" priority="1">A link to the blog in the </note>
+        <note from="meaning" priority="1">blog link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="7ede687eb28b95530ae9b19b6ab5427d6a78a73d">
+        <source>Blog 1</source>
+        <target>Blog 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note from="description" priority="1">A link to the blog in the </note>
+        <note from="meaning" priority="1">blog link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="387c395f017387274ccb40797f1d8a5b93185c83">
+        <source>Blog 2</source>
+        <target>Blog 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note from="description" priority="1">A link to the blog in the </note>
+        <note from="meaning" priority="1">blog link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="a58ef1087c16f0eb577ab9e3d17a14f47f77b613">
+        <source>Blog 3</source>
+        <target>Blog 3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note from="description" priority="1">A link to the blog in the </note>
+        <note from="meaning" priority="1">blog link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="3de24f99d086736e5fc57853e79ae1a8c37aca5b">
+        <source>Resume</source>
+        <target>Resume</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note from="description" priority="1">A link to my resume in the header</note>
+        <note from="meaning" priority="1">resume link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="60dcac457fe17f189840a80f8269174339ee066a">
+        <source>Forum</source>
+        <target>Forum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note from="description" priority="1">A link to the forum</note>
+        <note from="meaning" priority="1">forum link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="5aeda0e18a6826909337c1a505c8c2c4addc10d0">
+        <source>Portfolio</source>
+        <target>Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note from="description" priority="1">A link to the portfolio</note>
+        <note from="meaning" priority="1">portfolio link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="f44b6f5636e1a28495b46a60c63558d0b872d4fd">
+        <source>Shop</source>
+        <target>Shop</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note from="description" priority="1">A link to the MindsersIT shop</note>
+        <note from="meaning" priority="1">shop link</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="5bde791b03a90ac93b463a545f5a6c01de7bfc4a">
+        <source>More links</source>
+        <target>More links</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note from="description" priority="1">The title of a footer section full of useful links</note>
+        <note from="meaning" priority="1">useful links section title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="02e550b9ddff6fa4ec353aac01bb117bec35cd23">
+        <source>Contact me</source>
+        <target>Contact me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note from="description" priority="1">A link to a contact form</note>
+        <note from="meaning" priority="1">contact action</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="2d1dcad5c45a728633a94b131338910df2a8f1ea">
+        <source>Open Sources</source>
+        <target>Open Sources</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note from="description" priority="1">The title of a footer section about Open Source projects</note>
+        <note from="meaning" priority="1">opensource section title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="ee80e644ea12f861d7fd16c744dc9192b2a3a56b">
+        <source>Social</source>
+        <target>Social</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note from="description" priority="1">The title of a footer section about social media links</note>
+        <note from="meaning" priority="1">social section title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="a1906fed992bb64b4310a34925268b00e647b96d">
+        <source>Support</source>
+        <target>Support</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note from="description" priority="1">The title of a footer section about contribution</note>
+        <note from="meaning" priority="1">support section title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="c556d1d653e028867eae80f896deaf07b061463d">
+        <source>
+        ©2014 Nathanaël Cherrier. All rights reserved.
+        <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+        <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Legal notices<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>
+      </source>
+        <target>
+        ©2014 Nathanaël Cherrier. All rights reserved.
+        <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+        <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Legal notices<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note from="description" priority="1">A legal copyright message at the bottom of the footer</note>
+        <note from="meaning" priority="1">site copyright</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="b8254458ac3800a7bd4afcec837ac272d3b4a364">
+        <source>Lead JavaScript and<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>iOS developer</source>
+        <target>Lead JavaScript and<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>iOS developer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note from="description" priority="1">Resume title</note>
+        <note from="meaning" priority="1">Job title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="71944ae0974a31dd99972d6afdfe780c6955f25e">
+        <source>Contact</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note from="description" priority="1">Title of the contact informations section</note>
+        <note from="meaning" priority="1">Contact information</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="4be06a67a260eb987672b61be425914f5f451369">
+        <source>Social</source>
+        <target>Social</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note from="description" priority="1">Social section title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="b371bab56902d39135dcdd9fbe8398a4b4e1ca4a">
+        <source>My professional experiences</source>
+        <target>My professional experiences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note from="description" priority="1">Title of the professional experiences section</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="0cc5b7bf471ebc998fd025610fed7119eb895355">
+        <source>
+            <x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/>since<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/>
+            <x equiv-text="{{ exp.duration.start }}" id="INTERPOLATION"/>
+            <x equiv-text="{{ exp.duration.end ? '- ' + exp.duration.end : '' }}" id="INTERPOLATION_1"/></source>
+        <target>
+            <x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/>since<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/>
+            <x equiv-text="{{ exp.duration.start }}" id="INTERPOLATION"/>
+            <x equiv-text="{{ exp.duration.end ? '- ' + exp.duration.end : '' }}" id="INTERPOLATION_1"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note from="description" priority="1">The time spent in the company</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="1a642999c5ba55f04d312fde74784134a4083a45">
+        <source>
+          For <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/><x equiv-text="{{ exp.company }}" id="INTERPOLATION"/><x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> <x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/><x equiv-text="{{ exp.company }}" id="INTERPOLATION"/><x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/>
+          at <x equiv-text="{{ exp.location }}" id="INTERPOLATION_1"/>
+        </source>
+        <target>
+          For <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/><x equiv-text="{{ exp.company }}" id="INTERPOLATION"/><x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> <x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/><x equiv-text="{{ exp.company }}" id="INTERPOLATION"/><x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/>
+          at <x equiv-text="{{ exp.location }}" id="INTERPOLATION_1"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note from="description" priority="1">For example: For Econocom at Lyon</note>
+        <note from="meaning" priority="1">Experience location</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="7e05e5c85ce6d2975ffd26bd63d09a0bdd350992">
+        <source>
+          No experiences to show. Maybe webservices don't work as exepected.
+        </source>
+        <target>
+          No experiences to show. Maybe webservices don't work as exepected.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note from="description" priority="1">Experience list's fallback text</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="9446f05fd7acd868d9d01b8ff1e796b04b5e5b06">
+        <source><x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/>More<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/><x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER_1"/>Less<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/> experiences</source>
+        <target><x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER"/>More<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/><x ctype="x-ng-container" equiv-text="&lt;ng-container&gt;" id="START_TAG_NG-CONTAINER_1"/>Less<x ctype="x-ng-container" equiv-text="&lt;/ng-container&gt;" id="CLOSE_TAG_NG-CONTAINER"/> experiences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note from="description" priority="1">Button to toggle the experiences list</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="4f62ee924174b9ea68e65c27f69966e9ec3540be">
+        <source>My studies</source>
+        <target>My studies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note from="description" priority="1">Title of the studies section</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="d041fb1d4e784ce1c6ae1cb136e54582f7f209c8">
+        <source>From <x equiv-text="{{ study.school }}" id="INTERPOLATION"/> at <x equiv-text="{{ study.location }}" id="INTERPOLATION_1"/></source>
+        <target>From <x equiv-text="{{ study.school }}" id="INTERPOLATION"/> at <x equiv-text="{{ study.location }}" id="INTERPOLATION_1"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note from="description" priority="1">For example: From Lycée Blabla at Lyon</note>
+        <note from="meaning" priority="1">Graduation sender</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="c702e6a38948098d3ba6d86bfc724d127bd27256">
+        <source>
+          No study informations to show. Maybe webservices don't work as exepected.
+        </source>
+        <target>
+          No study informations to show. Maybe webservices don't work as exepected.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note from="description" priority="1">Studies list's fallback text</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="7173bd8c172b95170a8cf3a6f60ba553e82dcb6b">
+        <source>My skills</source>
+        <target>My skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note from="description" priority="1">Title of the skills section</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="8d417d019745d1c4426f4461a1cd10c2df469893">
+        <source>
+          No skill to show. Maybe webservices don't work as exepected.
+        </source>
+        <target>
+          No skill to show. Maybe webservices don't work as exepected.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note from="description" priority="1">Skills list's fallback text</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="77b934afa5fa25649e137d44f77a9a51b96cd4b6">
+        <source>Other details you may want to know</source>
+        <target>Other details you may want to know</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note from="description" priority="1">Title of the other section</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="b754c52ff5414e97a3a4a5ce42084e14415683f0">
+        <source>
+          My second passion, right after development, is science. Especially stars' science ( astrophysics and cosmology) and life sciences (biology).
+      </source>
+        <target>
+          My second passion, right after development, is science. Especially stars' science ( astrophysics and cosmology) and life sciences (biology).
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="3b3adcfe439e74413806cf4687a6334e5db734fe">
+        <source>
+          If you mix these two passions, you get bio-informatics. I never tried it but it looks really appealing.
+      </source>
+        <target>
+          If you mix these two passions, you get bio-informatics. I never tried it but it looks really appealing.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="615896a2080aa7f311e5f7faf76382a91fc2ff0a">
+        <source>
+          Besides that, I really like swimming (but I don't practice it very much) and I write a few blog posts. I play the guitar and a little bit of piano when I feel like it.
+      </source>
+        <target>
+          Besides that, I really like swimming (but I don't practice it very much) and I write a few blog posts. I play the guitar and a little bit of piano when I feel like it.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="ea43383ccd82577114070f733a2cd38f928663ae">
+        <source>
+        The information on this web or PDF version of my resume are updated regularly but the PDF version is not exactly the same. For evident reasons, the PDF resume is shorter and less detailed than the web version, some information might not appear there.
+    </source>
+        <target>
+        The information on this web or PDF version of my resume are updated regularly but the PDF version is not exactly the same. For evident reasons, the PDF resume is shorter and less detailed than the web version, some information might not appear there.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="8099eaae17bbc9831ded0cf27b5061a9371f6d4d">
+        <source>Download the PDF version</source>
+        <target>Download the PDF version</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="e84b44ff8677b82bf83873caac486573f2488e23">
+        <source>
+      Hi, my name is <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>Nathanaël Cherrier<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
+      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+    </source>
+        <target>
+      Hi, my name is <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>Nathanaël Cherrier<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
+      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+      I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="e2dcf27db9c6a5e249960c576014aa40b3883360">
+        <source>Learn more</source>
+        <target>Learn more</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="a2c4de44aa1483fa2708ec34f74589ee234a10e6">
+        <source><x ctype="image" equiv-text="&lt;img/&gt;" id="TAG_IMG"/> <x equiv-text="{{ instagramFollowersCount || '4k+' }}" id="INTERPOLATION"/> followers</source>
+        <target><x ctype="image" equiv-text="&lt;img/&gt;" id="TAG_IMG"/> <x equiv-text="{{ instagramFollowersCount || '4k+' }}" id="INTERPOLATION"/> followers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="a83a1cf261bb244cdb1fb2123d3c145d75b38eb1">
+        <source>
+      I have an <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>instagram account<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> where I share my life as a developer.
+      My audience is international and I'll be glad to use it to help you reach out more people with your company!
+      I am willing to promote your products/brands if I like them and they suit my account guidelines.
+    </source>
+        <target>
+      I have an <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>instagram account<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> where I share my life as a developer.
+      My audience is international and I'll be glad to use it to help you reach out more people with your company!
+      I am willing to promote your products/brands if I like them and they suit my account guidelines.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="6614e0e88c23a15dd84608bdddea8cd1deb9bf21">
+        <source>
+      For detailed pricing, <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>please contact me<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>.
+    </source>
+        <target>
+      For detailed pricing, <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>please contact me<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="ccad8bd99e72afab08b4549eab7c381c45df95b7">
+        <source><x equiv-text="{{ postCount }}" id="INTERPOLATION"/> tech posts</source>
+        <target><x equiv-text="{{ postCount }}" id="INTERPOLATION"/> tech posts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note from="description" priority="1">Show how many tech post are written on the blog</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="c3a85082bf8bceb46f7655535fa4a008718d8899">
+        <source><x equiv-text="{{ ossProjectCount }}" id="INTERPOLATION"/> OSS maintained</source>
+        <target><x equiv-text="{{ ossProjectCount }}" id="INTERPOLATION"/> OSS maintained</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note from="description" priority="1">Show how many OSS project are maintained</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="d30e05adde06b32cd4768b97f3b4ea6f693f193b">
+        <source>
+      As a passionate developer, I pour my heart into giving back to open source.
+      I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+      I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+    </source>
+        <target>
+      As a passionate developer, I pour my heart into giving back to open source.
+      I learned most of what I know thanks to the open internet, so it feels normal for me to teach and help on the internet.
+      I use open source projects every single day so contributing to open source projects feels like a good way to show how grateful I am for everyone maintaining projects.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="1963d3868a784818113cdd8c646578ce84a95821">
+        <source>
+      Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I'm the maintainer of <x equiv-text="{{ ossProjectCount }}" id="INTERPOLATION"/> of them.
+    </source>
+        <target>
+      Currently, I write 1 to 2 posts a week in average, I contribute to several open source projects and I'm the maintainer of <x equiv-text="{{ ossProjectCount }}" id="INTERPOLATION"/> of them.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="b3b9f8b4453bec30206cb7e0ac0bb48aac0caa8a">
+        <source>
+      If you want to know how to support my projects, please click down below.
+    </source>
+        <target>
+      If you want to know how to support my projects, please click down below.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="2e107c93811a645197836a3028c31f86cedd9054">
+        <source>
+          Oups! It seems like we didn't find what you want.
+        </source>
+        <target>
+          Oups! It seems like we didn't find what you want.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/errors/page-not-found.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="807e142b4b0d7fca1f2f23220487a370ed863638">
+        <source>
+          An unknown error occured. Sorry for trouble.
+        </source>
+        <target>
+          An unknown error occured. Sorry for trouble.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/errors/unknown-error.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="support-page.title">
+        <source>Support my work</source>
+        <target>Support my work</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="f16b196b737e7e6a9434f01406f82199d533e5c4">
+        <source>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>Did you find something helpful on the blog and are feeling a little grateful today?<x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>
+      I have been coding for 15+ years and love using this blog to show what I learned during
+      this continuous process of being a developper! I work full-time so this blog and my open
+      source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+    <x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>
+      I love to share with you what I learn everyday for <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>free<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/> and I am trying my best to keep it this way,
+      though costs are getting higher for me and I wouldn't say no to a little help from you.
+      <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      Your support would mean I could take days off or make more room in my schedule <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>to offer
+      you better quality content more often<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
+    <x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>As I don't want my website to turn into an ugly mess, you can see there no ads at all here!<x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+  </source>
+        <target>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>Did you find something helpful on the blog and are feeling a little grateful today?<x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>
+      I have been coding for 15+ years and love using this blog to show what I learned during
+      this continuous process of being a developper! I work full-time so this blog and my open
+      source projects are mainly updated on my free time which is, as a dad and husband, very precious.
+    <x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>
+      I love to share with you what I learn everyday for <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>free<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/> and I am trying my best to keep it this way,
+      though costs are getting higher for me and I wouldn't say no to a little help from you.
+      <x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      Your support would mean I could take days off or make more room in my schedule <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>to offer
+      you better quality content more often<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
+    <x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+    <x ctype="x-p" equiv-text="&lt;p&gt;" id="START_PARAGRAPH"/>As I don't want my website to turn into an ugly mess, you can see there no ads at all here!<x ctype="x-p" equiv-text="&lt;/p&gt;" id="CLOSE_PARAGRAPH"/>
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note from="description" priority="1">A text that explain how many work is done for free</note>
+        <note from="meaning" priority="1">support page intro</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="ce8e233f26f0a9674e810102e244c75f361bef8c">
+        <source>
+      It's often hard for people to figure out what is part of my daily workload. So, here what I do:
+    </source>
+        <target>
+      It's often hard for people to figure out what is part of my daily workload. So, here what I do:
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note from="description" priority="1">Introducing paragraph about workload</note>
+        <note from="meaning" priority="1">Workload intro</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="ebcddc24ddc99a6e764269ea749771e414b2eef4">
+        <source>
+        I share my knowledge on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>my blog<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> in the form of tech posts, tech event reports,
+        product reviews and tutorials.
+      </source>
+        <target>
+        I share my knowledge on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>my blog<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> in the form of tech posts, tech event reports,
+        product reviews and tutorials.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note from="description" priority="1">Explaning paragraph about blog workload</note>
+        <note from="meaning" priority="1">Workload blog explanation</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="3dd5bafd0e3adf1407856dde6b3f60913e0e48f3">
+        <source>https://blog.nathanaelcherrier.com/en/</source>
+        <target>https://blog.nathanaelcherrier.com/en/</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note from="description" priority="1">The URL of the blog</note>
+        <note from="meaning" priority="1">Blog url</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="7b781e6c686ff7fb1b02d406c1d64d4faaf56b80">
+        <source>
+        I document my life on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Instagram<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>. You'll find motivational posts, &quot;dev life&quot;
+        posts, and friendly advice for newbies.
+      </source>
+        <target>
+        I document my life on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Instagram<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>. You'll find motivational posts, &amp;quot;dev life&amp;quot;
+        posts, and friendly advice for newbies.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note from="description" priority="1">Explaning paragraph about instagram workload</note>
+        <note from="meaning" priority="1">Workload instagram explanation</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="d9457ac5919836bf02133179197c6b7c8ec82f3f">
+        <source>I maintain several open source projects on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Github<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>.</source>
+        <target>I maintain several open source projects on <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Github<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note from="description" priority="1">Explaning paragraph about oss workload</note>
+        <note from="meaning" priority="1">Workload projects explanation</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="97f6c51bb4875a785f6faf350ef8d853a6bf695c">
+        <source>
+      <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>I am very grateful<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/> for the community I have build with this platform and all the emails
+      you guys send me telling me how my posts or projects helped in some ways.
+    </source>
+        <target>
+      <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>I am very grateful<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/> for the community I have build with this platform and all the emails
+      you guys send me telling me how my posts or projects helped in some ways.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note from="description" priority="1">Introducing paragraph about payments</note>
+        <note from="meaning" priority="1">Payments intro</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="fab647a573c98a388b5d4966bc721f7567a1cd37">
+        <source>
+      Here are a few ways you can support the blog.
+    </source>
+        <target>
+      Here are a few ways you can support the blog.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note from="description" priority="1">payments list-intro</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="23f548614882bc85fb6ab0c94789641c998bb9bb">
+        <source>Patreon</source>
+        <target>Patreon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note from="description" priority="1">The title of the Patreon section on the support page</note>
+        <note from="meaning" priority="1">Patreon name</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="245f9d39e3e658d3db6091ffcc580b91cc998830">
+        <source>
+      Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
+      available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
+    </source>
+        <target>
+      Patreon is an opportunity for you to support me and get a little something in exchange. You can see the rewards
+      available directly on my Patreon page. It can last for as long as you desire for a minimum of 1$/month.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note from="description" priority="1">The introduction paragraph about Patreon</note>
+        <note from="meaning" priority="1">Patreon description</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="bb02f2de7d69d4aa0e61d22b7a4fb532db9a8595">
+        <source>Donate with Patreon and get rewards</source>
+        <target>Donate with Patreon and get rewards</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note from="description" priority="1">The title of the Patreon action button</note>
+        <note from="meaning" priority="1">Patreon action button title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="6ff7f8cebd9ad938596539c9d4d5b33f5310c8e7">
+        <source>Become a patron button</source>
+        <target>Become a patron button</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note from="description" priority="1">The alternative text of the Patreon action button</note>
+        <note from="meaning" priority="1">Patreon action button text</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="714fc61d4f0b47087d654f910c439eefbf129254">
+        <source>One-shot payment</source>
+        <target>One-shot payment</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note from="description" priority="1">The title of the one-shot payment section</note>
+        <note from="meaning" priority="1">One-shot payment title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="5301753953f37b05761f191b7aba8019143128ec">
+        <source>
+      If you don't want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
+    </source>
+        <target>
+      If you don't want to be committed to a monthly subscription, you can also donate by Paypal or directly with your credit card.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note from="description" priority="1">The description paragraph for one-shot payments</note>
+        <note from="meaning" priority="1">One-shot payment description</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="ecdf9ba598ceccac467c5f4c34447429203b4f90">
+        <source>Donate with Paypal or by credit card</source>
+        <target>Donate with Paypal or by credit card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note from="description" priority="1">The title of the Paypal action button</note>
+        <note from="meaning" priority="1">Paypal action button title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="d6842aeb814b0334f1a7ba07bedfc909e4defccc">
+        <source>Donate with PayPal button</source>
+        <target>Donate with PayPal button</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <note from="description" priority="1">The alternative text of the Paypal action button</note>
+        <note from="meaning" priority="1">Paypal action button text</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="bd78b18541393cbbde4878ceea4157cf90315d51">
+        <source>Crypto-currencies</source>
+        <target>Crypto-currencies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note from="description" priority="1">The title of the crypto section</note>
+        <note from="meaning" priority="1">Crypto title</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="32c3eb7b680c79ef2a5f1892c3612519c9dfcc6f">
+        <source>
+      If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
+      The website supports Litecoin, Bitcoin, Ethereum and Ripple.
+    </source>
+        <target>
+      If you feel a little nerdy (I am SO nerdy), you can also contribute to the blog by using your crypto-currencies.
+      The website supports Litecoin, Bitcoin, Ethereum and Ripple.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <note from="description" priority="1">The introduction paragraph for crypto</note>
+        <note from="meaning" priority="1">Crypto description</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="48aa34a9d9e6e7bbb6a093d70d7073b763c883c6">
+        <source>
+      You can also send some Basic Atention Token (BAT) using the Brave browser. It is easier and secure. You just have <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>to install the browser<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> and start using it.
+      When you are on my website you can choose to send a tip to me by clicking on the icon of BAT in the address bar. <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK_1"/>Here is a video<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> to better show you how to do so.
+    </source>
+        <target>
+      You can also send some Basic Atention Token (BAT) using the Brave browser. It is easier and secure. You just have <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>to install the browser<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> and start using it.
+      When you are on my website you can choose to send a tip to me by clicking on the icon of BAT in the address bar. <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK_1"/>Here is a video<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/> to better show you how to do so.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note from="description" priority="1">Crypto payments can be done using Brave browser</note>
+        <note from="meaning" priority="1">Brave description</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="4c535eb63189c1c468c306e0c2553cadf4284add">
+        <source>
+      Can't support my blog with money? Please do share on social media the posts you appreciate!
+      It helps tremendously.
+    </source>
+        <target>
+      Can't support my blog with money? Please do share on social media the posts you appreciate!
+      It helps tremendously.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/support/support.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <note from="description" priority="1">Even if people don't have money they can support us</note>
+        <note from="meaning" priority="1">Support without money</note>
+      </trans-unit>
+      <trans-unit datatype="html" id="2b8d433b883283b292ae2ad2cc4d3efbdd32e121">
+        <source>Legal notices</source>
+        <target>Legal notices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="91444811128782dee281d41b12cd7e8f60df4673">
+        <source>Editor</source>
+        <target>Editor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="1026181d3882f1364ec26df405ea0103f2db5f20">
+        <source>
+      The website &quot;nathanaelcherrier.com&quot; is edited by the company <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
+    </source>
+        <target>
+      The website &amp;quot;nathanaelcherrier.com&amp;quot; is edited by the company <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="787d7448676a9873bc5322358e5e780f8532a4bd">
+        <source>
+      Legal structure: &quot;Profession libérale&quot;<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      RCS de Lyon n°SIREN 841 104 052
+    </source>
+        <target>
+      Legal structure: &amp;quot;Profession libérale&amp;quot;<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      RCS de Lyon n°SIREN 841 104 052
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="d9c9c866da26c434edfecaec259fa2da6362546d">
+        <source>
+      155b rue Marcel Merieux - 69007 Lyon - France<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      + 33 (0) 6 58 62 44 21<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Contact email<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>
+    </source>
+        <target>
+      155b rue Marcel Merieux - 69007 Lyon - France<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      + 33 (0) 6 58 62 44 21<x ctype="lb" equiv-text="&lt;br/&gt;" id="LINE_BREAK"/>
+      <x ctype="x-a" equiv-text="&lt;a&gt;" id="START_LINK"/>Contact email<x ctype="x-a" equiv-text="&lt;/a&gt;" id="CLOSE_LINK"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="9554e2d363fd79a456e0d6d06c4c9a0df1d6fc54">
+        <source>Publishing Director</source>
+        <target>Publishing Director</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="d4db784aa81183ee26c4f07c5b7c97bee21e4364">
+        <source>Mr. Nathanaël Cherrier</source>
+        <target>Mr. Nathanaël Cherrier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="fe22ca53e651df951dac25b67c17894b0980f767">
+        <source>Host</source>
+        <target>Host</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit datatype="html" id="8f78e76e6398164cc2df7db4ce43c4deecd3aeb6">
+        <source>
+      The website is hosted by OVH, SAS
+    </source>
+        <target>
+      The website is hosted by OVH, SAS
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal/legal.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
