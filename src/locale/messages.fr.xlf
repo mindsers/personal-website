@@ -104,9 +104,7 @@
         <source>
             You need to enter a valid address email.
           </source>
-        <target>
-            You need to enter a valid address email.
-          </target>
+        <target>L'adresse email doit être valide.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">31</context>
