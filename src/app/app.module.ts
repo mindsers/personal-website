@@ -18,7 +18,8 @@ import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
 import { InstagramLinksComponent } from './influencer/instagram-links.component'
 import { InstagramService } from './influencer/shared/instagram.service';
-import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component'
+import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component';
+import { InfluencerComponent } from './influencer/influencer.component'
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.componen
     LegalComponent,
     InstagramLinksComponent,
     OpenSourcererComponent,
+    InfluencerComponent,
   ],
   imports: [
     BrowserModule,
