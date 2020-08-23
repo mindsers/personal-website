@@ -17,7 +17,8 @@ import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
 import { InstagramLinksComponent } from './influencer/instagram-links.component'
-import { InstagramService } from './influencer/shared/instagram.service'
+import { InstagramService } from './influencer/shared/instagram.service';
+import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { InstagramService } from './influencer/shared/instagram.service'
     SupportComponent,
     LegalComponent,
     InstagramLinksComponent,
+    OpenSourcererComponent,
   ],
   imports: [
     BrowserModule,
