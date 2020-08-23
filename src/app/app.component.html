@@ -8,16 +8,19 @@
       <nav>
         <ul>
           <li>
-            <a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog</a>
+            Who am I?
             <ul class="sub-menu">
-              <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 1</a></li>
-              <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 2</a></li>
-              <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 3</a></li>
+              <li><a [routerLink]="['/', 'open-sourcerer']" i18n="Navigation link to page about my open source activities">An open sourcerer</a></li>
             </ul>
           </li>
-          <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume in the header">Resume</a></li>
+          <li><a [href]="blogURL" i18n="blog link|">Blog</a></li>
+          <li>
+            <a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume in the header">Resume</a>
+            <ul class="sub-menu" *ngIf="false">
+              <li><a i18n="portfolio link|A link to the portfolio">Portfolio</a></li>
+            </ul>
+          </li>
           <li><a href="https://community.nathanaelcherrier.com" i18n="forum link|A link to the forum">Forum</a></li>
-          <li *ngIf="false"><a i18n="portfolio link|A link to the portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </div>
