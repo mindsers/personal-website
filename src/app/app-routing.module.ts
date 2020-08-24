@@ -12,6 +12,7 @@ import { InstagramLinksComponent } from './influencer/instagram-links.component'
 import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component'
 import { InfluencerComponent } from './influencer/influencer.component'
 import { ContractorComponent } from './contractor/contractor.component'
+import { WriterComponent } from './writer/writer.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'support', component: SupportComponent },
   { path: 'influencer', component: InfluencerComponent },
   { path: 'contractor', component: ContractorComponent },
+  { path: 'writer', component: WriterComponent },
   { path: 'open-sourcerer', component: OpenSourcererComponent },
   { path: 'instalinks', component: InstagramLinksComponent },
   { path: '404', component: PageNotFoundComponent },
