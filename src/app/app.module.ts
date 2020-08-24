@@ -20,7 +20,8 @@ import { InstagramLinksComponent } from './influencer/instagram-links.component'
 import { InstagramService } from './influencer/shared/instagram.service';
 import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component';
 import { InfluencerComponent } from './influencer/influencer.component';
-import { ContractorComponent } from './contractor/contractor.component'
+import { ContractorComponent } from './contractor/contractor.component';
+import { WriterComponent } from './writer/writer.component'
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ContractorComponent } from './contractor/contractor.component'
     OpenSourcererComponent,
     InfluencerComponent,
     ContractorComponent,
+    WriterComponent,
   ],
   imports: [
     BrowserModule,
