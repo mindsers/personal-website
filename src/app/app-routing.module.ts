@@ -9,6 +9,10 @@ import { UnknownErrorComponent } from './errors/unknown-error.component'
 import { SupportComponent } from './support/support.component'
 import { LegalComponent } from './legal/legal.component'
 import { InstagramLinksComponent } from './influencer/instagram-links.component'
+import { OpenSourcererComponent } from './open-sourcerer/open-sourcerer.component'
+import { InfluencerComponent } from './influencer/influencer.component'
+import { ContractorComponent } from './contractor/contractor.component'
+import { WriterComponent } from './writer/writer.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -16,6 +20,10 @@ const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'support', component: SupportComponent },
+  { path: 'influencer', component: InfluencerComponent },
+  { path: 'contractor', component: ContractorComponent },
+  { path: 'writer', component: WriterComponent },
+  { path: 'open-sourcerer', component: OpenSourcererComponent },
   { path: 'instalinks', component: InstagramLinksComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '500', component: UnknownErrorComponent },
