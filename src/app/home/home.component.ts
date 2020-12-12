@@ -32,5 +32,6 @@ export class HomeComponent implements OnInit {
 
     this.postCount = 160
     this.ossProjectCount = 3
+    this.techInterestDuration = (new Date()).getYear() - 2005
   }
 }
