@@ -6,3 +6,6 @@
 /fr/*                                       /fr/index.html                          200
 
 /*                                          /en/index.html                          200
+
+http://nathanaelcherrier.com/*              https://nathanaelcherrier.dev/:splat    301!
+https://nathanaelcherrier.com/*             https://nathanaelcherrier.dev/:splat    301!
