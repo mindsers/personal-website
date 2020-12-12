@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   instagramFollowersCount: number = null
   postCount: number = null
   ossProjectCount: number = null
+  techInterestDuration: number = 0
 
   constructor(private instagramService: InstagramService) { }
 
@@ -32,6 +33,6 @@ export class HomeComponent implements OnInit {
 
     this.postCount = 160
     this.ossProjectCount = 3
-    this.techInterestDuration = (new Date()).getYear() - 2005
+    this.techInterestDuration = (new Date()).getFullYear() - 2005
   }
 }
