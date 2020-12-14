@@ -31,7 +31,7 @@ describe('SimplePopinComponent', () => {
 
   describe('#handleClick()', () => {
     it('should call close function', () => {
-      const popinRef = TestBed.get(POPIN_VIEWREF) as PopinContainerComponent
+      const popinRef = TestBed.inject(POPIN_VIEWREF) as PopinContainerComponent
       component.handleClick(null)
 
       expect(popinRef.close).toHaveBeenCalled()

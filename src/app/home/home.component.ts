@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   instagramFollowersCount: number = null
   postCount: number = null
   ossProjectCount: number = null
-  techInterestDuration: number = 0
+  techInterestDuration: number = null
 
   constructor(private instagramService: InstagramService) { }
 
