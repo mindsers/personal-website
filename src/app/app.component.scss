@@ -57,15 +57,37 @@ header {
       }
 
       nav li {
+        position: relative;
         display: inline-block;
         margin: 0 15px;
         font-weight: lighter;
         font-size: 0.95em;
         cursor: pointer;
+        padding: 10px;
 
         a {
           text-decoration: none;
           color: #34495e;
+        }
+
+        & > .sub-menu {
+          display: none;
+        }
+
+        &:hover > .sub-menu {
+          display: flex;
+          position: absolute;
+          flex-direction: column;
+          background-color: white;
+          border: 1px solid #3498db;
+          padding: 10px 0;
+          box-sizing: border-box;
+          margin-top: 10px;
+
+          li {
+            width: max-content;
+            padding: 10px;
+          }
         }
       }
     }

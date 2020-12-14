@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core'
-
-import { ErrorComponent } from './error-component'
-import { RuntimeTranslationService } from '../shared/translator/translator.service'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-unknown-error',
-  templateUrl: './error-component.html',
+  template: `
+    <section class="error-message">
+      <div class="content">
+        <h1>500'</h1>
+        <p i18n>
+          An unknown error occured. Sorry for trouble.
+        </p>
+      </div>
+    </section>
+  `,
   styleUrls: ['./error-component.scss']
 })
-export class UnknownErrorComponent implements ErrorComponent, OnInit {
-  errorCode = 500
-  message = ''
-
-  constructor(private translator: RuntimeTranslationService) {}
-
-  ngOnInit() {
-    this.message = this.translator.translate('error-page.500.message')
-  }
-}
+export class UnknownErrorComponent {}

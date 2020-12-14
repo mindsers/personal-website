@@ -6,6 +6,7 @@ on:
       - develop
       - feature/*
       - release/*
+      - dependabot/*
 
 jobs:
   test:

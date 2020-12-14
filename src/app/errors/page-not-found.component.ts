@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core'
-
-import { ErrorComponent } from './error-component'
-import { RuntimeTranslationService } from '../shared/translator/translator.service'
+import { Component } from '@angular/core'
 
 @Component({
-  templateUrl: './error-component.html',
+  template: `
+    <section class="error-message">
+      <div class="content">
+        <h1>404'</h1>
+        <p i18n>
+          Oups! It seems like we didn't find what you want.
+        </p>
+      </div>
+    </section>
+  `,
   styleUrls: ['./error-component.scss']
 })
-export class PageNotFoundComponent implements ErrorComponent, OnInit {
-  errorCode = 404
-  message = ''
-
-  constructor(private translator: RuntimeTranslationService) {}
-
-  ngOnInit() {
-    this.message = this.translator.translate('error-page.404.message')
-  }
-}
+export class PageNotFoundComponent {}
