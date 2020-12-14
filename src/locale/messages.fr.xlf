@@ -730,8 +730,8 @@ des revues de produits et des tutoriels.</target>
         <note from="meaning" priority="1">Workload blog explanation</note>
       </trans-unit>
       <trans-unit datatype="html" id="3dd5bafd0e3adf1407856dde6b3f60913e0e48f3">
-        <source>https://blog.nathanaelcherrier.com/en/</source>
-        <target>https://blog.nathanaelcherrier.com/fr/</target>
+        <source>https://mindsers.blog/en/</source>
+        <target>https://mindsers.blog/fr/</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/support/support.component.html</context>
           <context context-type="linenumber">33</context>
@@ -944,9 +944,9 @@ Lorsque vous êtes sur mon site, vous pouvez choisir de faire une contribution e
       </trans-unit>
       <trans-unit datatype="html" id="1026181d3882f1364ec26df405ea0103f2db5f20">
         <source>
-      The website &quot;nathanaelcherrier.com&quot; is edited by the company <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
+      The website &quot;nathanaelcherrier.dev&quot; is edited by the company <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
     </source>
-        <target>Le site &amp;quot;nathanaelcherrier.com&amp;quot; est édité par la société <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.</target>
+        <target>Le site &amp;quot;nathanaelcherrier.dev&amp;quot; est édité par la société <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal/legal.component.html</context>
           <context context-type="linenumber">5</context>
