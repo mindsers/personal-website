@@ -10,7 +10,7 @@ import { ContactComponent } from './contact/contact.component'
 })
 export class AppComponent {
   get blogURL() {
-    return `https://blog.nathanaelcherrier.com/${this.userLocale}/`
+    return `https://mindsers.blog/${this.userLocale}/`
   }
 
   constructor(
