@@ -528,14 +528,14 @@ Aucune information disponible. Le site rencontre peut-être un problème.</targe
           <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
-      <trans-unit datatype="html" id="e84b44ff8677b82bf83873caac486573f2488e23">
+      <trans-unit datatype="html" id="4ae529b08226ed227d38ada34293f981bfac2458">
         <source>
       Hi, my name is <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>Nathanaël Cherrier<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>, I am a Javascript/iOS developer, teacher, blogger, and an aspiring technical expert living in Lyon.
-      Coding has been my passion for 13 years and I am always eager to learn more about new technologies and to better myself.
+      Coding has been my passion for <x id="INTERPOLATION" equiv-text="{{ techInterestDuration }}"/> years and I am always eager to learn more about new technologies and to better myself.
       I have a lead developer position in a startup where I code, of course, but also teach other about good practices and Javascript/Angular/Swift.
     </source>
         <target>Salut, je m'appelle <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>Nathanaël Cherrier<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>, je suis développeur Javascript/iOS, prof, blogueur, expert technique en devenir et j'habite à Lyon.
-Je me passionne pour le développement depuis 13 ans et je ne me lasse jamais d’en apprendre toujours plus sur les technologies et les moyens d’améliorer mon code.
+Je me passionne pour le développement depuis <x id="INTERPOLATION" equiv-text="{{ techInterestDuration }}"/> ans et je ne me lasse jamais d’en apprendre toujours plus sur les technologies et les moyens d’améliorer mon code.
 Je suis actuellement lead développeur dans une startup où je développe, bien sûr, mais j’enseigne également aux autres les bonnes pratiques ainsi que les languages JavaScript, Angular et Swift.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -554,7 +554,7 @@ Je suis actuellement lead développeur dans une startup où je développe, bien 
           <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
-      <trans-unit datatype="html" id="a2c4de44aa1483fa2708ec34f74589ee234a10e6">
+      <trans-unit datatype="html" id="e577d50b6330a73a74267ae0b0f283052702d185">
         <source><x ctype="image" equiv-text="&lt;img/&gt;" id="TAG_IMG"/> <x equiv-text="{{ instagramFollowersCount || '4k+' }}" id="INTERPOLATION"/> followers</source>
         <target><x ctype="image" equiv-text="&lt;img/&gt;" id="TAG_IMG"/> <x equiv-text="{{ instagramFollowersCount || '4k+' }}" id="INTERPOLATION"/> abonnés</target>
         <context-group purpose="location">
