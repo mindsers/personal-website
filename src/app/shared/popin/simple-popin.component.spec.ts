@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
 
 import { SimplePopinComponent } from './simple-popin.component'
 import { POPIN_DATA, POPIN_VIEWREF } from './popin'
@@ -8,7 +8,7 @@ describe('SimplePopinComponent', () => {
   let component: SimplePopinComponent
   let fixture: ComponentFixture<SimplePopinComponent>
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SimplePopinComponent ],
       providers: [
