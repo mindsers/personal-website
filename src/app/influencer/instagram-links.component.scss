@@ -33,15 +33,15 @@
       }
 
       &.wiki::before {
-        content: url('src/assets/img/info-circle-solid.svg');
+        content: url('../../assets/img/info-circle-solid.svg');
       }
 
       &.external::before {
-        content: url('src/assets/img/external-link-alt-solid.svg');
+        content: url('../../assets/img/external-link-alt-solid.svg');
       }
 
       &.amazon::before {
-        content: url('src/assets/img/amazon-brands.svg');
+        content: url('../../assets/img/amazon-brands.svg');
       }
     }
   }

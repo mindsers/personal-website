@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
 
 import { UnknownErrorComponent } from './unknown-error.component'
 
@@ -6,7 +6,7 @@ describe('UnknownErrorComponent', () => {
   let component: UnknownErrorComponent
   let fixture: ComponentFixture<UnknownErrorComponent>
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ UnknownErrorComponent ]
     })
