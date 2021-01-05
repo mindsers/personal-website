@@ -9,14 +9,13 @@
         <ul>
           <li>
             <a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog</a>
-            <ul class="sub-menu">
+            <ul class="sub-menu" *ngIf="false">
               <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 1</a></li>
               <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 2</a></li>
               <li><a [href]="blogURL" i18n="blog link|A link to the blog in the ">Blog 3</a></li>
             </ul>
           </li>
           <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume in the header">Resume</a></li>
-          <li><a href="https://community.nathanaelcherrier.com" i18n="forum link|A link to the forum">Forum</a></li>
           <li *ngIf="false"><a i18n="portfolio link|A link to the portfolio">Portfolio</a></li>
         </ul>
       </nav>
@@ -33,7 +32,6 @@
       <div class="item">
         <h2 i18n="useful links section title|The title of a footer section full of useful links">More links</h2>
         <ul>
-          <li><a href="https://community.nathanaelcherrier.com" i18n="forum link|A link to the forum">Forum</a></li>
           <li><a href="https://discord.gg/WrHUfSC">Discord</a></li>
           <li><a [routerLink]="['/', 'resume']" i18n="resume link|A link to my resume">Resume</a></li>
           <li><a href="#" (click)="handleOnContactButtonClick()" i18n="contact action|A link to a contact form">Contact me</a></li>
