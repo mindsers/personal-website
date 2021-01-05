@@ -729,7 +729,7 @@ des revues de produits et des tutoriels.</target>
         <note from="description" priority="1">Explaning paragraph about blog workload</note>
         <note from="meaning" priority="1">Workload blog explanation</note>
       </trans-unit>
-      <trans-unit datatype="html" id="c966a3669ac2a00e77af2acd346dcc88b8eee9ebc">
+      <trans-unit datatype="html" id="966a3669ac2a00e77af2acd346dcc88b8eee9ebc">
         <source>https://mindsers.blog/en/</source>
         <target>https://mindsers.blog/fr/</target>
         <context-group purpose="location">
