@@ -729,7 +729,7 @@ des revues de produits et des tutoriels.</target>
         <note from="description" priority="1">Explaning paragraph about blog workload</note>
         <note from="meaning" priority="1">Workload blog explanation</note>
       </trans-unit>
-      <trans-unit datatype="html" id="3dd5bafd0e3adf1407856dde6b3f60913e0e48f3">
+      <trans-unit datatype="html" id="c966a3669ac2a00e77af2acd346dcc88b8eee9ebc">
         <source>https://mindsers.blog/en/</source>
         <target>https://mindsers.blog/fr/</target>
         <context-group purpose="location">
@@ -942,7 +942,7 @@ Lorsque vous êtes sur mon site, vous pouvez choisir de faire une contribution e
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit datatype="html" id="1026181d3882f1364ec26df405ea0103f2db5f20">
+      <trans-unit datatype="html" id="3f37b5d17f6367e8915285933910de8455492f00">
         <source>
       The website &quot;nathanaelcherrier.dev&quot; is edited by the company <x ctype="x-strong" equiv-text="&lt;strong&gt;" id="START_TAG_STRONG"/>MindsersIT<x ctype="x-strong" equiv-text="&lt;/strong&gt;" id="CLOSE_TAG_STRONG"/>.
     </source>
