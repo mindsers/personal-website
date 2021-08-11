@@ -8,8 +8,8 @@ This repo host the Angular application that powers [nathanaelcherrier.dev](https
 
 All the repositories part of the MindsersIT project:
 
-- [@mindsers/website](https://github.com/mindsers/mindsersit-website)
-- [@mindsers/blog](https://github.com/mindsers/mindsersit-blog)
+- [@mindsers/website](https://github.com/mindsers/personal-website)
+- [@mindsers/blog](https://github.com/mindsers/mindsers-blog)
 
 ## Getting started
 
