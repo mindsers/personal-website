@@ -1,6 +1,6 @@
 ![Repo header image](https://repository-images.githubusercontent.com/217519248/74458700-5118-11ea-9d97-7563f10f9067)
 
-# @mindsersit/website
+# @mindsers/website
 
 _"MindsersIT Website"_ is a portfolio and freelance showcase for [nathanaelcherrier.dev](https://nathanaelcherrier.dev). This part of the site is based on [Angular](https://angular.com).
 
@@ -8,9 +8,8 @@ This repo host the Angular application that powers [nathanaelcherrier.dev](https
 
 All the repositories part of the MindsersIT project:
 
-- [@mindsersit/website](https://github.com/mindsers/mindsersit-website)
-- [@mindsersit/blog](https://github.com/mindsers/mindsersit-blog)
-- [@mindsersit/community](https://github.com/mindsers/mindsersit-community)
+- [@mindsers/website](https://github.com/mindsers/mindsersit-website)
+- [@mindsers/blog](https://github.com/mindsers/mindsersit-blog)
 
 ## Getting started
 
